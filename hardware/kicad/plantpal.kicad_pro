@@ -326,6 +326,34 @@
     [
       "59b4123e-c7be-466b-a5db-658b8f0c1171",
       ""
+    ],
+    [
+      "943ab7c0-d00c-4ea0-8716-990ca6b0cb6f",
+      "Main Controller"
+    ],
+    [
+      "7fda2409-1758-4461-822b-801ba75fe202",
+      "USB Power"
+    ],
+    [
+      "8a163738-8cdd-43d1-ab87-ebdfd2811ec1",
+      "Solar Power"
+    ],
+    [
+      "0bc89df9-c404-42cc-aab4-4237df7294d4",
+      "Power Switch and Regulator"
+    ],
+    [
+      "416559aa-55f3-4db2-bf13-04c2bb6b0caa",
+      "Sensor"
+    ],
+    [
+      "76cc1a03-b597-4ef0-85b8-85a2d617e76b",
+      "Battery"
+    ],
+    [
+      "3265fc00-478b-4188-a908-4fc9b1aaf6ab",
+      "Display"
     ]
   ],
   "text_variables": {}
