@@ -1056,17 +1056,9 @@
   (no_connect (at 42.545 55.88) (uuid 6fb4533b-0be1-44c6-92d9-7989b5da2eac))
   (no_connect (at 19.685 66.04) (uuid e9c59b29-bf9d-4976-bcac-b26df752be87))
 
-  (wire (pts (xy 146.05 92.075) (xy 146.05 95.25))
-    (stroke (width 0) (type default))
-    (uuid 04ea2a90-68cf-4dfe-a902-5525a76af5e3)
-  )
   (wire (pts (xy 155.575 57.15) (xy 155.575 59.69))
     (stroke (width 0) (type default))
     (uuid 0cdcd4e2-bd3e-4bfc-ab65-4357a1eed23e)
-  )
-  (wire (pts (xy 157.48 92.075) (xy 157.48 95.25))
-    (stroke (width 0) (type default))
-    (uuid 1137fb9e-67bf-40d4-9b84-35a3caef6a5f)
   )
   (wire (pts (xy 55.245 33.02) (xy 66.675 33.02))
     (stroke (width 0) (type default))
@@ -1091,6 +1083,10 @@
   (wire (pts (xy 42.545 40.64) (xy 48.895 40.64))
     (stroke (width 0) (type default))
     (uuid 318a5079-52f7-4d97-a1fe-16aec5f2fdfa)
+  )
+  (wire (pts (xy 29.21 107.95) (xy 26.67 107.95))
+    (stroke (width 0) (type default))
+    (uuid 36332755-6a21-42a0-b832-8f432c78c90f)
   )
   (wire (pts (xy 125.095 64.77) (xy 130.81 64.77))
     (stroke (width 0) (type default))
@@ -1132,6 +1128,10 @@
     (stroke (width 0) (type default))
     (uuid 6b6eb0af-05d7-4d35-adb8-2045bebc385f)
   )
+  (wire (pts (xy 29.21 103.505) (xy 29.21 107.95))
+    (stroke (width 0) (type default))
+    (uuid 6bb6d165-397d-46dc-bef0-76cab29c8c37)
+  )
   (wire (pts (xy 42.545 48.26) (xy 48.895 48.26))
     (stroke (width 0) (type default))
     (uuid 7482925f-eff4-441b-ae27-fb839cb49c65)
@@ -1160,17 +1160,9 @@
     (stroke (width 0) (type default))
     (uuid 870667b8-b9f0-4fe6-91e1-1ff9a6197363)
   )
-  (wire (pts (xy 146.05 95.25) (xy 143.51 95.25))
-    (stroke (width 0) (type default))
-    (uuid 8c991721-fc98-42d4-bb2a-c0585dea11a4)
-  )
   (wire (pts (xy 42.545 43.18) (xy 48.895 43.18))
     (stroke (width 0) (type default))
     (uuid 950b97f6-dc2a-4bc2-b82c-ee517979e8c6)
-  )
-  (wire (pts (xy 157.48 95.25) (xy 160.02 95.25))
-    (stroke (width 0) (type default))
-    (uuid 984d1d8d-ea9c-41e2-b165-f8417fabf7a7)
   )
   (wire (pts (xy 66.675 33.02) (xy 66.675 36.83))
     (stroke (width 0) (type default))
@@ -1191,6 +1183,10 @@
   (wire (pts (xy 71.755 50.165) (xy 71.755 53.34))
     (stroke (width 0) (type default))
     (uuid ba242d7d-8892-480b-84ae-ce211b1398cb)
+  )
+  (wire (pts (xy 43.18 107.95) (xy 45.72 107.95))
+    (stroke (width 0) (type default))
+    (uuid bbe7cb4b-70c3-400f-8e6a-e45734b4359b)
   )
   (wire (pts (xy 59.055 60.96) (xy 61.595 60.96))
     (stroke (width 0) (type default))
@@ -1219,6 +1215,10 @@
   (wire (pts (xy 120.015 64.77) (xy 115.57 64.77))
     (stroke (width 0) (type default))
     (uuid d40a820a-7666-45f7-8d6c-9720d0381991)
+  )
+  (wire (pts (xy 43.18 103.505) (xy 43.18 107.95))
+    (stroke (width 0) (type default))
+    (uuid eb3eb4fa-e87e-46e2-bd74-0f3c78e45048)
   )
   (wire (pts (xy 42.545 35.56) (xy 50.165 35.56))
     (stroke (width 0) (type default))
@@ -1254,7 +1254,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid cbd9eacb-441c-435a-aff1-d3f0de0869a0)
   )
-  (text "USB-C and ESD Protection" (at 26.67 122.555 0)
+  (text "USB-C and ESD Protection" (at 20.955 87.63 0)
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid d34638d8-fed2-4e7e-afdf-7755c8c4ab5b)
   )
@@ -1284,21 +1284,21 @@
     (uuid fa5870ab-51f2-4e76-8252-093902d79105)
   )
 
-  (hierarchical_label "VBUS" (shape input) (at 160.02 95.25 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 27880aa0-44ab-4b20-9c03-97418213e64e)
-  )
   (hierarchical_label "USB_D-" (shape output) (at 84.455 60.96 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 938a7257-edd9-4413-b25b-8252ab9b63ce)
   )
+  (hierarchical_label "+BATT" (shape bidirectional) (at 45.72 107.95 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid bb2a248e-396d-4e2c-bf54-4e3daf68c182)
+  )
+  (hierarchical_label "VBUS" (shape output) (at 26.67 107.95 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid cd89786f-e8d0-4fd9-be2e-7e5f8f5250ee)
+  )
   (hierarchical_label "USB_D+" (shape output) (at 59.055 60.96 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid cf710da6-a053-49c4-a01d-34b5d99122c3)
-  )
-  (hierarchical_label "+BATT" (shape input) (at 143.51 95.25 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e0caa1e5-106d-41f6-b29b-e65812ed5ab1)
   )
 
   (symbol (lib_id "Device:Polyfuse") (at 95.25 27.94 90) (unit 1)
@@ -1375,7 +1375,7 @@
           (reference "R17") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "R1") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1413,7 +1413,7 @@
           (reference "#PWR058") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1455,7 +1455,7 @@
           (reference "C28") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C1") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1493,7 +1493,7 @@
           (reference "#PWR070") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1535,7 +1535,7 @@
           (reference "R18") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "R2") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1626,7 +1626,7 @@
           (reference "U6") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "U6") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1659,7 +1659,7 @@
           (reference "#PWR070") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1697,7 +1697,7 @@
           (reference "#PWR066") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1739,7 +1739,7 @@
           (reference "C29") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C4") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1822,7 +1822,7 @@
           (reference "#PWR065") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1860,7 +1860,7 @@
           (reference "#PWR060") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1898,7 +1898,7 @@
           (reference "#PWR067") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1936,7 +1936,7 @@
           (reference "#PWR069") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1974,7 +1974,7 @@
           (reference "#PWR055") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1990,29 +1990,29 @@
     )
   )
 
-  (symbol (lib_id "power:+BATT") (at 146.05 92.075 0) (unit 1)
+  (symbol (lib_id "power:+BATT") (at 43.18 103.505 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 79aeda66-93f3-4d53-ad1f-42d445f09bee)
-    (property "Reference" "#PWR070" (at 146.05 95.885 0)
+    (uuid 8063c77e-038a-475e-b94a-437e5e8cc14d)
+    (property "Reference" "#PWR070" (at 43.18 107.315 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+BATT" (at 146.05 87.63 0)
+    (property "Value" "+BATT" (at 43.18 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 146.05 92.075 0)
+    (property "Footprint" "" (at 43.18 103.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 146.05 92.075 0)
+    (property "Datasheet" "" (at 43.18 103.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a1d5b104-00fc-4303-9942-403a49d20764))
+    (pin "1" (uuid f581f008-674c-45f7-bad9-54675d16e401))
     (instances
       (project "plantpal"
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
           (reference "#PWR070") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2060,7 +2060,7 @@
           (reference "C27") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C3") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2098,7 +2098,7 @@
           (reference "#PWR064") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2136,7 +2136,7 @@
           (reference "#PWR063") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2184,7 +2184,7 @@
           (reference "C26") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C2") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2222,7 +2222,7 @@
           (reference "#PWR071") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2260,7 +2260,7 @@
           (reference "#PWR062") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2302,7 +2302,7 @@
           (reference "R23") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "R4") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2313,44 +2313,6 @@
       (project "feather_rak3172"
         (path "/a1545928-1195-40b9-b3c4-78f837012afb"
           (reference "R6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VBUS") (at 157.48 92.075 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid cea2479e-5869-4031-841f-488f25bb6399)
-    (property "Reference" "#PWR064" (at 157.48 95.885 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (at 157.48 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 157.48 92.075 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 157.48 92.075 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9783a4c3-68c6-4082-9129-9a38dbe18441))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR064") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR051") (unit 1)
-        )
-      )
-      (project "bwlr1e-prog"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "feather_rak3172"
-        (path "/a1545928-1195-40b9-b3c4-78f837012afb"
-          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -2416,6 +2378,44 @@
     )
   )
 
+  (symbol (lib_id "power:VBUS") (at 29.21 103.505 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d26e1ea6-43a8-4e31-91f9-508c6a4de994)
+    (property "Reference" "#PWR060" (at 29.21 107.315 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VBUS" (at 29.21 99.695 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 29.21 103.505 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 29.21 103.505 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 88e74ee8-1261-44a0-9e68-13e2810c784c))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "#PWR060") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
+          (reference "#PWR081") (unit 1)
+        )
+      )
+      (project "bwlr1e-prog"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "#PWR014") (unit 1)
+        )
+      )
+      (project "Penguino-STM32WL-LoRa-E5"
+        (path "/c338af29-f8d9-4513-836a-55ed8bfc47d3"
+          (reference "#PWR0105") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Battery_Management:MCP73831-2-OT") (at 140.97 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d464bcf2-6ed0-4cbe-8270-dd994fbdda4f)
@@ -2448,7 +2448,7 @@
           (reference "U7") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "U1") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2486,7 +2486,7 @@
           (reference "#PWR057") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2524,7 +2524,7 @@
           (reference "#PWR061") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2566,7 +2566,7 @@
           (reference "R21") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "R3") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2604,7 +2604,7 @@
           (reference "#PWR059") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2642,7 +2642,7 @@
           (reference "#PWR056") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
       (project "bwlr1e-prog"

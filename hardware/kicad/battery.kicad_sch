@@ -257,6 +257,58 @@
         )
       )
     )
+    (symbol "power:+BATT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+BATT" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag battery" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+BATT\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+BATT_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+BATT_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+BATT" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -310,13 +362,21 @@
     (stroke (width 0) (type default))
     (uuid 004e7c34-3c86-4708-af80-6d1fff5f8164)
   )
+  (wire (pts (xy 115.57 48.895) (xy 115.57 52.705))
+    (stroke (width 0) (type default))
+    (uuid 29a0eda0-8e95-4897-bd78-ff7960c14f15)
+  )
   (wire (pts (xy 79.375 52.705) (xy 79.375 57.785))
     (stroke (width 0) (type default))
     (uuid 9c13995f-ae33-478f-a601-d81656227cc2)
   )
-  (wire (pts (xy 106.045 52.705) (xy 114.935 52.705))
+  (wire (pts (xy 106.045 52.705) (xy 115.57 52.705))
     (stroke (width 0) (type default))
     (uuid 9e229a61-8ba4-4334-8d63-5b05150eb5b3)
+  )
+  (wire (pts (xy 21.59 23.495) (xy 21.59 26.035))
+    (stroke (width 0) (type default))
+    (uuid aa3fab82-7ff0-4438-8f71-96d331fae411)
   )
   (wire (pts (xy 79.375 69.215) (xy 79.375 71.755))
     (stroke (width 0) (type default))
@@ -330,6 +390,10 @@
     (stroke (width 0) (type default))
     (uuid d2bbb253-64cb-431d-ac79-45fea2c9f5d4)
   )
+  (wire (pts (xy 21.59 26.035) (xy 27.305 26.035))
+    (stroke (width 0) (type default))
+    (uuid f9b6d872-7959-4b50-9086-d468a44caefb)
+  )
   (wire (pts (xy 79.375 52.705) (xy 95.885 52.705))
     (stroke (width 0) (type default))
     (uuid fb3cb338-a13a-4ec8-8606-7ce086965770)
@@ -340,9 +404,9 @@
     (uuid 33e42ef8-e261-41de-9d09-3146711ad25c)
   )
 
-  (hierarchical_label "+BATT" (shape output) (at 114.935 52.705 0) (fields_autoplaced)
+  (hierarchical_label "+BATT" (shape bidirectional) (at 27.305 26.035 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 852d463b-ca4e-4710-99b9-315f99252e3f)
+    (uuid 04d97f6e-6b76-4de5-b1f1-791ff526d168)
   )
 
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 100.965 55.245 90) (unit 1)
@@ -369,7 +433,7 @@
           (reference "Q1") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "Q1") (unit 1)
+          (reference "Q6") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -402,7 +466,7 @@
           (reference "TP1") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "TP1") (unit 1)
+          (reference "TP6") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -447,6 +511,47 @@
     )
   )
 
+  (symbol (lib_id "power:+BATT") (at 115.57 48.895 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 50a8de8c-8953-4749-a4b5-d53d21b13eaa)
+    (property "Reference" "#PWR070" (at 115.57 52.705 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 115.57 44.45 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 115.57 48.895 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 115.57 48.895 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3bcc9f41-c851-472d-a6c3-b743e28031d4))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "#PWR070") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
+          (reference "#PWR050") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+          (reference "#PWR078") (unit 1)
+        )
+      )
+      (project "bwlr1e-prog"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+      (project "feather_rak3172"
+        (path "/a1545928-1195-40b9-b3c4-78f837012afb"
+          (reference "#PWR0131") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 79.375 71.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab1a2a30-e759-4c58-b80f-bed03e4a32ae)
@@ -469,12 +574,53 @@
           (reference "#PWR06") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
       (project "bwlr1e"
         (path "/630c8da6-5464-4eef-824d-89618087f4b4"
           (reference "#PWR013") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 21.59 23.495 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f152843f-f64d-4954-b506-96d703c86bfa)
+    (property "Reference" "#PWR070" (at 21.59 27.305 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 21.59 19.05 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 21.59 23.495 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 21.59 23.495 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 11a1a237-baa8-4e51-a412-a43594d4c5b1))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "#PWR070") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
+          (reference "#PWR050") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+          (reference "#PWR079") (unit 1)
+        )
+      )
+      (project "bwlr1e-prog"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "#PWR018") (unit 1)
+        )
+      )
+      (project "feather_rak3172"
+        (path "/a1545928-1195-40b9-b3c4-78f837012afb"
+          (reference "#PWR0131") (unit 1)
         )
       )
     )
