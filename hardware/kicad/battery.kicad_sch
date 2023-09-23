@@ -577,7 +577,7 @@
           (reference "#PWR050") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -621,7 +621,7 @@
           (reference "#PWR083") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -659,7 +659,7 @@
           (reference "#PWR06") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
       (project "bwlr1e"
