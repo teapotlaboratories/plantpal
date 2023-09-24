@@ -1873,7 +1873,7 @@
           (reference "#PWR018") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -1906,7 +1906,7 @@
           (reference "#PWR053") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -1958,7 +1958,7 @@
           (reference "C24") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C16") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -1978,7 +1978,7 @@
     (property "Value" "1M" (at 201.93 92.075 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 196.85 90.805 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 196.85 90.805 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf" (at 196.85 90.805 0)
@@ -2103,7 +2103,7 @@
           (reference "#PWR054") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2188,7 +2188,7 @@
           (reference "#PWR01") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2221,7 +2221,7 @@
           (reference "#PWR015") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2288,7 +2288,7 @@
     (property "Value" "10K" (at 186.055 75.565 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 184.15 74.295 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 184.15 74.295 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" (at 184.15 74.295 0)
@@ -2356,7 +2356,7 @@
           (reference "#PWR026") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2468,7 +2468,7 @@
           (reference "C2") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C15") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -2496,7 +2496,7 @@
           (reference "#PWR052") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2581,7 +2581,7 @@
           (reference "#PWR035") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2601,7 +2601,7 @@
     (property "Value" "10K" (at 257.175 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 255.27 74.93 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 255.27 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" (at 255.27 74.93 0)
@@ -2738,7 +2738,7 @@
           (reference "C19") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C8") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2861,7 +2861,7 @@
           (reference "#PWR011") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -2963,7 +2963,7 @@
           (reference "C19") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C7") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -3023,7 +3023,7 @@
           (reference "C19") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C14") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -3128,7 +3128,7 @@
     (property "Value" "10K" (at 60.325 103.505 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 55.88 106.045 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 55.88 106.045 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" (at 55.88 106.045 0)
@@ -3196,7 +3196,7 @@
           (reference "#PWR02") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -3318,7 +3318,7 @@
           (reference "#PWR017") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -3351,7 +3351,7 @@
           (reference "#PWR052") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -3403,7 +3403,7 @@
           (reference "C2") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C10") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -3431,7 +3431,7 @@
           (reference "#PWR030") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -3529,7 +3529,7 @@
           (reference "C12") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C9") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -3549,7 +3549,7 @@
     (property "Value" "1M" (at 156.845 90.805 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 151.765 89.535 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 151.765 89.535 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf" (at 151.765 89.535 0)
@@ -3747,7 +3747,7 @@
           (reference "C19") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C12") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -3871,7 +3871,7 @@
           (reference "#PWR027") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -3926,7 +3926,7 @@
           (reference "C19") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C11") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -3964,7 +3964,7 @@
           (reference "#PWR029") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -3997,7 +3997,7 @@
           (reference "#PWR019") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -4135,7 +4135,7 @@
           (reference "#PWR013") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -4201,7 +4201,7 @@
           (reference "#PWR023") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -4234,7 +4234,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -4249,7 +4249,7 @@
     (property "Value" "10K" (at 60.325 98.425 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 55.88 100.965 0)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 55.88 100.965 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" (at 55.88 100.965 0)
@@ -4317,7 +4317,7 @@
           (reference "#PWR022") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -4416,7 +4416,7 @@
           (reference "C24") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C13") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -4561,7 +4561,7 @@
           (reference "C25") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C17") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
       (project "bwlr1e"
@@ -4594,7 +4594,7 @@
           (reference "#PWR03") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
       (project "bwlr1e"
