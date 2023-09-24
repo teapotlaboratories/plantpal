@@ -1802,43 +1802,6 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 236.855 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ce552912-c5f3-4ea1-969c-b627975cc3fa)
-    (property "Reference" "C22" (at 242.57 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10u" (at 243.205 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 236.855 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf" (at 236.855 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mouser" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM188R61A226ME15D?qs=eeBpzGFlv%252B8DV%2FrilzyhAw%3D%3D&gclid=Cj0KCQjwn4qWBhCvARIsAFNAMijttFPRtrXWYJjjdc3F7Yr8ZlLfo9gaIVHNlfh9bZOT-ul2jVOpdVYaAk1sEALw_wcB" (at 236.855 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 92d67d18-1fa4-4534-b979-034deb8047ca))
-    (pin "2" (uuid 20fc971e-9abb-437f-b905-53061a2efab7))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C22") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/0bc89df9-c404-42cc-aab4-4237df7294d4"
-          (reference "C26") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "C14") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 83.82 97.155 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dfcc947b-b11e-46f9-9866-7cfd73e79212)
@@ -1969,6 +1932,66 @@
       (project "bwlr1e"
         (path "/630c8da6-5464-4eef-824d-89618087f4b4"
           (reference "U4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 236.855 96.52 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid fb052444-6b0c-4dd4-9577-9ffb4b9fb9e7)
+    (property "Reference" "C28" (at 234.315 95.2562 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 234.315 97.7962 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Description" "Ceramic Capacitor 10V 10uF X5R ±10% 0603" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part Number" "CL10A106KP8NNNC" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor" "LCSC" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor Part Number" "C19702" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.html" (at 236.855 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid edbbe8f1-fdb3-44e0-b65b-e2ed3b7a43db))
+    (pin "2" (uuid 4405df9c-e315-434d-b97c-e7c02b86b514))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "C28") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
+          (reference "C19") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/0bc89df9-c404-42cc-aab4-4237df7294d4"
+          (reference "C26") (unit 1)
+        )
+      )
+      (project "bwlr1e-prog"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "C3") (unit 1)
+        )
+      )
+      (project "feather_rak3172"
+        (path "/a1545928-1195-40b9-b3c4-78f837012afb"
+          (reference "C6") (unit 1)
         )
       )
     )
