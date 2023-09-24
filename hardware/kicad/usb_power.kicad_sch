@@ -1429,7 +1429,7 @@
     (property "Reference" "R17" (at 53.34 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "5.1K" (at 58.42 33.02 90)
+    (property "Value" "5K1" (at 58.42 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 55.88 35.56 0)
@@ -1502,7 +1502,7 @@
           (reference "#PWR058") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1559,7 +1559,7 @@
           (reference "C28") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C19") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1597,7 +1597,7 @@
           (reference "#PWR070") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1748,7 +1748,7 @@
           (reference "#PWR070") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1786,7 +1786,7 @@
           (reference "#PWR066") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1881,7 +1881,7 @@
           (reference "#PWR065") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1919,7 +1919,7 @@
           (reference "#PWR060") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -1957,7 +1957,7 @@
           (reference "#PWR067") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2014,7 +2014,7 @@
           (reference "C28") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C20") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2052,7 +2052,7 @@
           (reference "#PWR069") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2090,7 +2090,7 @@
           (reference "#PWR055") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2112,7 +2112,7 @@
     (property "Reference" "R17" (at 53.34 40.005 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "5.1K" (at 58.42 40.005 90)
+    (property "Value" "5K1" (at 58.42 40.005 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 55.88 38.1 0)
@@ -2185,7 +2185,7 @@
           (reference "#PWR070") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2196,63 +2196,6 @@
       (project "feather_rak3172"
         (path "/a1545928-1195-40b9-b3c4-78f837012afb"
           (reference "#PWR0131") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 92.71 34.925 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 91e6786d-e237-43a9-88b4-be64c33a4fb1)
-    (property "Reference" "C27" (at 95.631 33.7566 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (at 95.631 36.068 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 93.6752 38.735 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_YAGEO-CC0402KRX5R6BB104_C129131.pdf" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "Ceramic Capacitor 10V 100nF X5R ±10% 0402" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "YAGEO" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "CC0402KRX5R6BB104" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "LCSC" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "C129131" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402KRX5R6BB104_C129131.html" (at 92.71 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ef1e57d5-020f-427e-a321-0a0d1e1b986c))
-    (pin "2" (uuid 0589b670-b7b8-4b8e-a1f8-1b80d20347cf))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C27") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C18") (unit 1)
-        )
-      )
-      (project "bwlr1e-prog"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "C5") (unit 1)
-        )
-      )
-      (project "Penguino-STM32WL-LoRa-E5"
-        (path "/c338af29-f8d9-4513-836a-55ed8bfc47d3"
-          (reference "C4") (unit 1)
         )
       )
     )
@@ -2280,7 +2223,7 @@
           (reference "#PWR064") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2318,7 +2261,7 @@
           (reference "#PWR063") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2329,63 +2272,6 @@
       (project "feather_rak3172"
         (path "/a1545928-1195-40b9-b3c4-78f837012afb"
           (reference "#PWR0135") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 80.01 34.925 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ab943a56-1ed0-4506-a5d5-18d1316358e2)
-    (property "Reference" "C26" (at 82.931 33.7566 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10n" (at 82.931 36.068 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 80.9752 38.735 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_YAGEO-CC0402KRX7R9BB103_C60133.pdf" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "Ceramic Capacitors 50V 10nF X7R ±10%" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "YAGEO" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "CC0402KRX7R9BB103" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "LCSC" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "C60133" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402KRX7R9BB103_C60133.html" (at 80.01 34.925 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dcc16a2f-34f8-4972-971c-92b38c8c52ff))
-    (pin "2" (uuid d04ffb63-afe1-42bc-994d-7ac04080e45c))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C26") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C17") (unit 1)
-        )
-      )
-      (project "bwlr1e-prog"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "C4") (unit 1)
-        )
-      )
-      (project "Penguino-STM32WL-LoRa-E5"
-        (path "/c338af29-f8d9-4513-836a-55ed8bfc47d3"
-          (reference "C2") (unit 1)
         )
       )
     )
@@ -2413,7 +2299,7 @@
           (reference "#PWR071") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2451,7 +2337,7 @@
           (reference "#PWR062") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2462,6 +2348,66 @@
       (project "Penguino-STM32WL-LoRa-E5"
         (path "/c338af29-f8d9-4513-836a-55ed8bfc47d3"
           (reference "#PWR0107") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 92.71 34.925 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ba627515-69ca-4ac2-8322-bacfbaa38ca8)
+    (property "Reference" "C27" (at 95.631 33.7566 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100n" (at 95.631 36.068 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 93.6752 38.735 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Description" "Ceramic Capacitor 16V 100nF X7R ±10%" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "Samsung Electro-Mechanics" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part Number" "CL05B104KO5NNNC" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor" "LCSC" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor Part Number" "C1525" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.html" (at 92.71 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2a0dfe1b-5eb7-453b-8df9-ad500e37c170))
+    (pin "2" (uuid 3c1c4296-dbb3-417c-bbf2-b82b5067ff2d))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "C27") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
+          (reference "C19") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
+          (reference "C14") (unit 1)
+        )
+      )
+      (project "bwlr1e-prog"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "C5") (unit 1)
+        )
+      )
+      (project "Penguino-STM32WL-LoRa-E5"
+        (path "/c338af29-f8d9-4513-836a-55ed8bfc47d3"
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -2596,6 +2542,61 @@
     )
   )
 
+  (symbol (lib_id "Device:C") (at 80.01 34.925 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d22df882-0d28-4c85-8875-d5a530cf4d9a)
+    (property "Reference" "C12" (at 73.025 33.655 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "10n" (at 73.025 36.195 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 79.0448 38.735 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811141241_YAGEO-CC0402KRX7R7BB103_C327009.pdf" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Part Description" "Ceramic Capacitors 16V 10nF X7R ±10%" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "YAGEO" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part Number" "CC0402KRX7R7BB103" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor" "LCSC" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor Part Number" "C327009" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Distributor Link" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402KRX7R7BB103_C327009.html" (at 80.01 34.925 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4e338d75-e3e1-4015-905d-f47675b933b8))
+    (pin "2" (uuid ca158c3a-3b0e-4677-ae67-523464a745e9))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "C12") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
+          (reference "C9") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
+          (reference "C6") (unit 1)
+        )
+      )
+      (project "bwlr1e"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "C8") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:VBUS") (at 177.8 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d26e1ea6-43a8-4e31-91f9-508c6a4de994)
@@ -2618,7 +2619,7 @@
           (reference "#PWR060") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2716,7 +2717,7 @@
           (reference "#PWR057") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2754,7 +2755,7 @@
           (reference "#PWR061") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2849,7 +2850,7 @@
           (reference "#PWR059") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
       (project "bwlr1e-prog"
@@ -2887,7 +2888,7 @@
           (reference "#PWR056") (unit 1)
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
       (project "bwlr1e-prog"
