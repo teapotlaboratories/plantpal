@@ -956,7 +956,7 @@
     (effects (font (size 1.27 1.27) (thickness 0.6) bold) (justify left bottom))
     (uuid 21b1b066-5803-428f-9620-5da7579c4ff9)
   )
-  (text "Display \nManufacturer: Good Display\nPart Number: GDEW0154I9FC\n\n26Pin FPC, 0.5mm Pitch, 0.25mm Pad Size\nPin 1 and 26 are not used \n\nNo connector is need, soldered directly to board\nUse 24 pin FPC connector footprint for debugging"
+  (text "Display \nManufacturer: Good Display\nPart Number: GDEW0154I9FC\nNon-flex Alternative: GDEW0154M10\n\n26Pin FPC, 0.5mm Pitch, 0.25mm Pad Size\nPin 1 and 26 are not used \n\nNo connector is need, soldered directly to board\nUse 24 pin FPC connector footprint for debugging"
     (at 195.58 29.21 0)
     (effects (font (size 1 1)) (justify right bottom))
     (uuid 9fe19f31-93af-406b-bbb9-0019bed849f6)
