@@ -134,4 +134,9 @@
     (thermal_bridge_angle 45) (tstamp 4451067c-4346-407f-9f38-37775cb943b9))
   (pad "4" smd roundrect (at -3.7 0 270) (size 1.8 0.8) (layers "F.Cu") (roundrect_rratio 0.0635)
     (zone_connect 2) (thermal_bridge_angle 45) (tstamp 4578b5d8-251f-468f-95b0-04ba2642cebd))
+  (model "${KIPRJMOD}/library/3dmodels/ANT_16060A1T_WAL.step"
+    (offset (xyz -0.2 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 180))
+  )
 )
