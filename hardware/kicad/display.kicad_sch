@@ -1945,7 +1945,7 @@
     (property "Value" "10u 1A" (at 160.655 50.8 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_SMD:L_Changjiang_FNR4012S" (at 160.655 53.975 0)
+    (property "Footprint" "plantpal:L_Changjiang_FNR4012S" (at 160.655 53.975 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_cjiang--Changjiang-Microelectronics-Tech-FNR4012S100MT_C167785.pdf" (at 160.655 53.975 0)
