@@ -2437,7 +2437,7 @@
     (property "Manufacturer Part Number" "BME688" (at 96.52 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor" "LCSC" (at 96.52 68.58 0)
+    (property "Distributor" "Digikey" (at 96.52 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Distributor Part Number" "828-BME688CT-ND" (at 96.52 68.58 0)
