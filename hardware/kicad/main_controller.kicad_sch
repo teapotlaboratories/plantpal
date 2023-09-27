@@ -4064,7 +4064,7 @@
     (property "Value" "0" (at 269.875 24.765 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 267.335 27.305 0)
+    (property "Footprint" "Inductor_SMD:L_0402_1005Metric" (at 267.335 27.305 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.pdf" (at 267.335 27.305 0)
