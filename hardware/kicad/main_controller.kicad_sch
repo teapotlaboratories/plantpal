@@ -916,6 +916,9 @@
   (junction (at 151.765 86.36) (diameter 0) (color 0 0 0 0)
     (uuid 92baf0ad-ec79-463f-8a2d-843a0985d8c5)
   )
+  (junction (at 230.505 37.465) (diameter 0) (color 0 0 0 0)
+    (uuid 9bf5efca-7b03-43ed-871f-9dcafe4093f4)
+  )
   (junction (at 255.27 96.52) (diameter 0) (color 0 0 0 0)
     (uuid a0eb73fe-f866-4204-8e3b-82a01c318eff)
   )
@@ -1141,6 +1144,10 @@
     (uuid 436a9e88-b749-4d41-b68d-14db32fffd8f)
   )
 
+  (wire (pts (xy 230.505 37.465) (xy 230.505 41.275))
+    (stroke (width 0) (type default))
+    (uuid 44b6f1aa-d5ed-4ce1-a2bf-10ca116d3fcd)
+  )
   (wire (pts (xy 142.24 83.185) (xy 140.97 83.185))
     (stroke (width 0) (type default))
     (uuid 4723d738-28bf-4aac-9bd5-4a6f680fbe7c)
@@ -4130,6 +4137,39 @@
         )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
           (reference "#PWR010") (unit 1)
+        )
+      )
+      (project "bwlr1e"
+        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
+          (reference "#PWR013") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 230.505 41.275 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ddbabefa-59f5-45a3-bc13-269fb89b5199)
+    (property "Reference" "#PWR052" (at 230.505 47.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 230.505 45.085 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 230.505 41.275 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 230.505 41.275 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 87439420-7dcb-4794-aa4f-e2c58f92d789))
+    (instances
+      (project "plantpal"
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+          (reference "#PWR052") (unit 1)
+        )
+        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
+          (reference "#PWR0102") (unit 1)
         )
       )
       (project "bwlr1e"
