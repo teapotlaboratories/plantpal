@@ -33,9 +33,9 @@ for(j=[0:2]){
 // add + pin
 color("#FAE481")
 translate([0, 0.3, 0])
-cube([2,7.4,1]);
+cube([2,7.4,0.9]);
 
 // add - pin
 color("#FAE481")
 translate([21, 0.3, 0])
-cube([2,7.4,1]);
+cube([2,7.4,0.9]);
