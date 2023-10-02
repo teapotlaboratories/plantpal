@@ -463,6 +463,10 @@
       {
         "netclass": "Default",
         "pattern": ""
+      },
+      {
+        "netclass": "CAP_TRACK",
+        "pattern": "/Sensor/CAP_TRACK"
       }
     ]
   },
