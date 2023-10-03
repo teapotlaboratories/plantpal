@@ -15,15 +15,6 @@
   )
   (fp_poly
     (pts
-      (xy -1.495 0.905)
-      (xy -2.905 0.905)
-      (xy -2.905 -0.905)
-      (xy -1.495 -0.905)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp e6b2f62e-4bd0-4b3f-9d34-bdd39c05dd4e))
-  (fp_poly
-    (pts
       (xy -3.85 0.2)
       (xy -3.35 0.2)
       (xy -3.35 -0.2)
@@ -130,7 +121,7 @@
     (zone_connect 2) (thermal_bridge_angle 45) (tstamp d85fb1ca-43de-49b4-90cc-1785dc1ab6fe))
   (pad "2" smd roundrect (at 1.435 -0.59) (size 1.27 0.635) (layers "F.Cu") (roundrect_rratio 0.08)
     (zone_connect 2) (thermal_bridge_angle 45) (tstamp 018e3952-bda1-4d12-96fb-e4958e725ca8))
-  (pad "3" smd roundrect (at -1.5 0 270) (size 1.8 0.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.0635)
+  (pad "3" smd roundrect (at -2.0025 0.0025 270) (size 1.805 1.805) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.0635)
     (thermal_bridge_angle 45) (tstamp 4451067c-4346-407f-9f38-37775cb943b9))
   (pad "4" smd roundrect (at -3.7 0 270) (size 1.8 0.8) (layers "F.Cu") (roundrect_rratio 0.0635)
     (zone_connect 2) (thermal_bridge_angle 45) (tstamp 4578b5d8-251f-468f-95b0-04ba2642cebd))
