@@ -10324,7 +10324,7 @@
   (gr_text "HARVESTER" (at 100.79 59.79) (layer "F.SilkS" knockout) (tstamp 4c095fe2-88b6-460c-95bf-d1af37659606)
     (effects (font (size 0.6 0.6) (thickness 0.125)) (justify bottom))
   )
-  (gr_text "Rx" (at 117.87 48.36) (layer "F.SilkS") (tstamp 57f93ee6-c38e-444f-85d2-f267c88cd980)
+  (gr_text "Rx" (at 120.56 49.63) (layer "F.SilkS") (tstamp 57f93ee6-c38e-444f-85d2-f267c88cd980)
     (effects (font (size 0.6 0.6) (thickness 0.15)) (justify left bottom))
   )
   (gr_text "CHG" (at 93.89 50.38) (layer "F.SilkS" knockout) (tstamp 79539ecf-a582-445f-a8ed-4d3e655f5afd)
