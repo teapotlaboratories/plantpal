@@ -102,6 +102,10 @@
     (stroke (width 0) (type default))
     (uuid 527e5e1c-1302-4cd1-b789-4f5ddc5d216a)
   )
+  (wire (pts (xy 146.05 82.55) (xy 158.75 82.55))
+    (stroke (width 0) (type default))
+    (uuid 53ec14a2-b702-40d0-bb00-3e30f516326b)
+  )
   (wire (pts (xy 93.345 82.55) (xy 93.345 109.22))
     (stroke (width 0) (type default))
     (uuid 54a6bf3d-4750-4bb8-b2ae-7276f7c51782)
@@ -373,6 +377,10 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 23a5c120-86b9-45f8-94a5-8b535185ee7d)
     )
+    (pin "CHIP_EN" input (at 146.05 82.55 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 705d83c4-224d-4205-8d71-9081d68776e8)
+    )
     (instances
       (project "plantpal"
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "5"))
@@ -638,6 +646,10 @@
     (pin "SDI" output (at 196.215 121.92 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 85294df8-1fcd-4772-b072-56057ad71a43)
+    )
+    (pin "CHIP_EN" output (at 158.75 82.55 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid c9d2bc54-cece-4ff3-892a-003301128d30)
     )
     (instances
       (project "plantpal"
