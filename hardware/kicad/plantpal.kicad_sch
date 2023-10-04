@@ -377,9 +377,9 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 23a5c120-86b9-45f8-94a5-8b535185ee7d)
     )
-    (pin "CHIP_EN" input (at 146.05 82.55 0)
+    (pin "RESET_BTN" input (at 146.05 82.55 0)
       (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 705d83c4-224d-4205-8d71-9081d68776e8)
+      (uuid 9e51a6b6-a5d6-4847-bb46-feb1c7113ef9)
     )
     (instances
       (project "plantpal"
@@ -647,9 +647,9 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 85294df8-1fcd-4772-b072-56057ad71a43)
     )
-    (pin "CHIP_EN" output (at 158.75 82.55 180)
+    (pin "RESET_BTN" output (at 158.75 82.55 180)
       (effects (font (size 1.27 1.27)) (justify left))
-      (uuid c9d2bc54-cece-4ff3-892a-003301128d30)
+      (uuid 2e3df60d-c048-45ab-90d8-86e4e0aec779)
     )
     (instances
       (project "plantpal"
