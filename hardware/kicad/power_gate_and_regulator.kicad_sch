@@ -949,6 +949,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 265b2e14-1362-48f5-bd64-c64486414565)
   )
+  (text "TODO: restructure schematic for M_DRV signaling" (at 50.165 109.855 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid 3ba07d7c-60d9-4408-8cfc-b7754851fc1b)
+  )
   (text "TODO: make sure signal from +BATT to M_DRV never exceed 3V3"
     (at 52.07 120.65 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -958,7 +962,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 489ed886-c21f-4f5f-9c6a-726f0720eb9a)
   )
-  (text "TODO: make sure signal from VBUS never exceed 3V3" (at 50.165 112.395 0)
+  (text "TODO: make sure signal from VBUS to M_DRV never exceed 3V3"
+    (at 50.165 112.395 0)
     (effects (font (size 1 1)) (justify left bottom))
     (uuid 7eeeaac7-b1f6-4ed4-aafa-954dcee5ac0a)
   )
