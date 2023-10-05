@@ -1286,7 +1286,7 @@
     (property "Value" "PMZ350UPEYL" (at 76.835 137.7949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-883" (at 78.105 139.065 0)
+    (property "Footprint" "plantpal:SOT-883" (at 78.105 139.065 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2001041205_Nexperia-PMZ350UPEYL_C478207.pdf" (at 83.185 136.525 0)
