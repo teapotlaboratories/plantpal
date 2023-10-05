@@ -1029,7 +1029,7 @@
     (stroke (width 0) (type default))
     (uuid 09ef648a-0c59-43e2-97aa-3c10f3a06088)
   )
-  (polyline (pts (xy 222.25 53.34) (xy 162.56 53.34))
+  (polyline (pts (xy 281.94 53.34) (xy 222.25 53.34))
     (stroke (width 0.5) (type default))
     (uuid 0a3fd381-7de8-448c-82ec-fd167620ce2a)
   )
