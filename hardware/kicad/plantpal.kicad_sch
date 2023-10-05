@@ -353,10 +353,6 @@
     (property "Sheetfile" "power_gate_and_regulator.kicad_sch" (at 103.505 90.7546 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "M_DRV" bidirectional (at 146.05 87.63 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 15c2db24-00a7-4d55-9de5-7ca9d8fa5bdb)
-    )
     (pin "DONE" input (at 146.05 85.09 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 16672956-7631-4e6f-afdc-640ed8aae51a)
@@ -380,6 +376,10 @@
     (pin "RESET_BTN" input (at 146.05 82.55 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 9e51a6b6-a5d6-4847-bb46-feb1c7113ef9)
+    )
+    (pin "M_DRV" input (at 146.05 87.63 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 9cd32106-47b2-42b2-84ab-1587d2e248bb)
     )
     (instances
       (project "plantpal"
@@ -595,10 +595,6 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 62175acc-66f9-46d5-a9c3-0a1da39d7b38)
     )
-    (pin "M_DRV" bidirectional (at 158.75 87.63 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6f988100-c404-4082-9148-61faf877851a)
-    )
     (pin "DONE" output (at 158.75 85.09 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid cd9074a2-b706-4f19-9fff-db99c4f5cbe3)
@@ -650,6 +646,10 @@
     (pin "RESET_BTN" output (at 158.75 82.55 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 2e3df60d-c048-45ab-90d8-86e4e0aec779)
+    )
+    (pin "M_DRV" output (at 158.75 87.63 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 08fae53c-ca9b-44cf-96d8-462449ef4787)
     )
     (instances
       (project "plantpal"
