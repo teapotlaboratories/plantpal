@@ -1738,7 +1738,7 @@
     (effects (font (size 1 1)) (justify right bottom))
     (uuid 0816fd8d-b3b1-4c24-9763-d89fc3d24d9c)
   )
-  (text "TODO: Write down strapping pin confriguration" (at 61.595 121.92 0)
+  (text "TODO: Write down strapping pin confriguration" (at 62.23 121.92 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 21d372bc-1c9f-4b0c-91d1-11245be024e2)
   )
