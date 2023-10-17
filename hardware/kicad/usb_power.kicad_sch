@@ -4,6 +4,11 @@
 
   (paper "A5")
 
+  (title_block
+    (date "2023-10-16")
+    (rev "2")
+  )
+
   (lib_symbols
     (symbol "Battery_Management:MCP73831-2-OT" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -7.62 6.35 0)
@@ -1368,6 +1373,11 @@
   (text "Charge LED" (at 181.61 41.275 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9b640ca8-3fe8-4a63-bb5c-27da2b232672)
+  )
+  (text "USB trace is less than \nCritical Length (2.4 inch) for\nUSB2.0 Full-speed specification.\n\nNo need for impedance control."
+    (at 83.82 85.09 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid f60e1570-4bfd-4b34-af10-e936c3b2a15e)
   )
 
   (label "D_IN-" (at 52.07 45.72 180) (fields_autoplaced)

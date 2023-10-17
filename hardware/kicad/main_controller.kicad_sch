@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2023-10-16")
+    (rev "2")
+  )
+
   (lib_symbols
     (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "TP" (at 0 6.858 0)
@@ -1839,6 +1844,10 @@
   (label "SCL" (at 43.815 100.33 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 91116f23-1baa-4377-956c-74efb670f0aa)
+  )
+  (label "ANT_FEED" (at 254.635 27.305 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 9ee908f6-ac6e-4a40-ae4d-3a18639ef7a4)
   )
   (label "DL_RXD0" (at 149.86 56.515 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
