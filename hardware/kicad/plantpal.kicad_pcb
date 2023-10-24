@@ -8201,7 +8201,7 @@
         (effects (font (size 0.3 0.3) (thickness 0.075)))
       (tstamp 6142cae7-cb00-4c48-b8a1-fe6a40d12e36)
     )
-    (fp_text value "VLMO1500-GS08" (at 0 1.43 90) (layer "F.Fab")
+    (fp_text value "VLMO1300-GS08" (at 0 1.43 90) (layer "F.Fab")
         (effects (font (size 0.3 0.3) (thickness 0.075)))
       (tstamp 983c047f-f4d8-4efa-97eb-ca482d816696)
     )
