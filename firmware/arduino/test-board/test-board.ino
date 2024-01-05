@@ -10,6 +10,8 @@
 #include <StreamString.h>
 #define PrintString StreamString
 
+#include "plantpal_graphics.h"
+
 /* EPD wiring */
 // ESP32-C6 DevKit-1
 // #define EPD_CS 10
@@ -41,11 +43,18 @@ BME680_Class BME680;
 
 /* Soil Moisture */
 #define SM_SENSE_OUT 22
-#define SM_PWM 23
+#define SM_PWM_PIN 23
+#define SM_PWM_PIN_FAST_DISCHARGE_PIN 17
+#define SM_PWM_CHANNEL 0
+#define SM_PWM_FREQ 500000
+#define SM_PWM_RESOLUTION 3
+#define SM_PWM_DUTY_CYCLE 4
 
 /* Battery Measurement */
 #define BATT_MEAS 2
 #define BATT_MEAS_EN 3
+#define BATT_MEAS_VD_R1 4.7  // 4.7K ohm
+#define BATT_MEAS_VD_R2 10.0 // 10K Ohm
 
 /* Deep-sleep test */
 // #define TEST_DEEP_SLEEP
@@ -65,8 +74,10 @@ void setup()
   // initialize display
   display.init(0); // default 10ms reset pulse, e.g. for bare panels with DESPI-C02, set to 0 to disable display serial diag out
   // first update should be full refresh
-  startup_display();
+  StartupDisplay();
   delay(1000);
+  DrawHappyFace();
+
   // power off display
   display.powerOff();
   display.hibernate();
@@ -91,8 +102,8 @@ void setup()
 
   /* Initialise Soil Moisture Sensor */
   pinMode( SM_SENSE_OUT, INPUT );
-  pinMode( SM_PWM, OUTPUT );
-  digitalWrite( SM_PWM, LOW );
+  // pinMode( SM_PWM_PIN, OUTPUT );
+  // digitalWrite( SM_PWM_PIN, LOW );
 
   /* Initialise Battery Measurement */
   pinMode( BATT_MEAS, INPUT );
@@ -106,15 +117,93 @@ void setup()
   Serial.flush(); 
   esp_deep_sleep_start();
 #endif
+
+  // ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
+  // ledcWrite( SM_PWM_PIN, SM_PWM_CHANNEL );
+  // pinMode( SM_PWM_PIN, OUTPUT);
+  // digitalWrite( SM_PWM_PIN, HIGH );
 }
 
 void loop()
 {
-  // test bme688
-  read_print_bme688();
+  // /* test bme688 */
+  ReadPrintBme688();
+
+  /* test battery sense adc read value */
+  // Serial.print("ADC Value: ");
+  // Serial.println( ReadBatterySenseAdcValue() );
+  // delay( 1000 );
+
+  /* test battery sense mV value */
+  // Serial.print("Batt Sense: ");
+  // Serial.print( ReadBatterySenseMillivolts() );
+  // Serial.println( " mV" );
+  // delay( 1000 );
+  
+  // /* test battery mV value */
+  // Serial.print("Batt Voltage: ");
+  // Serial.print( ReadBatteryMillivolts() );
+  // Serial.println( " mV" );
+  // delay( 1000 );
+
+  // /* test battery mV value */
+  // Serial.print("Soil Moisture: ");
+  // Serial.println( ReadSoilMoistureAdcValue() );
+  // delay( 100 );
 }
 
-void read_print_bme688()
+uint16_t ReadSoilMoistureAdcValue()
+{
+  
+  // #define SM_SENSE_OUT 22
+  // #define SM_PWM_PIN 23
+  // #define SM_PWM_PIN_FAST_DISCHARGE_PIN 17
+  // #define SM_PWM_CHANNEL 0
+  // #define SM_PWM_FREQ 500000
+  // #define SM_PWM_RESOLUTION 3
+  // #define SM_PWM_DUTY_CYCLE 4
+  // ledcSetup(SM_PWM_CHANNEL, SM_PWM_FREQ, SM_PWM_RESOLUTION);
+  // ledcAttachPin(SM_PWM_PIN, SM_PWM_CHANNEL);
+  // ledcWrite(SM_PWM_CHANNEL, SM_PWM_DUTY_CYCLE);
+
+  // ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
+  // ledcWrite( SM_PWM_PIN, SM_PWM_CHANNEL );
+
+  uint16_t ret = analogRead( SM_SENSE_OUT );
+  return ret;
+}
+
+uint16_t ReadBatterySenseAdcValue()
+{
+  digitalWrite( BATT_MEAS_EN, HIGH );
+  delay(10); // wait until voltage stable
+  uint16_t ret = analogRead( BATT_MEAS );
+  digitalWrite( BATT_MEAS_EN, LOW );
+  return ret;
+}
+
+uint16_t ReadBatterySenseMillivolts()
+{
+  digitalWrite( BATT_MEAS_EN, HIGH );
+  delay(10); // wait until voltage stable
+  uint16_t ret = analogReadMilliVolts( BATT_MEAS );
+  digitalWrite( BATT_MEAS_EN, LOW );
+  return ret;
+}
+
+// uint16_t ReadBatteryMillivolts()
+// { 
+//   digitalWrite( BATT_MEAS_EN, HIGH );
+//   delay(10); // wait until voltage stable
+//   float ret = analogReadMilliVolts( BATT_MEAS );
+//   digitalWrite( BATT_MEAS_EN, LOW );
+  
+//   // Vs = (R1 + R2) / ( Vout * R2 ) 
+//   float calc_batt_mv  = ( (float)BATT_MEAS_VD_R1 + (float)BATT_MEAS_VD_R2 ) / ( ret * (float) BATT_MEAS_VD_R2 );
+//   return calc_batt_mv;
+// }
+
+void ReadPrintBme688()
 {  
   static int32_t  temp, humidity, pressure, gas;  // BME readings
   static char     buf[16];                        // sprintf text buffer
@@ -146,7 +235,7 @@ void read_print_bme688()
 // partial update window size and position is on byte boundary in physical x direction
 // the size is increased in setPartialWindow() if x or w are not multiple of 8 for even rotation, y or h for odd rotation
 // see also comment in GxEPD2_BW.h, GxEPD2_3C.h or GxEPD2_GFX.h for method setPartialWindow()
-void startup_display()
+void StartupDisplay()
 {
   const char startup_text_r1[] = "Teapotlabs";
   const char startup_text_r2[] = "Plantpal";
@@ -176,4 +265,33 @@ void startup_display()
     display.print(startup_text_r2);
   }
   while (display.nextPage());
+}
+
+
+void DrawHappyFace()
+{
+  display.setFullWindow();
+  const unsigned char* bitmaps[] =
+  {
+    happy_face
+    //logo200x200, first200x200, second200x200, fourth200x200, third200x200, fifth200x200, sixth200x200, senventh200x200, eighth200x200 // ED037TC1 test
+  };
+
+  if ((display.epd2.WIDTH == 200) && (display.epd2.HEIGHT == 200) && !display.epd2.hasColor)
+  {
+    bool m = display.mirror(false);
+    for (uint16_t i = 0; i < sizeof(bitmaps) / sizeof(char*); i++)
+    {
+      display.firstPage();
+      do
+      {
+        display.fillScreen(GxEPD_WHITE);
+        display.drawInvertedBitmap(0, 0, bitmaps[i], 200, 200, GxEPD_BLACK);
+      }
+      while (display.nextPage());
+      delay(2000);
+    }
+    display.mirror(m);
+  }
+  delay(2000);
 }
