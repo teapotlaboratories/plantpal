@@ -43,8 +43,8 @@ BME680_Class BME680;
 
 /* Soil Moisture */
 #define SM_SENSE_OUT 22
+#define SM_SENSE_OUT_NEW 4
 #define SM_PWM_PIN 23
-#define SM_PWM_PIN_FAST_DISCHARGE_PIN 17
 #define SM_PWM_CHANNEL 0
 #define SM_PWM_FREQ 500000
 #define SM_PWM_RESOLUTION 3
@@ -68,20 +68,19 @@ void setup()
   delay(100);
 
   /* Initialise Display */
-  // initialize SPI
-  fspi.begin(EPD_SCK, -1, EPD_SDI, -1); // SCLK, MISO, MOSI, SS
-  display.epd2.selectSPI(fspi, SPISettings(4000000, MSBFIRST, SPI_MODE0));
-  // initialize display
-  display.init(0); // default 10ms reset pulse, e.g. for bare panels with DESPI-C02, set to 0 to disable display serial diag out
-  // first update should be full refresh
-  StartupDisplay();
-  delay(1000);
-  DrawHappyFace();
-
+  // // initialize SPI
+  // fspi.begin(EPD_SCK, -1, EPD_SDI, -1); // SCLK, MISO, MOSI, SS
+  // display.epd2.selectSPI(fspi, SPISettings(4000000, MSBFIRST, SPI_MODE0));
+  // // initialize display
+  // display.init(0); // default 10ms reset pulse, e.g. for bare panels with DESPI-C02, set to 0 to disable display serial diag out
+  // // first update should be full refresh
+  // StartupDisplay();
+  // delay(1000);
+  // DrawHappyFace();
   // power off display
-  display.powerOff();
-  display.hibernate();
-  display.end();
+  // display.powerOff();
+  // display.hibernate();
+  // display.end();
 
   /* Initialise BME688 */
   Wire.setPins(6, 7);
@@ -101,9 +100,10 @@ void setup()
   BME680.setGas(320, 150);  // 320�c for 150 milliseconds
 
   /* Initialise Soil Moisture Sensor */
+  pinMode( SM_SENSE_OUT_NEW, INPUT );
   pinMode( SM_SENSE_OUT, INPUT );
-  // pinMode( SM_PWM_PIN, OUTPUT );
-  // digitalWrite( SM_PWM_PIN, LOW );
+  pinMode( SM_PWM_PIN, OUTPUT );
+  digitalWrite( SM_PWM_PIN, LOW );
 
   /* Initialise Battery Measurement */
   pinMode( BATT_MEAS, INPUT );
@@ -118,16 +118,18 @@ void setup()
   esp_deep_sleep_start();
 #endif
 
-  // ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
-  // ledcWrite( SM_PWM_PIN, SM_PWM_CHANNEL );
   // pinMode( SM_PWM_PIN, OUTPUT);
   // digitalWrite( SM_PWM_PIN, HIGH );
+  // digitalWrite(SM_PWM_PIN, LOW);
+  ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
+  ledcWrite( SM_PWM_PIN, SM_PWM_DUTY_CYCLE );
+  
 }
 
 void loop()
 {
   // /* test bme688 */
-  ReadPrintBme688();
+  // ReadPrintBme688();
 
   /* test battery sense adc read value */
   // Serial.print("ADC Value: ");
@@ -147,9 +149,9 @@ void loop()
   // delay( 1000 );
 
   // /* test battery mV value */
-  // Serial.print("Soil Moisture: ");
-  // Serial.println( ReadSoilMoistureAdcValue() );
-  // delay( 100 );
+  Serial.print("Soil Moisture: ");
+  Serial.println( analogRead( SM_SENSE_OUT_NEW ) );
+  delay( 100 );
 }
 
 uint16_t ReadSoilMoistureAdcValue()
@@ -169,7 +171,7 @@ uint16_t ReadSoilMoistureAdcValue()
   // ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
   // ledcWrite( SM_PWM_PIN, SM_PWM_CHANNEL );
 
-  uint16_t ret = analogRead( SM_SENSE_OUT );
+  uint16_t ret = analogRead( SM_SENSE_OUT_NEW );
   return ret;
 }
 

@@ -19,6 +19,8 @@
 #include <StreamString.h>
 #define PrintString StreamString
 
+#include "plantpal_faces.h"
+
 /* EPD wiring */
 #define EPD_CS 19
 #define EPD_DC 18
@@ -604,7 +606,7 @@ void drawBitmaps200x200()
 {
   const unsigned char* bitmaps[] =
   {
-    logo200x200, first200x200, second200x200, third200x200, fourth200x200, fifth200x200, sixth200x200, senventh200x200, eighth200x200
+    happy, first200x200, second200x200, third200x200, fourth200x200, fifth200x200, sixth200x200, senventh200x200, eighth200x200
     //logo200x200, first200x200, second200x200, fourth200x200, third200x200, fifth200x200, sixth200x200, senventh200x200, eighth200x200 // ED037TC1 test
   };
 
