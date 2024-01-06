@@ -13,6 +13,13 @@
 
 #include "plantpal_graphics.h"
 
+/* select whether to enable sleep or not.
+   enabling sleep will change the behavior slightly
+   but will significantly increase battery-life */
+// #define DO_SLEEP // uncomment here to enable deep-sleep
+#define SLEEP_TIME_S   300 // 5 minutes
+#define US_TO_S_FACTOR 1000000ULL  /* Conversion factor for micro seconds to seconds */
+
 // Plantpal
 #define EPD_CS 19
 #define EPD_DC 18
@@ -34,7 +41,7 @@ GxEPD2_BW< GxEPD2_154_GDEY0154D67,
 BME680_Class BME680;
 
 /* Soil Moisture */
-#define SM_SENSE_OUT 22   // Rev 2 Board incorrectly wire analog in, use Pin 4 instead.
+#define SM_SENSE_OUT 22   // Rev 2 Board incorrectly wire analog-in pin, use Pin 4 instead.
 #define SM_SENSE_OUT_NEW 4  // use this pin instead
 #define SM_PWM_PIN 23
 #define SM_PWM_FREQ 500000
@@ -63,7 +70,9 @@ void setup()
   // initialize display
   display.init(0); // default 10ms reset pulse, e.g. for bare panels with DESPI-C02, set to 0 to disable display serial diag out
   // first update should be full refresh
+#ifndef DO_SLEEP
   StartupDisplay();
+#endif
   delay(1000);
 
   /* Initialise BME688 */
@@ -105,12 +114,13 @@ void loop()
   static Face current_face = Face::kHappy;
   static Face target_face;
 
-  /* max adc soil: 2657 
-     min adc soil: 848 
-     step size for 3 seg: 603 */
+  /* all sensor reading have not been calibrated and just
+     a way to give a simple example */
   while( 1 )
   {
     /* read bme688 */
+    BME680.getSensorData(temp, humidity, pressure, gas); // ignore first readings, might be incorrect
+    delay(100);
     BME680.getSensorData(temp, humidity, pressure, gas);
     temp_f = temp / 100.0;
     
@@ -135,16 +145,26 @@ void loop()
     if( target_face != current_face )
     {
       current_face = target_face;
+#ifndef DO_SLEEP
       DrawFacePartial(current_face);
+#else 
+      DrawFaceFull(current_face);
+#endif
     }
 
+    // draw mini info
     WriteLeftColumn( temp_f, "c" );
     WriteRightColumn( batt, "v" );
-
+    // WriteRightColumn( soil_adc, "" );
     display.hibernate();
-    // delay(500); 
-    // delay(1000); 
-    delay(300000); 
+
+#ifndef DO_SLEEP
+    delay(SLEEP_TIME_S * 1000); 
+#else
+    /* deepsleep now */
+    esp_sleep_enable_timer_wakeup( SLEEP_TIME_S * US_TO_S_FACTOR ); // sleep for 15 seconds
+    esp_deep_sleep_start();
+#endif
   }
 }
 
@@ -220,6 +240,47 @@ void DrawFacePartial( Face face )
   display.epd2.writeScreenBufferAgain(); // use default for white
   display.epd2.writeImagePartAgain(image, 0, 0, 200, 200,
                                           0, 0, 200, 150, false, false, true);
+}
+
+
+void DrawFaceFull( Face face )
+{
+  const unsigned char* image;
+  
+  switch( face )
+  {
+    case Face::kHappy:
+    {
+      image = happy_bg;
+      break;
+    }
+    case Face::kMeh:
+    {
+      image = meh_bg;
+      break;
+    }
+    case Face::kSad:
+    {
+      image = sad_bg;
+      break;
+    }
+    default:
+    {
+      return;
+    }
+  }
+ 
+  display.setFullWindow();
+  
+  bool m = display.mirror(false);
+  display.firstPage();
+  do
+  {
+    display.fillScreen(GxEPD_WHITE);
+    display.drawInvertedBitmap(0, 0, image, 200, 200, GxEPD_BLACK);
+  }
+  while (display.nextPage());
+  display.mirror(m);
 }
 
 void WriteLeftColumn(float value, String unit)
