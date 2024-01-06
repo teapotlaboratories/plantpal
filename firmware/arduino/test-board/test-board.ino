@@ -42,10 +42,9 @@ GxEPD2_BW< GxEPD2_154_GDEY0154D67,
 BME680_Class BME680;
 
 /* Soil Moisture */
-#define SM_SENSE_OUT 22
-#define SM_SENSE_OUT_NEW 4
+#define SM_SENSE_OUT 22   // Rev 2 Board incorrectly wire analog in, use Pin 4 instead.
+#define SM_SENSE_OUT_NEW 4  // use this pin instead
 #define SM_PWM_PIN 23
-#define SM_PWM_CHANNEL 0
 #define SM_PWM_FREQ 500000
 #define SM_PWM_RESOLUTION 3
 #define SM_PWM_DUTY_CYCLE 4
@@ -53,8 +52,8 @@ BME680_Class BME680;
 /* Battery Measurement */
 #define BATT_MEAS 2
 #define BATT_MEAS_EN 3
-#define BATT_MEAS_VD_R1 4.7  // 4.7K ohm
-#define BATT_MEAS_VD_R2 10.0 // 10K Ohm
+#define BATT_MEAS_VD_R1 4700.0  // 4.7K ohm
+#define BATT_MEAS_VD_R2 10000.0 // 10K Ohm
 
 /* Deep-sleep test */
 // #define TEST_DEEP_SLEEP
@@ -68,19 +67,19 @@ void setup()
   delay(100);
 
   /* Initialise Display */
-  // // initialize SPI
-  // fspi.begin(EPD_SCK, -1, EPD_SDI, -1); // SCLK, MISO, MOSI, SS
-  // display.epd2.selectSPI(fspi, SPISettings(4000000, MSBFIRST, SPI_MODE0));
-  // // initialize display
-  // display.init(0); // default 10ms reset pulse, e.g. for bare panels with DESPI-C02, set to 0 to disable display serial diag out
-  // // first update should be full refresh
-  // StartupDisplay();
-  // delay(1000);
-  // DrawHappyFace();
+  // initialize SPI
+  fspi.begin(EPD_SCK, -1, EPD_SDI, -1); // SCLK, MISO, MOSI, SS
+  display.epd2.selectSPI(fspi, SPISettings(4000000, MSBFIRST, SPI_MODE0));
+  // initialize display
+  display.init(0); // default 10ms reset pulse, e.g. for bare panels with DESPI-C02, set to 0 to disable display serial diag out
+  // first update should be full refresh
+  StartupDisplay();
+  delay(1000);
+  DrawHappyFace();
   // power off display
-  // display.powerOff();
-  // display.hibernate();
-  // display.end();
+  display.powerOff();
+  display.hibernate();
+  display.end();
 
   /* Initialise BME688 */
   Wire.setPins(6, 7);
@@ -98,6 +97,9 @@ void setup()
   BME680.setIIRFilter(IIR4);  // Use enumerated type values
   Serial.print(F("- Setting gas measurement to 320\xC2\xB0\x43 for 150ms\n"));  // "�C" symbols
   BME680.setGas(320, 150);  // 320�c for 150 milliseconds
+
+  /* Initialise ADC Read Resolution */
+  analogReadResolution(12);
 
   /* Initialise Soil Moisture Sensor */
   pinMode( SM_SENSE_OUT_NEW, INPUT );
@@ -117,103 +119,58 @@ void setup()
   Serial.flush(); 
   esp_deep_sleep_start();
 #endif
-
-  // pinMode( SM_PWM_PIN, OUTPUT);
-  // digitalWrite( SM_PWM_PIN, HIGH );
-  // digitalWrite(SM_PWM_PIN, LOW);
-  ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
-  ledcWrite( SM_PWM_PIN, SM_PWM_DUTY_CYCLE );
-  
 }
 
 void loop()
 {
-  // /* test bme688 */
-  // ReadPrintBme688();
-
-  /* test battery sense adc read value */
-  // Serial.print("ADC Value: ");
-  // Serial.println( ReadBatterySenseAdcValue() );
-  // delay( 1000 );
-
-  /* test battery sense mV value */
-  // Serial.print("Batt Sense: ");
-  // Serial.print( ReadBatterySenseMillivolts() );
-  // Serial.println( " mV" );
-  // delay( 1000 );
-  
-  // /* test battery mV value */
-  // Serial.print("Batt Voltage: ");
-  // Serial.print( ReadBatteryMillivolts() );
-  // Serial.println( " mV" );
-  // delay( 1000 );
-
-  // /* test battery mV value */
-  Serial.print("Soil Moisture: ");
-  Serial.println( analogRead( SM_SENSE_OUT_NEW ) );
-  delay( 100 );
+  ReadAllSensors();
 }
 
 uint16_t ReadSoilMoistureAdcValue()
 {
-  
-  // #define SM_SENSE_OUT 22
-  // #define SM_PWM_PIN 23
-  // #define SM_PWM_PIN_FAST_DISCHARGE_PIN 17
-  // #define SM_PWM_CHANNEL 0
-  // #define SM_PWM_FREQ 500000
-  // #define SM_PWM_RESOLUTION 3
-  // #define SM_PWM_DUTY_CYCLE 4
-  // ledcSetup(SM_PWM_CHANNEL, SM_PWM_FREQ, SM_PWM_RESOLUTION);
-  // ledcAttachPin(SM_PWM_PIN, SM_PWM_CHANNEL);
-  // ledcWrite(SM_PWM_CHANNEL, SM_PWM_DUTY_CYCLE);
+  /* enable pwm pin */
+  ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
+  ledcWrite( SM_PWM_PIN, SM_PWM_DUTY_CYCLE );
 
-  // ledcAttach( SM_PWM_PIN, SM_PWM_FREQ, SM_PWM_RESOLUTION );
-  // ledcWrite( SM_PWM_PIN, SM_PWM_CHANNEL );
+  /* let pwm generate pulses before we read */
+  delay(10);
 
-  uint16_t ret = analogRead( SM_SENSE_OUT_NEW );
+  /* read soil moisture */
+  const int n = 1;
+  int sum = 0;
+  for (int i = 0; i < n; i++) {
+    sum += analogRead( SM_SENSE_OUT_NEW );
+  }
+  int ret = sum / n;
+
+  /* disable pwm pin */
+  ledcDetach( SM_PWM_PIN );
+  pinMode( SM_PWM_PIN, INPUT );
   return ret;
 }
 
-uint16_t ReadBatterySenseAdcValue()
-{
+uint16_t ReadBatteryMillivolts()
+{ 
   digitalWrite( BATT_MEAS_EN, HIGH );
-  delay(10); // wait until voltage stable
-  uint16_t ret = analogRead( BATT_MEAS );
+  delay(20); // wait until voltage is stable
+  uint16_t batt_vd = analogReadMilliVolts( BATT_MEAS );
   digitalWrite( BATT_MEAS_EN, LOW );
-  return ret;
-}
-
-uint16_t ReadBatterySenseMillivolts()
-{
-  digitalWrite( BATT_MEAS_EN, HIGH );
-  delay(10); // wait until voltage stable
-  uint16_t ret = analogReadMilliVolts( BATT_MEAS );
-  digitalWrite( BATT_MEAS_EN, LOW );
-  return ret;
-}
-
-// uint16_t ReadBatteryMillivolts()
-// { 
-//   digitalWrite( BATT_MEAS_EN, HIGH );
-//   delay(10); // wait until voltage stable
-//   float ret = analogReadMilliVolts( BATT_MEAS );
-//   digitalWrite( BATT_MEAS_EN, LOW );
   
-//   // Vs = (R1 + R2) / ( Vout * R2 ) 
-//   float calc_batt_mv  = ( (float)BATT_MEAS_VD_R1 + (float)BATT_MEAS_VD_R2 ) / ( ret * (float) BATT_MEAS_VD_R2 );
-//   return calc_batt_mv;
-// }
+  // calculate battery voltage based 
+  // on voltage divider resistor
+  // Vsource = Vout (R1 + R2) / ( R2 ) 
+  return ( batt_vd * (BATT_MEAS_VD_R1 + BATT_MEAS_VD_R2) ) / BATT_MEAS_VD_R2 ;
+}
 
-void ReadPrintBme688()
+void ReadAllSensors()
 {  
   static int32_t  temp, humidity, pressure, gas;  // BME readings
   static char     buf[16];                        // sprintf text buffer
   static float    alt;                            // Temporary variable
   static uint16_t loopCounter = 0;                // Display iterations
   if (loopCounter % 25 == 0) {                    // Show header @25 loops
-    Serial.print(F("\nLoop Temp\xC2\xB0\x43 Humid% Press hPa Air m"));
-    Serial.print(F("\xE2\x84\xA6\n==== ====== ====== ========= =========\n"));  // "�C" symbol
+    Serial.print(F("\nLoop Temp\xC2\xB0\x43 Humid% Press hPa Air m\xE2\x84\xA6    SoilMstr  Batt mV"));
+    Serial.print(F("\n==== ====== ====== ========= ========= ========= =========\n"));  // "�C" symbol
   }                                                     // if-then time to show headers
   BME680.getSensorData(temp, humidity, pressure, gas);  // Get readings
   if (loopCounter++ != 0) {                             // Ignore first reading, might be incorrect
@@ -227,8 +184,12 @@ void ReadPrintBme688()
             (uint8_t)(pressure % 100));  // Pressure Pascals
     Serial.print(buf);
     Serial.print(" ");
-    sprintf(buf, "%4d.%02d\n", (int16_t)(gas / 100), (uint8_t)(gas % 100));  // Resistance milliohms
+    sprintf(buf, "%4d.%02d", (int16_t)(gas / 100), (uint8_t)(gas % 100));  // Resistance milliohms
     Serial.print(buf);
+    Serial.print("     ");
+    Serial.print(ReadSoilMoistureAdcValue());
+    Serial.print("     ");
+    Serial.println(ReadBatteryMillivolts());
     delay(10000);  // Wait 10s
   }                // of ignore first reading
 }
@@ -268,7 +229,6 @@ void StartupDisplay()
   }
   while (display.nextPage());
 }
-
 
 void DrawHappyFace()
 {
