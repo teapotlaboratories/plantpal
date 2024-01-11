@@ -1,0 +1,39 @@
+Thickness = 1.6mm
+
+--------------------
+
+Size: 38.4 x 128.5mm
+Number of layers: 4
+Material: TG150-160 FR-4
+
+Min. track/spacing: 5/5mil
+Min. hole size: 0.3mm
+
+Solder mask: Red
+Silkscreen: White
+
+--------------------
+
+SUGGESTED STACK-UP
+
+L1	Copper		1oz					plantpal-F_Cu.gbr
+
+	Prepreg		0.11mm		Dk=4.29 (2116)
+
+L2	Copper		1oz					plantpal-In1_Cu.gbr
+
+	Core		Core 1.2mm
+
+L3	Copper		1oz					plantpal-In2_Cu.gbr
+
+	Prepreg		0.11mm		Dk=4.29 (2116)
+
+L4	Copper		1oz					plantpal-B_Cu.gbr
+
+--------------------
+
+SENSITIVE COMPONENTS
+
+Solar cell: SC1, SC2, SC3, SC4
+- recommends 220°C peak temperatures at the reflow zone above 175°C for about 50 seconds
+- or manual soldering is recommended under 260°C for 2 sec.
