@@ -48,7 +48,7 @@ The project won't be possible without the amazing work from people across the gl
 A detailed schematic can be found [here](https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.pdf%22)
 
 ## Boards
- <p align="center">  <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/pcb_render.gif" alt="pcb_render"  width="50%" height="50%"/><br><b>PCB Render</b></p>
+ <p align="center">  <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_render.gif" alt="pcb_render"  width="50%" height="50%"/><br><b>PCB Render</b></p>
 
 Built using KiCAD, the board is design to be as small as possible with all components placed on the top side of the PCB.
 
