@@ -43,9 +43,9 @@ The project won't be possible without the amazing work from people across the gl
 
 ## Schematics
 
-<p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/bwlr1e/main/hardware/main/schematic.png" alt="schematic"/></p>
+<p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.png" alt="schematic"/></p>
 
-A detailed schematic can be found [here](https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.pdf%22)
+A detailed schematic can be found [here](https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.pdf)
 
 ## Boards
  <p align="center">  <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_render.gif" alt="pcb_render"  width="50%" height="50%"/><br><b>PCB Render</b></p>
