@@ -58,7 +58,7 @@ The following design are based on the latest revision.
 | <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/assembled_front.jpg" alt="assembled_front"  width="67%" height="67%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/assembled_back.jpg" alt="assembled_back"  width="70%" height="70%"/></p> |
 | <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/pcb_top_kicad.png" alt="pcb_front"  width="73%" height="73%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/pcb_bottom_kicad.png" alt="pcb_bottom"  width="77%" height="77%"/></p> |
 
- <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/hardware/main/pcb.svg" alt="pcb"  width="50%" height="50%"/><br><b>PCB Top and Bottom Layout</b></p> 
+ <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/hardware/pcb.svg" alt="pcb"  width="50%" height="50%"/><br><b>PCB Top and Bottom Layout</b></p> 
   
 ### Case
 <p align="center">  <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/case_render.gif" alt="case_render"  width="50%" height="50%"/></p>
