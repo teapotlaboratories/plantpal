@@ -5,8 +5,10 @@
   (paper "A5")
 
   (title_block
-    (date "2023-10-16")
-    (rev "2")
+    (title "Display")
+    (date "2024-01-10")
+    (rev "3")
+    (company "Teapot Laboratories")
   )
 
   (lib_symbols

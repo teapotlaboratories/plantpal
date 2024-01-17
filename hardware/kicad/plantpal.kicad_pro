@@ -524,11 +524,11 @@
   "pcbnew": {
     "last_paths": {
       "gencad": "",
-      "idf": "",
+      "idf": "C:/Users/aldwi/OneDrive/Documents/Developments/plantpal/3d_models/revision_3/plantpal.emn",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "C:/Users/aldwi/OneDrive/Documents/Developments/plantpal/3d_models/revision_3/plantpal.step",
+      "vrml": "C:/Users/aldwi/OneDrive/Documents/Developments/plantpal/3d_models/revision_3/plantpal.wrl"
     },
     "page_layout_descr_file": ""
   },
