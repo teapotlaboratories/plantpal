@@ -3,3 +3,4 @@ docs/images filter=lfs diff=lfs merge=lfs -text
 docs/images/pcb_render.gif filter=lfs diff=lfs merge=lfs -text
 docs/images/pcb_bottom.png filter=lfs diff=lfs merge=lfs -text
 docs/images/pcb_top.png filter=lfs diff=lfs merge=lfs -text
+docs/images/case_render.gif filter=lfs diff=lfs merge=lfs -text
