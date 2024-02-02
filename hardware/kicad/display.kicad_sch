@@ -6,8 +6,8 @@
 
   (title_block
     (title "Display")
-    (date "2024-01-10")
-    (rev "3")
+    (date "2024-02-01")
+    (rev "4")
     (company "Teapot Laboratories")
   )
 
@@ -482,58 +482,6 @@
         )
       )
     )
-    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3V3_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3V3_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -856,7 +804,7 @@
     (stroke (width 0) (type default))
     (uuid b80a196b-ab56-4aa2-9e7c-f334830d069a)
   )
-  (wire (pts (xy 69.85 73.025) (xy 69.85 75.565))
+  (wire (pts (xy 69.85 69.85) (xy 69.85 75.565))
     (stroke (width 0) (type default))
     (uuid bd50a6d6-bd93-42f8-b972-6768be0b3f8c)
   )
@@ -891,6 +839,10 @@
   (wire (pts (xy 135.255 53.975) (xy 124.46 53.975))
     (stroke (width 0) (type default))
     (uuid d20d823c-e25b-40a2-b5b1-dc62e334b291)
+  )
+  (wire (pts (xy 69.85 69.85) (xy 71.12 69.85))
+    (stroke (width 0) (type default))
+    (uuid d44d2bf3-5788-424c-a8c2-15eb7aeb72a3)
   )
   (wire (pts (xy 55.88 94.615) (xy 46.99 94.615))
     (stroke (width 0) (type default))
@@ -929,8 +881,8 @@
     (uuid fc8fff6a-9595-4db4-90af-de2b8e481163)
   )
 
-  (text "Display \nManufacturer: Good Display\nPart Number: GDEW0154I9FC\nNon-flex Alternative: GDEW0154M10\n\n26Pin FPC, 0.5mm Pitch, 0.25mm Pad Size\nPin 1 and 26 are not used \n\nNo connector is need, soldered directly to board\nUse 24 pin FPC connector footprint for debugging\n\nSchematic follows epd datasheet.\nMaybe we should follows DESPI-C02?"
-    (at 196.215 33.655 0)
+  (text "Display \nManufacturer: Good Display\nPart Number: GDEY0154D67\nAlternative Part Number: GDEW0154M10"
+    (at 196.215 19.685 0)
     (effects (font (size 1 1)) (justify right bottom))
     (uuid 9fe19f31-93af-406b-bbb9-0019bed849f6)
   )
@@ -975,6 +927,10 @@
   (hierarchical_label "DC" (shape input) (at 49.53 60.325 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 33909f81-7871-4cb2-87b9-ec98f025572d)
+  )
+  (hierarchical_label "+3V3D" (shape input) (at 71.12 69.85 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 39a806af-a675-4e69-94e5-cf86e8316897)
   )
   (hierarchical_label "SDI" (shape input) (at 49.53 71.755 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -1213,48 +1169,6 @@
       (project "plantpal"
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/3265fc00-478b-4188-a908-4fc9b1aaf6ab"
           (reference "D6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 69.85 73.025 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 28a7c79e-f2ff-49d3-8efb-cf7cdb5ea92a)
-    (property "Reference" "#PWR049" (at 69.85 76.835 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 72.39 69.215 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 69.85 73.025 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 69.85 73.025 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 871113f6-c8de-4314-bc48-d51aed5e195f))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR049") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/0bc89df9-c404-42cc-aab4-4237df7294d4"
-          (reference "#PWR086") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
-          (reference "#PWR091") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "#PWR089") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/3265fc00-478b-4188-a908-4fc9b1aaf6ab"
-          (reference "#PWR093") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR0134") (unit 1)
         )
       )
     )
