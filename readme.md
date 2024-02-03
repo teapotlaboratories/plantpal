@@ -1,11 +1,15 @@
 
-# Teapotlabs Plantpal
- <p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/bwlr1e/main/docs/images/device.jpg" alt="drawing"  width="50%" height="50%"/></p>
- 
-Teapotlabs Plantpal is a solar-powered wireless LoRa environmental sensor capable of sensing temperature, humidity, air pressure and air quality using the on-board BME688. 
-With STM32WLE MCU as it's core and AEM10941 for solar charging, the device is capable of multi-year operation with the possibility of indefinite battery-life by utilizing the solar charging capability
 
-Teapotlabs BWLR1E is part of  [Teapot open-hardware project](https://github.com/teapotlaboratories). 
+# Teapotlabs Plantpal
+ <p align="center"> <img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/device.jpg" alt="drawing"  width="50%" height="50%"/></p>
+ 
+Meet Teapotlabs Plantpal - the compact wonder for your garden! This adorable device uses capacitive sensing to measure soil moisture. Its low-power e-paper display keeps you updated without draining energy. Plus, with the BME688 sensor, it is able to monitor air quality and CO2 levels, ensuring your plants thrive in optimal conditions. Precision gardening made cute!
+
+Teapotlabs Plantpal is part of  [Teapotlabs open-hardware project](https://github.com/teapotlaboratories). 
+
+## Sponsorship
+Huge thanks to [PCBWay](https://www.pcbway.com) to sponsored this project! 
+All PCB and Assembly in this project is using their services.
 
 ## Acknowledgement
 The project won't be possible without the amazing work from people across the globe. The following are the reference to those awesome projects!
@@ -26,13 +30,14 @@ The project won't be possible without the amazing work from people across the gl
 	- Change to 4-layer board
 	- Move BME688 to bottom layer
 	- Improve antenna layout
+- **Revision 4**: Re-wire EPD remaining power to +3V3D
 
 ## Specification
 
 - [ESP32-C6FH4](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf): ESP32-C6 with 4 MB in-package flash
 - [AEM10941](https://e-peas.com/product/aem10941): Solar energy harvesting
 - USB-C for charging and programming
-- *15uA Deep-Sleep* *( to be confirmed on rev3 )*
+- ~16uA Deep-Sleep
 - 1.54 Inch E-Paper Display
 - Sensor:
 	- `BME688` for Environmental Sensing
@@ -45,6 +50,7 @@ The project won't be possible without the amazing work from people across the gl
 
 <p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.png" alt="schematic"/></p>
 
+Built using **KiCAD 7.0.5**
 A detailed schematic can be found [here](https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.pdf)
 
 ## Boards
@@ -55,25 +61,24 @@ Built using KiCAD, the board is design to be as small as possible with all compo
 The following design are based on the latest revision.
 | Top Board | Bottom Board |
 |--|--|
-| <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/assembled_front.jpg" alt="assembled_front"  width="67%" height="67%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/assembled_back.jpg" alt="assembled_back"  width="70%" height="70%"/></p> |
+| <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/assembled_front.jpg" alt="assembled_front"  width="67%" height="67%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/assembled_back.jpg" alt="assembled_back"  width="67%" height="67%"/></p> |
 | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_top.png" alt="pcb_front"  width="73%" height="73%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_bottom.png" alt="pcb_bottom"  width="77%" height="77%"/></p> |
 
  <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/hardware/pcb.svg" alt="pcb"  width="50%" height="50%"/><br><b>PCB Top and Bottom Layout</b></p> 
   
-### Case
+### Case and Showcase
 <p align="center">  <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/case_render.gif" alt="case_render"  width="70%" height="70%"/></p>
 
 Built using [TinkerCAD](https://www.tinkercad.com). The case are 3D printable with any generic 3D printer with/without support. The STL files are available [here](https://github.com/teapotlaboratories/bwlr1e/tree/main/hardware/main/case)
- <p align="center"><img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/case_open.jpg" alt="drawing"  width="50%" height="50%"/><br><b>Case Open</b></p>
+ <p align="center"><img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/case_open.jpg" alt="drawing"  width="50%" height="50%"/><br><b>Case Open</b></p>
 
-For adding additional sensors, Qwiic connector is also available on the left side of the board.
- <p align="center"><img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/using_qwiic.jpg" alt="drawing"  width="50%" height="50%"/><br><b>Connecting to Adafruit BME688</b></p>
+`BME688` sensor is available in the back, facing 3 small vents in the back of the case
+ <p align="center"><img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/assembled_back_close_up.jpg" alt="drawing"  width="50%" height="50%"/><br><b>BME688 Position</b></p>
 
-The case is design to be as small as possible with an additional magnets in the back to ease the placement of the sensor. The following are the list of material used at the time of testing:
-- 3.7v LiPo Battery, 850mAh 6mm x 30mm x 48mm
-- 4 piece of 8mm x 2mm neodymium magnet
+#### Soil Moisture Sensing Showcase
+Based on the amazing project in [b-parasite](https://github.com/rbaron/b-parasite), Plantpal has the built-in soil moisture sensor via capacitive sensing. Using capacitive sensing, enables the device to measure soil moisture without any traces exposed to the environment. See [rbaron's b-parasite](https://github.com/rbaron/b-parasite) project for more information on how the sensor works and more additional information to protect the soil moisture sensor!
 
-<p align="center"><img src="https://github.com/teapotlaboratories/bwlr1e/raw/main/docs/images/placement_showcase.gif" alt="placement_showcase"  width="50%" height="50%"/><br><b>Sensor Placement with Magnet</b></p>
+<p align="center"><img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/soil_moisture_showcase.gif" alt="soil moisture sensing test"  width="50%" height="50%"/><br><b>Soil Moisture Sensing Showcase</b></p>
 
 ### Measurement
 Power consumption and solar charging current are measured using [Nordic PPK2](https://www.nordicsemi.com/Products/Development-hardware/Power-Profiler-Kit-2)  and [CurrentRanger](https://lowpowerlab.com/shop/product/152).
@@ -112,10 +117,6 @@ The following are some very good tutorial to start developing with the device:
  - [Programming with STM32Cube](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Low-Level-Development/#rak3172-on-stm32cubeide-with-stm32wl-sdk-v1-0-0)
  - [Programming with MbedOS](https://github.com/hallard/LoRa-E5-Tiny/blob/main/README.md#compile-and-flash-firmware)
 
-For connecting to the **UART2** port, use any USB-to-UART bridge module. In testing, the [Sparkfun](https://www.sparkfun.com/products/14050) board is used for communication with AT firmware and programming over **Arduino**.
- <p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/bwlr1e/master/docs/images/sparkfun_ftdi.jpeg" width="30%" height="30%"><br>Sparkfun USB-to-UART Bridge</p>
-
-> :warning: **Be sure to only use 3.3V module. Do not 5V module** 
 
 ### Available SDK
 Through **UART2**, user can program the device using the following SDK:
@@ -130,12 +131,6 @@ Out of factory the device need to be put in bootloader mode, to To program the d
 5. Device should be in Serial Bootloader mode.
 
 You can also use [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) , instead of the SDK  to upload a firmware
-  
-### Programming with Teapotlabs BWLR1E Programmer
- <p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/bwlr1e/master/docs/images/programmer/programming_bwlr1e.gif" width="30%" height="30%"><br>Teapotlabs BWLR1E Programmer</p>
-
-An alternative to solder-free programming is to use the Teapotlabs BWLR1E Programmer. A full detail of the device can be found [here](https://github.com/teapotlaboratories/bwlr1e/blob/main/readme_programmer.md).
-The programmer connects to UART2 of the device. 
 
 ## License
 The product is open-source! However, some part of library used under **src**, might have it's own license.

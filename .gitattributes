@@ -8,3 +8,13 @@ hardware/case filter=lfs diff=lfs merge=lfs -text
 hardware/case/bottom.stl filter=lfs diff=lfs merge=lfs -text
 hardware/case/display_support.stl filter=lfs diff=lfs merge=lfs -text
 hardware/case/top.stl filter=lfs diff=lfs merge=lfs -text
+docs/images/assembled_front_close_up.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/case_close.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/with_aa_for_comparison.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/assembled_back.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/assembled_front.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/case_open.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/device.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/soil_moisture_showcase.gif filter=lfs diff=lfs merge=lfs -text
+docs/images/assembled_back_close_up.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/case_close_back.jpg filter=lfs diff=lfs merge=lfs -text
