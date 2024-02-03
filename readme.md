@@ -1,5 +1,6 @@
 
 
+
 # Teapotlabs Plantpal
  <p align="center"> <img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/device.jpg" alt="drawing"  width="50%" height="50%"/></p>
  
@@ -62,10 +63,13 @@ The following design are based on the latest revision.
 | Top Board | Bottom Board |
 |--|--|
 | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/assembled_front.jpg" alt="assembled_front"  width="67%" height="67%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/assembled_back.jpg" alt="assembled_back"  width="67%" height="67%"/></p> |
-| <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_top.png" alt="pcb_front"  width="73%" height="73%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_bottom.png" alt="pcb_bottom"  width="77%" height="77%"/></p> |
+| <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_top.png" alt="pcb_front"  width="73%" height="73%"/></p> | <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/pcb_bottom.png" alt="pcb_bottom"  width="72%" height="72%"/></p> |
 
  <p align="center"> <img src="https://github.com/teapotlaboratories/plantpal/raw/main/hardware/pcb.svg" alt="pcb"  width="50%" height="50%"/><br><b>PCB Top and Bottom Layout</b></p> 
   
+  
+ <p align="center"> <img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/assembled_front_close_up.jpg" alt="pcb"  width="50%" height="50%"/><br><b>Assembled Front Close-up</b></p> 
+ 
 ### Case and Showcase
 <p align="center">  <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/case_render.gif" alt="case_render"  width="70%" height="70%"/></p>
 
