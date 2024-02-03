@@ -9441,6 +9441,8 @@
     (stroke (width 0.2) (type dash_dot_dot)) (layer "F.SilkS") (tstamp adea5f13-dae5-44e5-9495-1784b279e05b))
   (gr_line (start 123.7 71.87) (end 115.27 71.87)
     (stroke (width 0.2) (type dash_dot_dot)) (layer "F.SilkS") (tstamp b3893647-f22d-45f3-ba15-7a4039dc74a1))
+  (gr_circle (center 108.2802 53.2638) (end 108.204 53.2384)
+    (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (tstamp c0beefc1-a37a-4308-951d-e99890b539e5))
   (gr_line (start 126.59 75.19) (end 93.1 75.2)
     (stroke (width 0.3) (type default)) (layer "F.SilkS") (tstamp c5c71168-0952-4669-9f76-ea83a44eb617))
   (gr_line (start 103.58 60.1) (end 109.83 60.1)
