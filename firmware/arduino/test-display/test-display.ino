@@ -28,6 +28,7 @@
 #define EPD_BUSY 14
 #define EPD_SDI 21
 #define EPD_SCK 20
+#define EPD_POWER_EN 22
 
 #define MAX_DISPLAY_BUFFER_SIZE 65536ul // e.g.
 #define MAX_DISPLAY_HEIGHT(EPD) (EPD::HEIGHT <= MAX_DISPLAY_BUFFER_SIZE / (EPD::WIDTH / 8) ? EPD::HEIGHT : MAX_DISPLAY_BUFFER_SIZE / (EPD::WIDTH / 8))
@@ -45,6 +46,9 @@ void setup()
   Serial.println("setup");
   delay(100);
 
+  // power on EPD
+  pinMode( EPD_POWER_EN, OUTPUT);
+  digitalWrite( EPD_POWER_EN, HIGH);
   // initialize SPI
   fspi.begin(EPD_SCK, -1, EPD_SDI, -1); // SCLK, MISO, MOSI, SS
   display.epd2.selectSPI(fspi, SPISettings(4000000, MSBFIRST, SPI_MODE0));

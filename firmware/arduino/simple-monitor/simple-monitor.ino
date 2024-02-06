@@ -27,6 +27,7 @@
 #define EPD_BUSY 14
 #define EPD_SDI 21
 #define EPD_SCK 20
+#define EPD_POWER_EN 22
 
 #define MAX_DISPLAY_BUFFER_SIZE 65536ul // e.g.
 #define MAX_DISPLAY_HEIGHT(EPD) (EPD::HEIGHT <= MAX_DISPLAY_BUFFER_SIZE / (EPD::WIDTH / 8) ? EPD::HEIGHT : MAX_DISPLAY_BUFFER_SIZE / (EPD::WIDTH / 8))
@@ -41,8 +42,7 @@ GxEPD2_BW< GxEPD2_154_GDEY0154D67,
 BME680_Class BME680;
 
 /* Soil Moisture */
-#define SM_SENSE_OUT 22   // Rev 2 Board incorrectly wire analog-in pin, use Pin 4 instead.
-#define SM_SENSE_OUT_NEW 4  // use this pin instead
+#define SM_SENSE_OUT 4
 #define SM_PWM_PIN 23
 #define SM_PWM_FREQ 500000
 #define SM_PWM_RESOLUTION 3
@@ -64,6 +64,9 @@ void setup()
   delay(100);
 
   /* Initialise Display */
+  // enable EPD power
+  pinMode( EPD_POWER_EN, OUTPUT);
+  digitalWrite( EPD_POWER_EN, HIGH);
   // initialize SPI
   fspi.begin(EPD_SCK, -1, EPD_SDI, -1); // SCLK, MISO, MOSI, SS
   display.epd2.selectSPI(fspi, SPISettings(4000000, MSBFIRST, SPI_MODE0));
@@ -96,7 +99,6 @@ void setup()
   analogReadResolution(12);
 
   /* Initialise Soil Moisture Sensor */
-  pinMode( SM_SENSE_OUT_NEW, INPUT );
   pinMode( SM_SENSE_OUT, INPUT );
   pinMode( SM_PWM_PIN, OUTPUT );
   digitalWrite( SM_PWM_PIN, LOW );
@@ -344,7 +346,7 @@ uint16_t ReadSoilMoistureAdcValue()
   const int n = 1;
   int sum = 0;
   for (int i = 0; i < n; i++) {
-    sum += analogRead( SM_SENSE_OUT_NEW );
+    sum += analogRead( SM_SENSE_OUT );
   }
   int ret = sum / n;
 
