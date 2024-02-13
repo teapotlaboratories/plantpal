@@ -1,4 +1,5 @@
 enum class Face {
+  kNone,
   kHappy,
   kMeh,
   kSad

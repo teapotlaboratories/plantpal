@@ -16,7 +16,7 @@
 /* select whether to enable sleep or not.
    enabling sleep will change the behavior slightly
    but will significantly increase battery-life */
-// #define DO_SLEEP // uncomment here to enable deep-sleep
+#define DO_SLEEP // uncomment here to enable deep-sleep
 #define SLEEP_TIME_S   300 // 5 minutes
 #define US_TO_S_FACTOR 1000000ULL  /* Conversion factor for micro seconds to seconds */
 
@@ -113,7 +113,7 @@ void loop()
 {
   int32_t  temp, humidity, pressure, gas;  // BME readings
   float temp_f;
-  static Face current_face = Face::kHappy;
+  static Face current_face = Face::kNone;
   static Face target_face;
 
   /* all sensor reading have not been calibrated and just
@@ -163,6 +163,9 @@ void loop()
 #ifndef DO_SLEEP
     delay(SLEEP_TIME_S * 1000); 
 #else
+    /* power-off EPD */
+    digitalWrite( EPD_POWER_EN, LOW);
+
     /* deepsleep now */
     esp_sleep_enable_timer_wakeup( SLEEP_TIME_S * US_TO_S_FACTOR ); // sleep for 15 seconds
     esp_deep_sleep_start();
