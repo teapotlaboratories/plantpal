@@ -129,7 +129,7 @@ Out of factory, the ESP32-C6 will be blank and need to be put in `bootloader` mo
 A more detailed information about USB behavior on ESP32-C6 can be [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/usb-serial-jtag-console.html)
 
 ## How to Purchase
-At the moment, we do not mass produce the device. The fastest way you can get the board is to order it directly from the manufacturer [here](https://link.teapotlabs.io/plantpal-order) (does **NOT** include the display).
+At the moment, we do not mass produce the device. The fastest way you can get the device is to order it directly from the manufacturer [here](https://link.teapotlabs.io/plantpal-order) (does **NOT** include the display and case).
 You need to buy the display separately from Aliexpress or other distributor.
 
 If you'd like to buy it from us fully assembled, we might be available and please contact contact@teapotlabs.io
