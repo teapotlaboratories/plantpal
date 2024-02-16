@@ -1,4 +1,3 @@
-
 # Teapotlabs Plantpal
  <p align="center"> <img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/device.jpg" alt="drawing"  width="50%" height="50%"/></p>
  
@@ -107,8 +106,8 @@ The following are the summary of the measurement:
 More measurement can be found [here](https://github.com/teapotlaboratories/plantpal/tree/main/docs/measurement)
 
 ## Bill Of Materials
-Most of the components are generic and can be bought from any electornics/semi-conductor distributor. The bill of materials can be downloaded [here](https://github.com/teapotlaboratories/plantpal/blob/main/hardware/main/bill_of_materials.csv)
-The EPD display used and tested is `GDEY0154D67` from **GoodDisplay**. The following display should be compatible:
+Most of the components are generic and can be bought from any electornics/semi-conductor distributor. The bill of materials can be downloaded [here](https://github.com/teapotlaboratories/plantpal/blob/main/hardware/main/bill_of_materials.csv).
+The EPD display used and tested is `GDEY0154D67` from **GoodDisplay**. The following display should be compatible, but the example code would need to be adjusted:
 - GDEW0154T8
 - GDEW0154Z17
 - GDEW0154Z04
@@ -130,10 +129,10 @@ Out of factory, the ESP32-C6 will be blank and need to be put in `bootloader` mo
 A more detailed information about USB behavior on ESP32-C6 can be [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/usb-serial-jtag-console.html)
 
 ## How to Purchase
-At the moment, we do not mass produce the device. However, you can purchase the board fully assembled ( does **NOT** include the display ) directly from the manufacturer [here](https://link.teapotlabs.io/plantpal-order).
-You need to buy the display separately.
+At the moment, we do not mass produce the device. The fastest way you can get the board is to order it directly from the manufacturer [here](https://link.teapotlabs.io/plantpal-order) (does **NOT** include the display).
+You need to buy the display separately from Aliexpress or other distributor.
 
-If you need any help on purchasing the board from the manufacturer feel free to reach out to contact@teapotlabs.io
+If you'd like to buy it from us fully assembled, we might be available and please contact contact@teapotlabs.io
 
 ## Disclaimer and notes
 Some disclaimer about Plantpal:
