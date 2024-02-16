@@ -71,7 +71,7 @@ More images can be found [here](https://github.com/teapotlaboratories/plantpal/t
 ### Case and Showcase
 <p align="center">  <img src="https://github.com/teapotlaboratories/plantpal/raw/main/docs/images/case_render.gif" alt="case_render"  width="70%" height="70%"/></p>
 
-Built using [TinkerCAD](https://www.tinkercad.com). The case are 3D printable with any generic 3D printer with/without support. The STL files are available [here](https://github.com/teapotlaboratories/plantpal/tree/main/hardware/main/case)
+Built using [TinkerCAD](https://www.tinkercad.com). The case are 3D printable with any generic 3D printer with/without support. The STL files are available [here](https://github.com/teapotlaboratories/plantpal/tree/main/hardware/case)
  <p align="center"><img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/case_open.jpg" alt="drawing"  width="50%" height="50%"/><br><b>Case Open</b></p>
 
 `BME688` sensor is available in the back, facing 3 small vents in the back of the case
@@ -106,7 +106,7 @@ The following are the summary of the measurement:
 More measurement can be found [here](https://github.com/teapotlaboratories/plantpal/tree/main/docs/measurement)
 
 ## Bill Of Materials
-Most of the components are generic and can be bought from any electornics/semi-conductor distributor. The bill of materials can be downloaded [here](https://github.com/teapotlaboratories/plantpal/blob/main/hardware/main/bill_of_materials.csv).
+Most of the components are generic and can be bought from any electornics/semi-conductor distributor. The bill of materials can be downloaded [here](https://github.com/teapotlaboratories/plantpal/blob/main/hardware/bill_of_materials.csv).
 The EPD display used and tested is `GDEY0154D67` from **GoodDisplay**. The following display should be compatible, but the example code would need to be adjusted:
 - GDEW0154T8
 - GDEW0154Z17
