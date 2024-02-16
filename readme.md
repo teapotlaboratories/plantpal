@@ -120,11 +120,14 @@ Those displays are available from AliExpress
 Programming the device can be done easily over the USB-C. 
 Out of factory, the ESP32-C6 will be blank and need to be put in `bootloader` mode. The following is a step-by-step guide to initially program the device
 
-  1. Press and Hold `BOOT` and `RESET` button
-  2. Release `RESET` button 
-  3. Wait couple seconds
-  4. Release `BOOT` button
-  5. Plantpal should be in `bootloader` mode and you can flash it via `ESP-IDF` or `Arduino` 
+  1. Plug-in the USB-C to host computer and check if the device is detected
+  2. If not, check that you have the battery plug-in and try to shine the solar cell using any source of bright light ( phone flashlight, sun, lamp )
+  3. Wait until the USB is detected in the host computer 
+  4. Press and Hold `BOOT` and `RESET` button
+  5. Release `RESET` button 
+  6. Wait couple seconds
+  7. Release `BOOT` button
+  8. Plantpal should be in `bootloader` mode and you can flash it via `ESP-IDF` or `Arduino` 
 
 A more detailed information about USB behavior on ESP32-C6 can be [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/usb-serial-jtag-console.html)
 
