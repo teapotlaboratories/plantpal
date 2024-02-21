@@ -18,3 +18,5 @@ docs/images/device.jpg filter=lfs diff=lfs merge=lfs -text
 docs/images/soil_moisture_showcase.gif filter=lfs diff=lfs merge=lfs -text
 docs/images/assembled_back_close_up.jpg filter=lfs diff=lfs merge=lfs -text
 docs/images/case_close_back.jpg filter=lfs diff=lfs merge=lfs -text
+docs/images/case_render.mp4 filter=lfs diff=lfs merge=lfs -text
+docs/images/pcb_render.mp4 filter=lfs diff=lfs merge=lfs -text
