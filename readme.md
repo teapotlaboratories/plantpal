@@ -6,7 +6,7 @@ Meet Teapotlabs Plantpal -  Your pal in plant care! This adorable device uses ca
 Teapotlabs Plantpal is part of  [Teapotlabs open-hardware project](https://github.com/teapotlaboratories). 
 
 ## Sponsorship
-Huge thanks to [PCBWay](https://www.pcbway.com) to sponsored this project! All PCB and Assembly in this project is using their services.
+Huge thanks to [PCBWay](https://www.pcbway.com) to sponsored this project! All PCB board and PCB Assembly in this project was using their rapid-prototyping services. The process from ordering to delivery of the device was really smooth and easy. We were really happy with the quality of the assembly and especially the customer support that was really easy to work with, where they help us identify and fix issue such as verifying BOM, checking components for assembly and even replacing damaged parts at no cost.
 
 ## Acknowledgement
 The project won't be possible without the amazing work from people across the globe. The following are the reference to those awesome projects!
