@@ -26,7 +26,7 @@ The project won't be possible without the amazing work from people across the gl
 	- `BME688` for Environmental Sensing
 	- Built-in `Soil Moisture` sensor
 	- `Battery voltage` sensing
-- 1A charge rate via USB
+- 500mA charge rate via USB
 - 3.7 Volts LiPo Battery
 
 ## Revision
