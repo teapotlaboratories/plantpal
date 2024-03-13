@@ -43,6 +43,11 @@ The project won't be possible without the amazing work from people across the gl
 	- Improve antenna layout
 - **Revision 4**: Re-wire EPD remaining power to +3V3D
 
+## Release
+- **Revision 4.1**: Based on revision 4.0, with BoM changes.
+  - Change charge rate resistor to 2K for 500mA
+  - Update solar cell components to latest available  
+
 ## Schematics
 
 <p align="center"> <img src="https://raw.githubusercontent.com/teapotlaboratories/plantpal/main/hardware/schematic.png" alt="schematic"/></p>
