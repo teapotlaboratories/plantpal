@@ -931,7 +931,7 @@
   (symbol (lib_id "power:GND") (at 179.705 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 036df5e6-68ba-47a8-aa80-fcb641ef3c8f)
-    (property "Reference" "#PWR024" (at 179.705 114.3 0)
+    (property "Reference" "#PWR053" (at 179.705 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 179.705 111.76 0)
@@ -946,9 +946,6 @@
     (pin "1" (uuid fcf1bd32-9787-4c35-928c-f8a47d58f3db))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR024") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR053") (unit 1)
         )
@@ -964,43 +961,40 @@
   (symbol (lib_name "Solar_Cell_1") (lib_id "Device:Solar_Cell") (at 98.425 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07eec525-afb7-46ee-9095-f89726433d6a)
-    (property "Reference" "SC1" (at 102.235 86.7409 0)
+    (property "Reference" "SC3" (at 102.235 86.7409 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "KXOB25-05X3TF-TR" (at 90.805 83.82 0)
+    (property "Value" "KXOB25-05X3F-TR" (at 90.805 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "plantpal:KXOB25-05X3F" (at 98.425 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Atf9/DubuDisk/www/Gen3/KXOB25-05X3TF%20DATA%20SHEET%20202012.pdf" (at 98.425 88.646 90)
+    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Ae07/DubuDisk/www/Gen3/KXOB25-05X3F%20DATA%20SHEET%20202007.pdf" (at 98.425 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.9MW" (at 98.425 90.17 0)
+    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.7MW" (at 98.425 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "ANYSOLAR Ltd" (at 98.425 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer Part Number" "KXOB25-05X3TF-TR" (at 98.425 90.17 0)
+    (property "Manufacturer Part Number" "KXOB25-05X3F-TR" (at 98.425 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Distributor" "Digikey" (at 98.425 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Part Number" "2994-KXOB25-05X3TF-TRCT-ND" (at 98.425 90.17 0)
+    (property "Distributor Part Number" "KXOB25-05X3FCT-ND" (at 98.425 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3TF-TR/13999164" (at 98.425 90.17 0)
+    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3F-TR/9990478" (at 98.425 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid bc6e230b-c311-45f4-acd3-d146b5bc2902))
     (pin "2" (uuid f9e9793d-fd52-42a2-843d-6564b62c7f85))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "SC1") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "SC3") (unit 1)
         )
@@ -1016,7 +1010,7 @@
   (symbol (lib_id "Device:C_Small") (at 179.705 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 094fa541-357c-49c1-a4b8-042d618d9350)
-    (property "Reference" "C17" (at 186.055 102.87 0)
+    (property "Reference" "C23" (at 186.055 102.87 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 186.055 105.41 0)
@@ -1050,9 +1044,6 @@
     (pin "2" (uuid 88b10ead-d63d-49dc-a371-9cf80fb52395))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C17") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "C23") (unit 1)
         )
@@ -1068,7 +1059,7 @@
   (symbol (lib_id "Device:L_Small") (at 184.785 97.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0d6a54b7-e94b-4baf-a00f-40ea7001f180)
-    (property "Reference" "L3" (at 182.245 95.25 90)
+    (property "Reference" "L4" (at 182.245 95.25 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10u" (at 187.325 95.25 90)
@@ -1102,9 +1093,6 @@
     (pin "2" (uuid 058eee36-18ce-446d-a3d2-05e61f84a915))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "L3") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "L4") (unit 1)
         )
@@ -1120,7 +1108,7 @@
   (symbol (lib_id "power:GND") (at 236.855 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 111a346f-0744-4b34-8039-df24cd5fb3c1)
-    (property "Reference" "#PWR039" (at 236.855 130.81 0)
+    (property "Reference" "#PWR055" (at 236.855 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 236.855 128.27 0)
@@ -1135,9 +1123,6 @@
     (pin "1" (uuid e2fd2b78-0633-4378-b758-6971314dc33c))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR039") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR055") (unit 1)
         )
@@ -1153,7 +1138,7 @@
   (symbol (lib_id "Device:C_Small") (at 169.545 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23ee8941-fcda-45f1-9c83-e7f80e70ce7e)
-    (property "Reference" "C14" (at 175.895 102.87 0)
+    (property "Reference" "C22" (at 175.895 102.87 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "22u" (at 175.895 105.41 0)
@@ -1187,9 +1172,6 @@
     (pin "2" (uuid 451e9e65-693d-45db-89f9-821fc2ff324a))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C14") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "C22") (unit 1)
         )
@@ -1205,7 +1187,7 @@
   (symbol (lib_id "power:GND") (at 180.34 120.015 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 275cf41f-028a-4402-bec3-94ea364a63eb)
-    (property "Reference" "#PWR025" (at 180.34 126.365 0)
+    (property "Reference" "#PWR054" (at 180.34 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 180.34 123.825 0)
@@ -1220,9 +1202,6 @@
     (pin "1" (uuid e6720589-e6f4-44d0-b22a-90a037e8ff07))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR025") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR054") (unit 1)
         )
@@ -1238,7 +1217,7 @@
   (symbol (lib_id "power:GND") (at 247.65 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e726dc6-f151-4d03-8c82-50f2695d228a)
-    (property "Reference" "#PWR042" (at 247.65 81.28 0)
+    (property "Reference" "#PWR058" (at 247.65 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 247.65 78.74 0)
@@ -1253,9 +1232,6 @@
     (pin "1" (uuid 3c6be8bb-df32-4545-89a7-993a3b9a8d74))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR042") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR058") (unit 1)
         )
@@ -1271,7 +1247,7 @@
   (symbol (lib_id "power:+BATT") (at 240.665 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3b6e4373-7c82-4fec-a47a-6e7f7c8934fd)
-    (property "Reference" "#PWR070" (at 240.665 82.55 0)
+    (property "Reference" "#PWR057" (at 240.665 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 236.22 77.47 0)
@@ -1286,12 +1262,6 @@
     (pin "1" (uuid c2ce2aa5-c087-471e-81a9-20d2f8cc104f))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR070") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR050") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR057") (unit 1)
         )
@@ -1315,40 +1285,37 @@
     (property "Reference" "SC1" (at 64.77 86.7409 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "KXOB25-05X3TF-TR" (at 53.34 83.82 0)
+    (property "Value" "KXOB25-05X3F-TR" (at 53.34 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "plantpal:KXOB25-05X3F" (at 60.96 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Atf9/DubuDisk/www/Gen3/KXOB25-05X3TF%20DATA%20SHEET%20202012.pdf" (at 60.96 88.646 90)
+    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Ae07/DubuDisk/www/Gen3/KXOB25-05X3F%20DATA%20SHEET%20202007.pdf" (at 60.96 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.9MW" (at 60.96 90.17 0)
+    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.7MW" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "ANYSOLAR Ltd" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer Part Number" "KXOB25-05X3TF-TR" (at 60.96 90.17 0)
+    (property "Manufacturer Part Number" "KXOB25-05X3F-TR" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Distributor" "Digikey" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Part Number" "2994-KXOB25-05X3TF-TRCT-ND" (at 60.96 90.17 0)
+    (property "Distributor Part Number" "KXOB25-05X3FCT-ND" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3TF-TR/13999164" (at 60.96 90.17 0)
+    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3F-TR/9990478" (at 60.96 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 019e1a18-de65-40a6-869a-368ac27c33be))
     (pin "2" (uuid 3023891c-51d9-41bf-93b5-a6a63286e04a))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "SC1") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "SC1") (unit 1)
         )
@@ -1435,7 +1402,7 @@
   (symbol (lib_id "power:GND") (at 159.385 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 693afdc0-73f7-4efc-8cf9-591ca54c11e9)
-    (property "Reference" "#PWR020" (at 159.385 114.3 0)
+    (property "Reference" "#PWR051" (at 159.385 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 159.385 111.76 0)
@@ -1450,9 +1417,6 @@
     (pin "1" (uuid 5e7103c9-d2f2-4ed5-8737-16f16158ac6e))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR020") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR051") (unit 1)
         )
@@ -1468,7 +1432,7 @@
   (symbol (lib_id "Device:C_Small") (at 159.385 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79fa1630-96e1-4353-9f3c-c864564c5b6b)
-    (property "Reference" "C14" (at 165.735 102.87 0)
+    (property "Reference" "C21" (at 165.735 102.87 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "22u" (at 165.735 105.41 0)
@@ -1502,9 +1466,6 @@
     (pin "2" (uuid dee804b7-2b54-46fe-9d0a-9972646dfc5c))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C14") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "C21") (unit 1)
         )
@@ -1520,7 +1481,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 127.635 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 804a8088-2b9f-4147-b542-01da391b273d)
-    (property "Reference" "TP4" (at 133.35 76.835 90)
+    (property "Reference" "TP3" (at 133.35 76.835 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SOLAR+" (at 127 76.835 90)
@@ -1553,9 +1514,6 @@
     (pin "1" (uuid c52695a5-5020-4044-8a19-65550cf65840))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "TP4") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "TP3") (unit 1)
         )
@@ -1571,7 +1529,7 @@
   (symbol (lib_id "power:GND") (at 169.545 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a7e242c-244d-4127-8303-de6a22eed54f)
-    (property "Reference" "#PWR021" (at 169.545 114.3 0)
+    (property "Reference" "#PWR052" (at 169.545 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.545 111.76 0)
@@ -1586,9 +1544,6 @@
     (pin "1" (uuid bbbc3f12-9db8-49e2-a334-3b9b9ca17bd3))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR021") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR052") (unit 1)
         )
@@ -1604,7 +1559,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 127.635 95.25 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a05838bd-d82c-48d3-8351-ba34ff7aa065)
-    (property "Reference" "TP5" (at 133.35 97.79 90)
+    (property "Reference" "TP4" (at 133.35 97.79 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SOLAR-" (at 127 97.79 90)
@@ -1637,9 +1592,6 @@
     (pin "1" (uuid 0bf3ad33-46cb-4519-a621-c5284a1c2bdf))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "TP5") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "TP4") (unit 1)
         )
@@ -1655,7 +1607,7 @@
   (symbol (lib_id "power:GND") (at 81.28 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a86ff320-8bd6-48db-aa56-5a9b9622c723)
-    (property "Reference" "#PWR05" (at 81.28 102.87 0)
+    (property "Reference" "#PWR050" (at 81.28 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 81.28 100.33 0)
@@ -1670,9 +1622,6 @@
     (pin "1" (uuid cb67c6a5-95ca-417a-b1c2-0e5c105b7009))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR05") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR050") (unit 1)
         )
@@ -1688,7 +1637,7 @@
   (symbol (lib_id "power:GND") (at 238.125 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a9474a16-db80-4032-8e1f-dc7683608f51)
-    (property "Reference" "#PWR040" (at 238.125 91.44 0)
+    (property "Reference" "#PWR056" (at 238.125 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.125 88.9 0)
@@ -1703,9 +1652,6 @@
     (pin "1" (uuid 57ec67a3-c339-4b7d-b7f5-edb97c6ffcee))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR040") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR056") (unit 1)
         )
@@ -1721,7 +1667,7 @@
   (symbol (lib_id "power:+BATT") (at 50.8 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aa01bd7a-27cd-46d5-9213-54d2c785cb6a)
-    (property "Reference" "#PWR070" (at 50.8 130.81 0)
+    (property "Reference" "#PWR049" (at 50.8 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 46.355 125.73 0)
@@ -1736,12 +1682,6 @@
     (pin "1" (uuid d5a64add-5c9a-46d5-b637-1057e64a1230))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR070") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR050") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "#PWR049") (unit 1)
         )
@@ -1762,43 +1702,40 @@
   (symbol (lib_name "Solar_Cell_1") (lib_id "Device:Solar_Cell") (at 81.28 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1f0900a-84dc-48dc-baf8-2916589a42a5)
-    (property "Reference" "SC1" (at 85.09 86.7409 0)
+    (property "Reference" "SC2" (at 85.09 86.7409 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "KXOB25-05X3TF-TR" (at 71.12 92.71 0)
+    (property "Value" "KXOB25-05X3F-TR" (at 71.12 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "plantpal:KXOB25-05X3F" (at 81.28 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Atf9/DubuDisk/www/Gen3/KXOB25-05X3TF%20DATA%20SHEET%20202012.pdf" (at 81.28 88.646 90)
+    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Ae07/DubuDisk/www/Gen3/KXOB25-05X3F%20DATA%20SHEET%20202007.pdf" (at 81.28 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.9MW" (at 81.28 90.17 0)
+    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.7MW" (at 81.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "ANYSOLAR Ltd" (at 81.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer Part Number" "KXOB25-05X3TF-TR" (at 81.28 90.17 0)
+    (property "Manufacturer Part Number" "KXOB25-05X3F-TR" (at 81.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Distributor" "Digikey" (at 81.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Part Number" "2994-KXOB25-05X3TF-TRCT-ND" (at 81.28 90.17 0)
+    (property "Distributor Part Number" "KXOB25-05X3FCT-ND" (at 81.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3TF-TR/13999164" (at 81.28 90.17 0)
+    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3F-TR/9990478" (at 81.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 86db684d-53e0-49cf-8c7a-730b7e0916cf))
     (pin "2" (uuid 679dde2b-ff8d-4fd3-b907-cdeaec268036))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "SC1") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "SC2") (unit 1)
         )
@@ -1814,7 +1751,7 @@
   (symbol (lib_id "Device:L_Small") (at 174.625 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ee36ef93-eefe-4eea-ba98-e76a5f49c61d)
-    (property "Reference" "L2" (at 170.815 87.63 90)
+    (property "Reference" "L3" (at 170.815 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10u 0.55A" (at 178.435 87.63 90)
@@ -1848,9 +1785,6 @@
     (pin "2" (uuid da4bcddf-46b7-4140-be7d-2e54902d06dd))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "L2") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "L3") (unit 1)
         )
@@ -1866,43 +1800,40 @@
   (symbol (lib_name "Solar_Cell_1") (lib_id "Device:Solar_Cell") (at 115.57 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f155ab5d-da99-45ce-af0a-4fc7679786a7)
-    (property "Reference" "SC1" (at 119.38 86.7409 0)
+    (property "Reference" "SC4" (at 119.38 86.7409 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "KXOB25-05X3TF-TR" (at 105.41 93.345 0)
+    (property "Value" "KXOB25-05X3F-TR" (at 105.41 93.345 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "plantpal:KXOB25-05X3F" (at 115.57 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Atf9/DubuDisk/www/Gen3/KXOB25-05X3TF%20DATA%20SHEET%20202012.pdf" (at 115.57 88.646 90)
+    (property "Datasheet" "https://waf-e.dubudisk.com/anysolar.dubuplus.com/techsupport@anysolar.biz/O18Ae07/DubuDisk/www/Gen3/KXOB25-05X3F%20DATA%20SHEET%20202007.pdf" (at 115.57 88.646 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.9MW" (at 115.57 90.17 0)
+    (property "Part Description" "Solar Cell G3 Thin 2.07V 30.7MW" (at 115.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Manufacturer" "ANYSOLAR Ltd" (at 115.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Manufacturer Part Number" "KXOB25-05X3TF-TR" (at 115.57 90.17 0)
+    (property "Manufacturer Part Number" "KXOB25-05X3F-TR" (at 115.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Distributor" "Digikey" (at 115.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Part Number" "2994-KXOB25-05X3TF-TRCT-ND" (at 115.57 90.17 0)
+    (property "Distributor Part Number" "KXOB25-05X3FCT-ND" (at 115.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3TF-TR/13999164" (at 115.57 90.17 0)
+    (property "Distributor Link" "https://www.digikey.com/en/products/detail/anysolar-ltd/KXOB25-05X3F-TR/9990478" (at 115.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4aedf1b1-638c-4872-b1c1-d1dee0a88c57))
     (pin "2" (uuid 04e07170-fbfb-4c6c-a624-6c102f1f1a5b))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "SC1") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
           (reference "SC4") (unit 1)
         )

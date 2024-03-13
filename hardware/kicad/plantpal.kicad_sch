@@ -276,9 +276,6 @@
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
           (reference "#PWR02") (unit 1)
         )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
-          (reference "#PWR076") (unit 1)
-        )
       )
       (project "bwlr1e"
         (path "/630c8da6-5464-4eef-824d-89618087f4b4"
@@ -308,9 +305,6 @@
       (project "plantpal"
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
           (reference "#PWR062") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
-          (reference "#PWR076") (unit 1)
         )
       )
       (project "bwlr1e"

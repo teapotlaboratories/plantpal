@@ -1073,7 +1073,7 @@
   (symbol (lib_id "Device:R_Small") (at 146.05 73.025 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ec63e58-b32c-4026-8cca-5e35a4b6f7e1)
-    (property "Reference" "R17" (at 142.24 71.755 0)
+    (property "Reference" "R25" (at 142.24 71.755 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470m" (at 141.605 74.295 0)
@@ -1107,12 +1107,6 @@
     (pin "2" (uuid 8a898ef0-20f8-429c-b65f-3d86ed4b6ad8))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R17") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "R10") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/3265fc00-478b-4188-a908-4fc9b1aaf6ab"
           (reference "R25") (unit 1)
         )
@@ -1674,7 +1668,7 @@
   (symbol (lib_id "Device:R_Small") (at 156.21 73.025 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 937ff02f-7768-46a8-aef5-7fa751ee2923)
-    (property "Reference" "R17" (at 160.02 71.755 0)
+    (property "Reference" "R26" (at 160.02 71.755 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1M" (at 160.655 74.295 0)
@@ -1708,12 +1702,6 @@
     (pin "2" (uuid f186e5dc-3a0b-42d2-853a-a079f556bd54))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R17") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "R10") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/3265fc00-478b-4188-a908-4fc9b1aaf6ab"
           (reference "R26") (unit 1)
         )

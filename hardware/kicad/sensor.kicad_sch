@@ -1180,7 +1180,7 @@
   (symbol (lib_id "power:GND") (at 107.95 52.07 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 054c1b1d-7d3c-42ff-ae6d-75b9fd9627f0)
-    (property "Reference" "#PWR036" (at 107.95 58.42 0)
+    (property "Reference" "#PWR081" (at 107.95 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 109.22 55.88 0)
@@ -1195,9 +1195,6 @@
     (pin "1" (uuid dbe73696-22f2-4013-8bd3-a5de8199f0a9))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR036") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR081") (unit 1)
         )
@@ -1213,7 +1210,7 @@
   (symbol (lib_id "Device:R_Small") (at 173.99 123.825 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 074d9223-2720-4df4-8344-5250bef7f5a6)
-    (property "Reference" "R5" (at 176.53 122.5549 0)
+    (property "Reference" "R20" (at 176.53 122.5549 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4K7" (at 176.53 125.0949 0)
@@ -1247,9 +1244,6 @@
     (pin "2" (uuid fcc10509-00c9-43e5-8f11-74375f7ab7f0))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R5") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R20") (unit 1)
         )
@@ -1265,7 +1259,7 @@
   (symbol (lib_id "power:GND") (at 198.755 127.635 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 112aa574-55a5-4f8d-81e5-3206037616fe)
-    (property "Reference" "#PWR016" (at 198.755 133.985 0)
+    (property "Reference" "#PWR087" (at 198.755 133.985 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 198.755 131.445 0)
@@ -1280,9 +1274,6 @@
     (pin "1" (uuid 9f5dfc62-018c-48f1-b8c7-d42491c0092d))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR016") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR087") (unit 1)
         )
@@ -1298,7 +1289,7 @@
   (symbol (lib_id "Device:Q_NMOS_GSD") (at 191.135 117.475 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 12c9fe71-1392-43d4-a1a7-bc61e56dee4c)
-    (property "Reference" "Q3" (at 193.04 110.49 0)
+    (property "Reference" "Q5" (at 193.04 110.49 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DMG1012UW" (at 202.565 113.03 0)
@@ -1333,9 +1324,6 @@
     (pin "3" (uuid 1c0febba-0816-4761-91ea-2a5e2bb81e36))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "Q3") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "Q5") (unit 1)
         )
@@ -1351,7 +1339,7 @@
   (symbol (lib_id "power:+3V3") (at 99.06 44.45 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 139a1cfc-4f0d-4a20-868f-14bf756eda1f)
-    (property "Reference" "#PWR033" (at 99.06 48.26 0)
+    (property "Reference" "#PWR079" (at 99.06 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 97.79 40.64 0)
@@ -1366,9 +1354,6 @@
     (pin "1" (uuid d8e20af7-9768-4a74-abda-f86caa1f9828))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR033") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR079") (unit 1)
         )
@@ -1418,9 +1403,6 @@
     (pin "2" (uuid d910ed25-b8a5-4e8a-8076-aa5f9a9de510))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "D3") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "D3") (unit 1)
         )
@@ -1436,7 +1418,7 @@
   (symbol (lib_id "power:GND") (at 204.47 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2503b08d-9771-4afc-a439-abc113e97448)
-    (property "Reference" "#PWR072" (at 204.47 67.31 0)
+    (property "Reference" "#PWR088" (at 204.47 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 204.597 65.3542 0)
@@ -1451,9 +1433,6 @@
     (pin "1" (uuid 25e0c309-24d9-4d5f-a0b2-3db9653b0044))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR072") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR088") (unit 1)
         )
@@ -1469,7 +1448,7 @@
   (symbol (lib_id "power:GND") (at 93.98 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ad5fd34-b77c-482a-b653-a634f38df8fd)
-    (property "Reference" "#PWR032" (at 93.98 90.17 0)
+    (property "Reference" "#PWR077" (at 93.98 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 93.98 88.9 0)
@@ -1484,9 +1463,6 @@
     (pin "1" (uuid a4759c6f-dd12-419b-a935-9823d31d3ba7))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR032") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR077") (unit 1)
         )
@@ -1502,7 +1478,7 @@
   (symbol (lib_id "power:GND") (at 99.06 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e8697d8-768e-4b2f-8211-1e59fecccf6f)
-    (property "Reference" "#PWR034" (at 99.06 90.17 0)
+    (property "Reference" "#PWR080" (at 99.06 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.06 88.9 0)
@@ -1517,9 +1493,6 @@
     (pin "1" (uuid eead167d-6b85-4470-b739-d3fba6a43aec))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR034") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR080") (unit 1)
         )
@@ -1535,7 +1508,7 @@
   (symbol (lib_id "power:GND") (at 173.99 140.335 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 38bcbdf0-3d50-4345-9e86-6a61db648df9)
-    (property "Reference" "#PWR012" (at 173.99 146.685 0)
+    (property "Reference" "#PWR084" (at 173.99 146.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 173.99 144.145 0)
@@ -1550,9 +1523,6 @@
     (pin "1" (uuid 7d901fb6-86c4-4c37-9576-2213c0221a6e))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR012") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR084") (unit 1)
         )
@@ -1568,7 +1538,7 @@
   (symbol (lib_id "Device:C_Small") (at 104.14 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39855d77-0f1b-43fb-a04e-0bd2b791b056)
-    (property "Reference" "C27" (at 104.775 46.355 90)
+    (property "Reference" "C28" (at 104.775 46.355 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 111.125 46.355 90)
@@ -1602,15 +1572,6 @@
     (pin "2" (uuid 21a9e1de-acca-4f46-9cf5-efc2c9aa9457))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C27") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C19") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C7") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "C28") (unit 1)
         )
@@ -1631,7 +1592,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 176.53 112.395 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c2a7868-85d6-4fa4-ad9b-138cd9cf1ad4)
-    (property "Reference" "Q2" (at 170.18 111.1249 0)
+    (property "Reference" "Q4" (at 170.18 111.1249 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PMV32UP" (at 170.18 113.6649 0)
@@ -1666,9 +1627,6 @@
     (pin "3" (uuid 044b9dd2-d329-4750-8d8a-0e167dcd8906))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "Q2") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "Q4") (unit 1)
         )
@@ -1684,7 +1642,7 @@
   (symbol (lib_id "Device:R_Small") (at 118.11 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d16dfef-4827-4675-a1e2-91cf71e14fc0)
-    (property "Reference" "R13" (at 117.475 58.42 90)
+    (property "Reference" "R16" (at 117.475 58.42 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 122.555 58.42 90)
@@ -1718,14 +1676,8 @@
     (pin "2" (uuid f36285ba-57ef-4730-8141-5d777eb3815f))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R13") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R16") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R6") (unit 1)
         )
       )
       (project "bwlr3d"
@@ -1739,7 +1691,7 @@
   (symbol (lib_id "power:+3V3") (at 125.73 56.515 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4dae167e-40a1-4c80-8554-2c2893681574)
-    (property "Reference" "#PWR037" (at 125.73 60.325 0)
+    (property "Reference" "#PWR082" (at 125.73 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 123.19 52.705 0)
@@ -1754,9 +1706,6 @@
     (pin "1" (uuid 0197b7c5-cc48-4ca6-a439-e6b6366d9a0e))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR037") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR082") (unit 1)
         )
@@ -1772,7 +1721,7 @@
   (symbol (lib_id "Device:R_Small") (at 163.195 46.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5cb2f374-de8d-4ad5-84e5-2e9de31d72bb)
-    (property "Reference" "R13" (at 158.75 44.45 90)
+    (property "Reference" "R18" (at 158.75 44.45 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 163.83 44.45 90)
@@ -1806,14 +1755,8 @@
     (pin "2" (uuid 8cee3499-c0eb-40b0-896b-f7413d7eed95))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R13") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R18") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R6") (unit 1)
         )
       )
       (project "bwlr3d"
@@ -1827,7 +1770,7 @@
   (symbol (lib_id "power:GND") (at 188.595 127.635 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e1e4509-1d82-4dee-a1a0-09e604a7a430)
-    (property "Reference" "#PWR014" (at 188.595 133.985 0)
+    (property "Reference" "#PWR086" (at 188.595 133.985 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 188.595 131.445 0)
@@ -1842,9 +1785,6 @@
     (pin "1" (uuid 4a47e9ba-0eae-410f-9235-cd79de656021))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR014") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR086") (unit 1)
         )
@@ -1860,7 +1800,7 @@
   (symbol (lib_id "power:GND") (at 175.895 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b07f309-71fd-4258-8fce-fba288c62cd1)
-    (property "Reference" "#PWR074" (at 175.895 80.01 0)
+    (property "Reference" "#PWR085" (at 175.895 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.022 78.0542 0)
@@ -1875,9 +1815,6 @@
     (pin "1" (uuid 50f0740c-03da-4bd5-871e-eb420b729daa))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR074") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR085") (unit 1)
         )
@@ -1893,7 +1830,7 @@
   (symbol (lib_id "Device:C_Small") (at 165.1 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 74d0c62f-736e-46a1-9960-4500dc61edc3)
-    (property "Reference" "C27" (at 159.385 132.715 0)
+    (property "Reference" "C29" (at 159.385 132.715 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 158.115 135.255 0)
@@ -1927,15 +1864,6 @@
     (pin "2" (uuid 30aa2efe-bdec-481a-b054-965738bf7aaf))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C27") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C19") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C6") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "C29") (unit 1)
         )
@@ -1956,7 +1884,7 @@
   (symbol (lib_id "Device:R_Small") (at 188.595 106.045 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89b1c19b-d4ac-456a-9d5a-b253defa7d06)
-    (property "Reference" "R16" (at 183.515 104.775 0)
+    (property "Reference" "R22" (at 183.515 104.775 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 183.515 107.315 0)
@@ -1990,12 +1918,6 @@
     (pin "2" (uuid 2a10f87f-aee3-469d-9a1b-ded8ddbd8f3d))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R16") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R5") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R22") (unit 1)
         )
@@ -2011,7 +1933,7 @@
   (symbol (lib_id "Device:R_Small") (at 118.11 76.2 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b3b65b1-7504-4c08-9ad3-c10092a6f352)
-    (property "Reference" "R13" (at 116.84 78.74 90)
+    (property "Reference" "R17" (at 116.84 78.74 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 121.92 78.74 90)
@@ -2045,14 +1967,8 @@
     (pin "2" (uuid fc648d74-cf36-459c-bcf5-6c80b0970e23))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R13") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R17") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R6") (unit 1)
         )
       )
       (project "bwlr3d"
@@ -2100,9 +2016,6 @@
     (pin "2" (uuid b79ac864-5918-493d-ae26-5c1863e89d04))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C30") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "C30") (unit 1)
         )
@@ -2118,7 +2031,7 @@
   (symbol (lib_id "Device:R_Small") (at 163.195 64.77 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92e35604-648f-43f3-bff9-455dfedfaa52)
-    (property "Reference" "R13" (at 158.75 67.31 90)
+    (property "Reference" "R19" (at 158.75 67.31 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 163.83 67.31 90)
@@ -2152,14 +2065,8 @@
     (pin "2" (uuid 0a0178a1-af6d-4c1e-9867-51e09468a763))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R13") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R19") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R6") (unit 1)
         )
       )
       (project "bwlr3d"
@@ -2173,7 +2080,7 @@
   (symbol (lib_id "power:+BATT") (at 173.99 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a0244845-db40-470d-8ed6-46ab76fb4770)
-    (property "Reference" "#PWR070" (at 173.99 102.87 0)
+    (property "Reference" "#PWR083" (at 173.99 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 169.545 97.79 0)
@@ -2188,15 +2095,6 @@
     (pin "1" (uuid 3f6099d8-a253-40e0-944f-e2fc7e68a6a0))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR070") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR050") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
-          (reference "#PWR019") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR083") (unit 1)
         )
@@ -2217,7 +2115,7 @@
   (symbol (lib_id "Device:R_Small") (at 173.99 133.985 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aa014406-dd37-4835-8eaf-c92878440ce1)
-    (property "Reference" "R13" (at 175.895 133.35 0)
+    (property "Reference" "R21" (at 175.895 133.35 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 175.895 135.89 0)
@@ -2251,14 +2149,8 @@
     (pin "2" (uuid 5cf31075-5281-4eb9-8049-b90d7e133f9a))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R13") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R21") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R6") (unit 1)
         )
       )
       (project "bwlr3d"
@@ -2306,15 +2198,6 @@
     (pin "2" (uuid d1b9216e-26a7-48e8-8acd-72cffa0c788b))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "C27") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "C19") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "C7") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "C27") (unit 1)
         )
@@ -2335,7 +2218,7 @@
   (symbol (lib_id "power:GND") (at 85.09 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b254ce51-3fdf-4033-aeb8-591d938735e8)
-    (property "Reference" "#PWR028" (at 85.09 58.42 0)
+    (property "Reference" "#PWR075" (at 85.09 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 82.55 55.88 0)
@@ -2350,9 +2233,6 @@
     (pin "1" (uuid c446e4d1-8f58-414e-a98d-277e03159938))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR028") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR075") (unit 1)
         )
@@ -2368,7 +2248,7 @@
   (symbol (lib_id "Device:R_Small") (at 198.755 122.555 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7a3c1bd-c797-4858-87ef-8322c25237f2)
-    (property "Reference" "R16" (at 203.835 121.285 0)
+    (property "Reference" "R23" (at 203.835 121.285 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 203.835 123.825 0)
@@ -2402,12 +2282,6 @@
     (pin "2" (uuid c387fbb9-bc92-44b4-96cd-8ee0e12fdd23))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R16") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R5") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R23") (unit 1)
         )
@@ -2423,7 +2297,7 @@
   (symbol (lib_id "Sensor:BME680") (at 96.52 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca539278-f386-44cd-94cb-bc075bd10707)
-    (property "Reference" "U2" (at 85.09 67.31 0)
+    (property "Reference" "U7" (at 85.09 67.31 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "BME688" (at 85.09 69.85 0)
@@ -2463,9 +2337,6 @@
     (pin "8" (uuid d77c3f8c-2e92-4b40-bd63-c0be2a7a03b0))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "U2") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "U7") (unit 1)
         )
@@ -2481,7 +2352,7 @@
   (symbol (lib_id "power:+BATT") (at 82.55 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid caf3b2dd-e994-4bd6-bc8f-795503f7a399)
-    (property "Reference" "#PWR070" (at 82.55 118.11 0)
+    (property "Reference" "#PWR074" (at 82.55 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 82.55 110.49 0)
@@ -2496,15 +2367,6 @@
     (pin "1" (uuid e3252aa7-1104-4fd6-978d-ffddc5796c94))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR070") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR019") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/0bc89df9-c404-42cc-aab4-4237df7294d4"
-          (reference "#PWR084") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR074") (unit 1)
         )
@@ -2525,7 +2387,7 @@
   (symbol (lib_id "Transistor_BJT:MMBT3906") (at 173.355 64.77 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d43dbfb1-1910-460f-b165-54588f75751e)
-    (property "Reference" "Q6" (at 178.435 64.135 0)
+    (property "Reference" "Q3" (at 178.435 64.135 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MMBT3906" (at 178.435 66.675 0)
@@ -2560,9 +2422,6 @@
     (pin "3" (uuid 431a72e1-3234-461d-824b-4126adbafc66))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "Q6") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "Q3") (unit 1)
         )
@@ -2578,7 +2437,7 @@
   (symbol (lib_id "Device:R_Small") (at 210.185 52.07 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e155d713-4bdd-4254-85db-124caaf6a50e)
-    (property "Reference" "R16" (at 215.9 50.8 0)
+    (property "Reference" "R24" (at 215.9 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1M" (at 215.9 53.34 0)
@@ -2612,12 +2471,6 @@
     (pin "2" (uuid 58600c4d-5649-4c09-bae6-1bcb7536f020))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "R16") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/943ab7c0-d00c-4ea0-8716-990ca6b0cb6f"
-          (reference "R5") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "R24") (unit 1)
         )
@@ -2633,7 +2486,7 @@
   (symbol (lib_id "power:+3V3") (at 93.98 44.45 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e70b8eba-1735-44b0-9b36-fa6c0dcaa048)
-    (property "Reference" "#PWR031" (at 93.98 48.26 0)
+    (property "Reference" "#PWR076" (at 93.98 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 88.9 40.64 0)
@@ -2648,9 +2501,6 @@
     (pin "1" (uuid 0e59b75f-c7a7-483d-be2a-9b7cfa95145d))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR031") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR076") (unit 1)
         )
@@ -2666,7 +2516,7 @@
   (symbol (lib_id "power:+3V3") (at 96.52 114.3 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f39848c5-9b3f-429e-9080-fbbab68b6cbc)
-    (property "Reference" "#PWR049" (at 96.52 118.11 0)
+    (property "Reference" "#PWR078" (at 96.52 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 93.98 110.49 0)
@@ -2681,12 +2531,6 @@
     (pin "1" (uuid aed3d901-33c8-47e4-b8d2-6538e8571b99))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR049") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/0bc89df9-c404-42cc-aab4-4237df7294d4"
-          (reference "#PWR086") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/416559aa-55f3-4db2-bf13-04c2bb6b0caa"
           (reference "#PWR078") (unit 1)
         )

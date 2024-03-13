@@ -565,7 +565,7 @@
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 135.255 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 30640bdc-93d9-4cac-ba54-6bb52a06aad7)
-    (property "Reference" "Q1" (at 135.255 44.45 90)
+    (property "Reference" "Q6" (at 135.255 44.45 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AO3407A" (at 135.255 46.99 90)
@@ -600,9 +600,6 @@
     (pin "3" (uuid 56ea06d3-4447-4a9d-9ea1-e08ef6d1a42c))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "Q1") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
           (reference "Q6") (unit 1)
         )
@@ -618,7 +615,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 106.68 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3d99f6bc-c1ce-46d4-8275-767b9d01245f)
-    (property "Reference" "TP1" (at 109.22 45.72 0)
+    (property "Reference" "TP6" (at 109.22 45.72 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "+LIPO" (at 102.87 45.72 0)
@@ -651,9 +648,6 @@
     (pin "1" (uuid 4ca3ab9c-fb70-4a40-8999-5c921a2607ec))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "TP1") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
           (reference "TP6") (unit 1)
         )
@@ -669,7 +663,7 @@
   (symbol (lib_id "power:+BATT") (at 149.86 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50a8de8c-8953-4749-a4b5-d53d21b13eaa)
-    (property "Reference" "#PWR070" (at 149.86 52.07 0)
+    (property "Reference" "#PWR091" (at 149.86 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 149.86 43.815 0)
@@ -684,12 +678,6 @@
     (pin "1" (uuid 3bcc9f41-c851-472d-a6c3-b743e28031d4))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR070") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR050") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
           (reference "#PWR091") (unit 1)
         )
@@ -710,7 +698,7 @@
   (symbol (lib_id "power:+BATT") (at 69.85 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f87e3e2-8d51-40d6-8fd4-5a066cab4d2d)
-    (property "Reference" "#PWR070" (at 69.85 48.26 0)
+    (property "Reference" "#PWR089" (at 69.85 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 65.405 43.18 0)
@@ -725,15 +713,6 @@
     (pin "1" (uuid f77f9dfb-14b8-4d3d-9e2c-25e46b034708))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR070") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/7fda2409-1758-4461-822b-801ba75fe202"
-          (reference "#PWR050") (unit 1)
-        )
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/8a163738-8cdd-43d1-ab87-ebdfd2811ec1"
-          (reference "#PWR083") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
           (reference "#PWR089") (unit 1)
         )
@@ -754,7 +733,7 @@
   (symbol (lib_id "power:GND") (at 106.68 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab1a2a30-e759-4c58-b80f-bed03e4a32ae)
-    (property "Reference" "#PWR06" (at 106.68 77.47 0)
+    (property "Reference" "#PWR090" (at 106.68 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 106.68 76.2 0)
@@ -769,9 +748,6 @@
     (pin "1" (uuid d52a4bd8-5690-445b-8bce-37a74bc625dd))
     (instances
       (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR06") (unit 1)
-        )
         (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
           (reference "#PWR090") (unit 1)
         )
