@@ -1,624 +1,1478 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 59b4123e-c7be-466b-a5db-658b8f0c1171)
-
-  (paper "A4")
-
-  (title_block
-    (title "Teapotlabs Plantpal")
-    (date "2024-02-01")
-    (rev "4")
-    (company "Teapot Laboratories")
-  )
-
-  (lib_symbols
-    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3V3_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3V3_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 146.685 77.47) (diameter 0) (color 0 0 0 0)
-    (uuid 685e5ff7-d205-4198-8f76-69de7b2bd738)
-  )
-  (junction (at 93.345 82.55) (diameter 0) (color 0 0 0 0)
-    (uuid c761a193-2254-479c-9791-667725e798d4)
-  )
-
-  (wire (pts (xy 140.97 77.47) (xy 146.685 77.47))
-    (stroke (width 0) (type default))
-    (uuid 04850c36-da7d-4117-a3e5-c4a80e8c3820)
-  )
-  (wire (pts (xy 93.345 62.865) (xy 93.345 82.55))
-    (stroke (width 0) (type default))
-    (uuid 054c9c1e-2363-4cce-86a3-f47eb44b894d)
-  )
-  (wire (pts (xy 196.215 85.09) (xy 214.63 85.09))
-    (stroke (width 0) (type default))
-    (uuid 09551080-b385-40cc-be40-dfcef48b05b0)
-  )
-  (wire (pts (xy 93.345 82.55) (xy 103.505 82.55))
-    (stroke (width 0) (type default))
-    (uuid 0d2f1345-6937-4054-b762-abc0b00d6cc4)
-  )
-  (wire (pts (xy 196.215 114.3) (xy 214.63 114.3))
-    (stroke (width 0) (type default))
-    (uuid 11374159-e181-4249-8aeb-a44a7581d9df)
-  )
-  (wire (pts (xy 154.94 53.34) (xy 154.94 73.66))
-    (stroke (width 0) (type default))
-    (uuid 1896b322-5872-4518-bfd5-fd01c51d3067)
-  )
-  (wire (pts (xy 151.765 56.515) (xy 151.765 76.835))
-    (stroke (width 0) (type default))
-    (uuid 35f61bbf-5213-4750-bd5b-998afd8305d4)
-  )
-  (wire (pts (xy 196.215 111.76) (xy 214.63 111.76))
-    (stroke (width 0) (type default))
-    (uuid 380b8bc9-3c01-4798-91dc-a065b61da475)
-  )
-  (wire (pts (xy 146.685 77.47) (xy 146.685 75.565))
-    (stroke (width 0) (type default))
-    (uuid 44d357ed-3378-4177-b368-0aee83a16eac)
-  )
-  (wire (pts (xy 214.63 73.025) (xy 210.185 73.025))
-    (stroke (width 0) (type default))
-    (uuid 4d3b1462-ab75-4d12-b405-d8a096f3b2c4)
-  )
-  (wire (pts (xy 196.215 78.105) (xy 214.63 78.105))
-    (stroke (width 0) (type default))
-    (uuid 4ea4d855-8784-486a-ad11-2ee748f0ed62)
-  )
-  (wire (pts (xy 93.345 82.55) (xy 93.345 109.22))
-    (stroke (width 0) (type default))
-    (uuid 54a6bf3d-4750-4bb8-b2ae-7276f7c51782)
-  )
-  (wire (pts (xy 154.94 73.66) (xy 158.75 73.66))
-    (stroke (width 0) (type default))
-    (uuid 5dd9e6b1-1bab-4809-a070-5f840ed97aff)
-  )
-  (wire (pts (xy 233.045 109.22) (xy 241.3 109.22))
-    (stroke (width 0) (type default))
-    (uuid 64ceb095-30f8-46a4-8da2-4409366798a9)
-  )
-  (wire (pts (xy 82.55 120.65) (xy 158.75 120.65))
-    (stroke (width 0) (type default))
-    (uuid 675d4715-59b3-4753-a273-53fc6e1ea8f1)
-  )
-  (wire (pts (xy 196.215 119.38) (xy 214.63 119.38))
-    (stroke (width 0) (type default))
-    (uuid 6e672932-ff76-42a9-aa05-a7ccbcaa78c6)
-  )
-  (wire (pts (xy 140.97 84.455) (xy 149.225 84.455))
-    (stroke (width 0) (type default))
-    (uuid 83bc947a-8a45-492f-a6cc-b5f37bb90acd)
-  )
-  (wire (pts (xy 207.645 93.98) (xy 214.63 93.98))
-    (stroke (width 0) (type default))
-    (uuid 847ed995-82b5-4ce4-90d9-e57514eb1e06)
-  )
-  (wire (pts (xy 196.215 82.55) (xy 214.63 82.55))
-    (stroke (width 0) (type default))
-    (uuid 8ac07a72-f22f-4cef-9dba-1240fce949d1)
-  )
-  (wire (pts (xy 210.185 73.025) (xy 210.185 67.31))
-    (stroke (width 0) (type default))
-    (uuid 937e693d-d782-4ee6-ada9-67075cb015e3)
-  )
-  (wire (pts (xy 196.215 109.22) (xy 214.63 109.22))
-    (stroke (width 0) (type default))
-    (uuid 945ac1b7-8ef5-46c5-8fb2-125f2baafc46)
-  )
-  (wire (pts (xy 196.215 88.9) (xy 214.63 88.9))
-    (stroke (width 0) (type default))
-    (uuid 97317520-4a3f-4a24-bfc6-4c1f97a6d468)
-  )
-  (wire (pts (xy 151.765 76.835) (xy 158.75 76.835))
-    (stroke (width 0) (type default))
-    (uuid 9dd2cccd-dd29-4887-932b-1596129e5242)
-  )
-  (wire (pts (xy 99.06 78.74) (xy 103.505 78.74))
-    (stroke (width 0) (type default))
-    (uuid a4e253fb-4520-4464-93fa-a2b29bcb7a0d)
-  )
-  (wire (pts (xy 82.55 53.34) (xy 154.94 53.34))
-    (stroke (width 0) (type default))
-    (uuid a72715c3-e59d-4ea2-9362-9cf3e85b8032)
-  )
-  (wire (pts (xy 99.06 59.69) (xy 99.06 78.74))
-    (stroke (width 0) (type default))
-    (uuid b369a6c3-8c3f-4b6c-bcc6-8f8b6cdd4960)
-  )
-  (wire (pts (xy 146.685 80.01) (xy 146.685 77.47))
-    (stroke (width 0) (type default))
-    (uuid b7567cc3-80ed-4994-8429-9c7297c86171)
-  )
-  (wire (pts (xy 196.215 91.44) (xy 214.63 91.44))
-    (stroke (width 0) (type default))
-    (uuid bb57ddad-1209-4fec-907b-0d6dabe5a1d2)
-  )
-  (wire (pts (xy 196.215 75.565) (xy 214.63 75.565))
-    (stroke (width 0) (type default))
-    (uuid c43d0bd5-0987-4fa6-acf4-f0b30d4680d7)
-  )
-  (wire (pts (xy 196.215 116.84) (xy 214.63 116.84))
-    (stroke (width 0) (type default))
-    (uuid c857c429-1f94-433c-a617-74cbb8a6042d)
-  )
-  (wire (pts (xy 146.685 80.01) (xy 158.75 80.01))
-    (stroke (width 0) (type default))
-    (uuid d1b13137-651d-4739-a8c6-beb3e85813a5)
-  )
-  (wire (pts (xy 196.215 121.92) (xy 214.63 121.92))
-    (stroke (width 0) (type default))
-    (uuid d9c43402-0b0a-48c2-ab3a-86593cb7edf9)
-  )
-  (wire (pts (xy 140.97 87.63) (xy 158.75 87.63))
-    (stroke (width 0) (type default))
-    (uuid e1eb1773-5d9f-4bf2-a4cd-f4870460783b)
-  )
-  (wire (pts (xy 82.55 109.22) (xy 93.345 109.22))
-    (stroke (width 0) (type default))
-    (uuid e3ee17e3-57bf-46aa-9399-b2bbb0d4dfc2)
-  )
-  (wire (pts (xy 82.55 82.55) (xy 93.345 82.55))
-    (stroke (width 0) (type default))
-    (uuid e9162f5f-a730-415c-a510-6fac8e2e214b)
-  )
-  (wire (pts (xy 82.55 56.515) (xy 151.765 56.515))
-    (stroke (width 0) (type default))
-    (uuid ee1dabf8-5b36-4618-8c51-bb58ff6d107c)
-  )
-  (wire (pts (xy 82.55 62.865) (xy 93.345 62.865))
-    (stroke (width 0) (type default))
-    (uuid f4c0cba4-0102-4683-8cf7-cb2a19d9b467)
-  )
-  (wire (pts (xy 82.55 59.69) (xy 99.06 59.69))
-    (stroke (width 0) (type default))
-    (uuid f63c6361-806c-4cd6-af98-77b7b037ca68)
-  )
-  (wire (pts (xy 82.55 118.11) (xy 158.75 118.11))
-    (stroke (width 0) (type default))
-    (uuid fa98467c-8e6a-46eb-a824-cd8db12493e4)
-  )
-
-  (label "+3V3D" (at 149.225 84.455 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 1affb306-5c70-4e63-beda-db1e3a9e25cd)
-  )
-  (label "+3V3D" (at 241.3 109.22 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 2c80fc73-a266-4e64-a235-4caa4b006b46)
-  )
-  (label "SDA" (at 198.12 78.105 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ab92560e-b476-4768-8b7b-72d33902cb0d)
-  )
-  (label "+BATT" (at 90.805 82.55 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid bac4451a-d8dd-4405-b598-d73bb7a5f7e5)
-  )
-  (label "SCL" (at 198.12 75.565 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d7c5c466-0f76-4c11-85a6-ddbe834e5f9f)
-  )
-  (label "+BATT" (at 207.645 93.98 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid fcb69a5b-9bec-45c2-9b92-d8bab514e6e0)
-  )
-
-  (symbol (lib_id "power:+3V3") (at 210.185 67.31 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a78e9262-710f-4f3a-812d-f01a243c2995)
-    (property "Reference" "#PWR02" (at 210.185 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 211.455 63.5 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 210.185 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 210.185 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid be5085d5-14c6-4182-95c3-b6479ff32fea))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR0103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 146.685 75.565 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e8e4f0ee-475a-4163-a645-408aa58a1d66)
-    (property "Reference" "#PWR062" (at 146.685 79.375 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 147.955 71.755 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 146.685 75.565 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 146.685 75.565 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5f3667d8-692c-421c-8a0f-4ea0d5904000))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
-          (reference "#PWR062") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR0103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 103.505 74.93) (size 37.465 15.24) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 0bc89df9-c404-42cc-aab4-4237df7294d4)
-    (property "Sheetname" "Power Regulator" (at 103.505 74.2184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power_regulator.kicad_sch" (at 103.505 90.7546 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "LDO_EN" input (at 103.505 78.74 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0cc573cd-efd4-400b-84a3-063166fc5b4a)
-    )
-    (pin "+BATT" input (at 103.505 82.55 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid c59f8168-6bd2-4e8f-95b2-1ef55c14b5b6)
-    )
-    (pin "+3V3" output (at 140.97 77.47 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 23a5c120-86b9-45f8-94a5-8b535185ee7d)
-    )
-    (pin "DISPLAY_EN" input (at 140.97 87.63 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid a9014f3f-21eb-4fe4-9b5a-ee634c454f4f)
-    )
-    (pin "+3V3D" output (at 140.97 84.455 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid d02bbd1a-b3bf-4a49-944c-66977b26acce)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 214.63 105.41) (size 18.415 20.955) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 3265fc00-478b-4188-a908-4fc9b1aaf6ab)
-    (property "Sheetname" "Display" (at 214.63 104.6984 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "display.kicad_sch" (at 214.63 126.9496 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SCLK" input (at 214.63 119.38 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 728a5339-8347-499e-9b0b-d296e2cd1d6c)
-    )
-    (pin "SDI" input (at 214.63 121.92 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 876b6da5-6be4-46b7-9a14-95a00d1efa03)
-    )
-    (pin "CS" input (at 214.63 116.84 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid ee356ca2-c02b-4c59-bb95-39939b9d7c20)
-    )
-    (pin "BUSY" output (at 214.63 109.22 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6163d715-a961-4eca-8839-a9df476a8243)
-    )
-    (pin "RST" input (at 214.63 111.76 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6dad7ded-44e0-42e9-9be4-cad87e73f7f8)
-    )
-    (pin "DC" input (at 214.63 114.3 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid ea8ffa68-7665-49c1-863e-f6f81d8c4900)
-    )
-    (pin "+3V3D" input (at 233.045 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 7329821a-571c-4748-b3a5-2190227dca8e)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "8"))
-      )
-    )
-  )
-
-  (sheet (at 214.63 70.485) (size 19.05 26.035) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 416559aa-55f3-4db2-bf13-04c2bb6b0caa)
-    (property "Sheetname" "Sensor" (at 214.63 69.7734 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "sensor.kicad_sch" (at 214.63 97.1046 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "PWM" input (at 214.63 82.55 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid c93f05cc-ec06-4c01-a2c2-5277f3639134)
-    )
-    (pin "SENSE_OUT" output (at 214.63 85.09 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 043ebda6-9777-42bf-974b-e51026900390)
-    )
-    (pin "BATT_MEAS" output (at 214.63 88.9 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 001912b5-9063-457b-9a22-56eb534b7ee4)
-    )
-    (pin "BATT_MEAS_EN" input (at 214.63 91.44 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d2a5a1a2-cb80-47ce-84da-cdeb0808400e)
-    )
-    (pin "SCL" input (at 214.63 75.565 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b851aa6f-820a-4abe-8c2a-25a6084729f8)
-    )
-    (pin "SDA" bidirectional (at 214.63 78.105 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid e8593c44-0e8a-4572-8018-f777982f3bd9)
-    )
-    (pin "+BATT" input (at 214.63 93.98 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 514999b7-ba74-423d-8a46-e09f72f7741d)
-    )
-    (pin "+3V3" input (at 214.63 73.025 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0115d005-4b92-4991-a9b6-3b1934d91823)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 60.325 76.2) (size 22.225 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 76cc1a03-b597-4ef0-85b8-85a2d617e76b)
-    (property "Sheetname" "Battery" (at 60.325 75.4884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "battery.kicad_sch" (at 60.325 89.4846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "+BATT" bidirectional (at 82.55 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b3bd2389-4d3c-4bd1-8a22-8bf4502e7238)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 57.15 105.41) (size 25.4 20.955) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 7fda2409-1758-4461-822b-801ba75fe202)
-    (property "Sheetname" "USB Power" (at 57.15 104.6984 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "usb_power.kicad_sch" (at 57.15 126.9496 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "USB_D+" output (at 82.55 118.11 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 8892d787-5b0f-4ec8-91bf-40591848ba84)
-    )
-    (pin "USB_D-" output (at 82.55 120.65 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid c6aa4dec-fec8-495a-ab83-aaf030351178)
-    )
-    (pin "+BATT" bidirectional (at 82.55 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 56d0eb41-8176-4da2-93c5-8f205d418a51)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 55.245 50.8) (size 27.305 14.605) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 8a163738-8cdd-43d1-ab87-ebdfd2811ec1)
-    (property "Sheetname" "Solar Power" (at 55.245 50.0884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "solar_power.kicad_sch" (at 55.245 65.9896 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "LDO_EN" output (at 82.55 59.69 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 58205c2f-020a-47ed-911b-9c61299381ac)
-    )
-    (pin "PWR_STATUS" output (at 82.55 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 438a5d40-ffef-4f28-8700-d9f844ac2895)
-    )
-    (pin "+BATT" bidirectional (at 82.55 62.865 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f23b82a4-43f1-4e3e-96bf-024744cd8140)
-    )
-    (pin "MPP_STATUS" output (at 82.55 56.515 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 95ec860a-5e72-4ed4-830f-f28b83a928c1)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 158.75 71.12) (size 37.465 54.61) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 943ab7c0-d00c-4ea0-8716-990ca6b0cb6f)
-    (property "Sheetname" "Main Controller" (at 158.75 70.4084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "main_controller.kicad_sch" (at 158.75 126.3146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SDA" bidirectional (at 196.215 78.105 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 29a0fb94-f858-4111-9f35-3e466cd308d7)
-    )
-    (pin "USB_D+" input (at 158.75 118.11 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 977a0276-c28d-4c62-8c7d-6aaca24a4a10)
-    )
-    (pin "USB_D-" input (at 158.75 120.65 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 67c0f035-8cfb-4392-a8f6-5df3d50a0be1)
-    )
-    (pin "BATT_MEAS_EN" output (at 196.215 91.44 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid ef45a878-2c12-4e72-8928-44880ae7ccab)
-    )
-    (pin "BATT_MEAS" input (at 196.215 88.9 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 62175acc-66f9-46d5-a9c3-0a1da39d7b38)
-    )
-    (pin "PWM" output (at 196.215 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b0f2b919-dcb4-46cd-9d2a-68431134854e)
-    )
-    (pin "SENSE_OUT" input (at 196.215 85.09 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f18e2dc3-2262-46e4-a3fd-0416c576019a)
-    )
-    (pin "SCL" output (at 196.215 75.565 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 499595d9-020f-4054-9e92-df7abed25109)
-    )
-    (pin "PWR_STATUS" input (at 158.75 73.66 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d7374f01-438e-46e5-a83c-4c9521731591)
-    )
-    (pin "+3V3" input (at 158.75 80.01 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 7902f89b-c4ee-4b4e-ade4-b46f9770a00a)
-    )
-    (pin "SCLK" output (at 196.215 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid e4426c9d-fa0a-445f-97ec-6ef1bd66e95c)
-    )
-    (pin "RST" output (at 196.215 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 818c7522-71dd-4bf1-9a87-ca01ff61397e)
-    )
-    (pin "DC" output (at 196.215 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 8a7556c6-7b94-4fd9-8ac0-746601372cda)
-    )
-    (pin "CS" output (at 196.215 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid c56a6e41-1b43-4f22-b081-f449b4e92899)
-    )
-    (pin "BUSY" input (at 196.215 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 255ba0d7-7186-4984-8fc9-e519a535e380)
-    )
-    (pin "SDI" output (at 196.215 121.92 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 85294df8-1fcd-4772-b072-56057ad71a43)
-    )
-    (pin "MPP_STATUS" input (at 158.75 76.835 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 10e25a3f-cbab-4cb8-a636-1fc3c536a49d)
-    )
-    (pin "DISPLAY_EN" output (at 158.75 87.63 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid abed216f-5d81-4c1f-9706-3830da45c35c)
-    )
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171" (page "2"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "59b4123e-c7be-466b-a5db-658b8f0c1171")
+	(paper "A4")
+	(title_block
+		(title "Teapotlabs Plantpal")
+		(date "2024-02-01")
+		(rev "4")
+		(company "Teapot Laboratories")
+	)
+	(lib_symbols
+		(symbol "power:+3V3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 146.685 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "685e5ff7-d205-4198-8f76-69de7b2bd738")
+	)
+	(junction
+		(at 93.345 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c761a193-2254-479c-9791-667725e798d4")
+	)
+	(wire
+		(pts
+			(xy 140.97 77.47) (xy 146.685 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04850c36-da7d-4117-a3e5-c4a80e8c3820")
+	)
+	(wire
+		(pts
+			(xy 93.345 62.865) (xy 93.345 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "054c9c1e-2363-4cce-86a3-f47eb44b894d")
+	)
+	(wire
+		(pts
+			(xy 196.215 85.09) (xy 214.63 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09551080-b385-40cc-be40-dfcef48b05b0")
+	)
+	(wire
+		(pts
+			(xy 93.345 82.55) (xy 103.505 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2f1345-6937-4054-b762-abc0b00d6cc4")
+	)
+	(wire
+		(pts
+			(xy 196.215 114.3) (xy 214.63 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11374159-e181-4249-8aeb-a44a7581d9df")
+	)
+	(wire
+		(pts
+			(xy 154.94 53.34) (xy 154.94 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1896b322-5872-4518-bfd5-fd01c51d3067")
+	)
+	(wire
+		(pts
+			(xy 151.765 56.515) (xy 151.765 76.835)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35f61bbf-5213-4750-bd5b-998afd8305d4")
+	)
+	(wire
+		(pts
+			(xy 196.215 111.76) (xy 214.63 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "380b8bc9-3c01-4798-91dc-a065b61da475")
+	)
+	(wire
+		(pts
+			(xy 146.685 77.47) (xy 146.685 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d357ed-3378-4177-b368-0aee83a16eac")
+	)
+	(wire
+		(pts
+			(xy 214.63 73.025) (xy 210.185 73.025)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d3b1462-ab75-4d12-b405-d8a096f3b2c4")
+	)
+	(wire
+		(pts
+			(xy 196.215 78.105) (xy 214.63 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea4d855-8784-486a-ad11-2ee748f0ed62")
+	)
+	(wire
+		(pts
+			(xy 93.345 82.55) (xy 93.345 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54a6bf3d-4750-4bb8-b2ae-7276f7c51782")
+	)
+	(wire
+		(pts
+			(xy 154.94 73.66) (xy 158.75 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dd9e6b1-1bab-4809-a070-5f840ed97aff")
+	)
+	(wire
+		(pts
+			(xy 233.045 109.22) (xy 241.3 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64ceb095-30f8-46a4-8da2-4409366798a9")
+	)
+	(wire
+		(pts
+			(xy 82.55 120.65) (xy 158.75 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "675d4715-59b3-4753-a273-53fc6e1ea8f1")
+	)
+	(wire
+		(pts
+			(xy 196.215 119.38) (xy 214.63 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e672932-ff76-42a9-aa05-a7ccbcaa78c6")
+	)
+	(wire
+		(pts
+			(xy 140.97 84.455) (xy 149.225 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83bc947a-8a45-492f-a6cc-b5f37bb90acd")
+	)
+	(wire
+		(pts
+			(xy 207.645 93.98) (xy 214.63 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "847ed995-82b5-4ce4-90d9-e57514eb1e06")
+	)
+	(wire
+		(pts
+			(xy 196.215 82.55) (xy 214.63 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac07a72-f22f-4cef-9dba-1240fce949d1")
+	)
+	(wire
+		(pts
+			(xy 210.185 73.025) (xy 210.185 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937e693d-d782-4ee6-ada9-67075cb015e3")
+	)
+	(wire
+		(pts
+			(xy 196.215 109.22) (xy 214.63 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "945ac1b7-8ef5-46c5-8fb2-125f2baafc46")
+	)
+	(wire
+		(pts
+			(xy 196.215 88.9) (xy 214.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97317520-4a3f-4a24-bfc6-4c1f97a6d468")
+	)
+	(wire
+		(pts
+			(xy 151.765 76.835) (xy 158.75 76.835)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dd2cccd-dd29-4887-932b-1596129e5242")
+	)
+	(wire
+		(pts
+			(xy 99.06 78.74) (xy 103.505 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e253fb-4520-4464-93fa-a2b29bcb7a0d")
+	)
+	(wire
+		(pts
+			(xy 82.55 53.34) (xy 154.94 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a72715c3-e59d-4ea2-9362-9cf3e85b8032")
+	)
+	(wire
+		(pts
+			(xy 99.06 59.69) (xy 99.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b369a6c3-8c3f-4b6c-bcc6-8f8b6cdd4960")
+	)
+	(wire
+		(pts
+			(xy 146.685 80.01) (xy 146.685 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7567cc3-80ed-4994-8429-9c7297c86171")
+	)
+	(wire
+		(pts
+			(xy 196.215 91.44) (xy 214.63 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb57ddad-1209-4fec-907b-0d6dabe5a1d2")
+	)
+	(wire
+		(pts
+			(xy 196.215 75.565) (xy 214.63 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43d0bd5-0987-4fa6-acf4-f0b30d4680d7")
+	)
+	(wire
+		(pts
+			(xy 196.215 116.84) (xy 214.63 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c857c429-1f94-433c-a617-74cbb8a6042d")
+	)
+	(wire
+		(pts
+			(xy 146.685 80.01) (xy 158.75 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1b13137-651d-4739-a8c6-beb3e85813a5")
+	)
+	(wire
+		(pts
+			(xy 196.215 121.92) (xy 214.63 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c43402-0b0a-48c2-ab3a-86593cb7edf9")
+	)
+	(wire
+		(pts
+			(xy 140.97 87.63) (xy 158.75 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1eb1773-5d9f-4bf2-a4cd-f4870460783b")
+	)
+	(wire
+		(pts
+			(xy 82.55 109.22) (xy 93.345 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ee17e3-57bf-46aa-9399-b2bbb0d4dfc2")
+	)
+	(wire
+		(pts
+			(xy 82.55 82.55) (xy 93.345 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9162f5f-a730-415c-a510-6fac8e2e214b")
+	)
+	(wire
+		(pts
+			(xy 82.55 56.515) (xy 151.765 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee1dabf8-5b36-4618-8c51-bb58ff6d107c")
+	)
+	(wire
+		(pts
+			(xy 82.55 62.865) (xy 93.345 62.865)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4c0cba4-0102-4683-8cf7-cb2a19d9b467")
+	)
+	(wire
+		(pts
+			(xy 82.55 59.69) (xy 99.06 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f63c6361-806c-4cd6-af98-77b7b037ca68")
+	)
+	(wire
+		(pts
+			(xy 82.55 118.11) (xy 158.75 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa98467c-8e6a-46eb-a824-cd8db12493e4")
+	)
+	(label "+3V3D"
+		(at 149.225 84.455 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1affb306-5c70-4e63-beda-db1e3a9e25cd")
+	)
+	(label "+3V3D"
+		(at 241.3 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2c80fc73-a266-4e64-a235-4caa4b006b46")
+	)
+	(label "SDA"
+		(at 198.12 78.105 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab92560e-b476-4768-8b7b-72d33902cb0d")
+	)
+	(label "+BATT"
+		(at 90.805 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bac4451a-d8dd-4405-b598-d73bb7a5f7e5")
+	)
+	(label "SCL"
+		(at 198.12 75.565 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7c5c466-0f76-4c11-85a6-ddbe834e5f9f")
+	)
+	(label "+BATT"
+		(at 207.645 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fcb69a5b-9bec-45c2-9b92-d8bab514e6e0")
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 210.185 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a78e9262-710f-4f3a-812d-f01a243c2995")
+		(property "Reference" "#PWR02"
+			(at 210.185 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 211.455 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.185 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.185 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.185 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be5085d5-14c6-4182-95c3-b6479ff32fea")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 146.685 75.565 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8e4f0ee-475a-4163-a645-408aa58a1d66")
+		(property "Reference" "#PWR062"
+			(at 146.685 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 147.955 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.685 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.685 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.685 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f3667d8-692c-421c-8a0f-4ea0d5904000")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 103.505 74.93)
+		(size 37.465 15.24)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0bc89df9-c404-42cc-aab4-4237df7294d4")
+		(property "Sheetname" "Power Regulator"
+			(at 103.505 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_regulator.kicad_sch"
+			(at 103.505 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LDO_EN" input
+			(at 103.505 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0cc573cd-efd4-400b-84a3-063166fc5b4a")
+		)
+		(pin "+BATT" input
+			(at 103.505 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c59f8168-6bd2-4e8f-95b2-1ef55c14b5b6")
+		)
+		(pin "+3V3" output
+			(at 140.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "23a5c120-86b9-45f8-94a5-8b535185ee7d")
+		)
+		(pin "DISPLAY_EN" input
+			(at 140.97 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a9014f3f-21eb-4fe4-9b5a-ee634c454f4f")
+		)
+		(pin "+3V3D" output
+			(at 140.97 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d02bbd1a-b3bf-4a49-944c-66977b26acce")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 214.63 105.41)
+		(size 18.415 20.955)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3265fc00-478b-4188-a908-4fc9b1aaf6ab")
+		(property "Sheetname" "Display"
+			(at 214.63 104.6984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display.kicad_sch"
+			(at 214.63 126.9496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SCLK" input
+			(at 214.63 119.38 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "728a5339-8347-499e-9b0b-d296e2cd1d6c")
+		)
+		(pin "SDI" input
+			(at 214.63 121.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "876b6da5-6be4-46b7-9a14-95a00d1efa03")
+		)
+		(pin "CS" input
+			(at 214.63 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ee356ca2-c02b-4c59-bb95-39939b9d7c20")
+		)
+		(pin "BUSY" output
+			(at 214.63 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6163d715-a961-4eca-8839-a9df476a8243")
+		)
+		(pin "RST" input
+			(at 214.63 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6dad7ded-44e0-42e9-9be4-cad87e73f7f8")
+		)
+		(pin "DC" input
+			(at 214.63 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ea8ffa68-7665-49c1-863e-f6f81d8c4900")
+		)
+		(pin "+3V3D" input
+			(at 233.045 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7329821a-571c-4748-b3a5-2190227dca8e")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 214.63 70.485)
+		(size 19.05 26.035)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "416559aa-55f3-4db2-bf13-04c2bb6b0caa")
+		(property "Sheetname" "Sensor"
+			(at 214.63 69.7734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensor.kicad_sch"
+			(at 214.63 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM" input
+			(at 214.63 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c93f05cc-ec06-4c01-a2c2-5277f3639134")
+		)
+		(pin "SENSE_OUT" output
+			(at 214.63 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "043ebda6-9777-42bf-974b-e51026900390")
+		)
+		(pin "BATT_MEAS" output
+			(at 214.63 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "001912b5-9063-457b-9a22-56eb534b7ee4")
+		)
+		(pin "BATT_MEAS_EN" input
+			(at 214.63 91.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d2a5a1a2-cb80-47ce-84da-cdeb0808400e")
+		)
+		(pin "SCL" input
+			(at 214.63 75.565 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b851aa6f-820a-4abe-8c2a-25a6084729f8")
+		)
+		(pin "SDA" bidirectional
+			(at 214.63 78.105 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e8593c44-0e8a-4572-8018-f777982f3bd9")
+		)
+		(pin "+BATT" input
+			(at 214.63 93.98 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "514999b7-ba74-423d-8a46-e09f72f7741d")
+		)
+		(pin "+3V3" input
+			(at 214.63 73.025 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0115d005-4b92-4991-a9b6-3b1934d91823")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 60.325 76.2)
+		(size 22.225 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "76cc1a03-b597-4ef0-85b8-85a2d617e76b")
+		(property "Sheetname" "Battery"
+			(at 60.325 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "battery.kicad_sch"
+			(at 60.325 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+BATT" bidirectional
+			(at 82.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b3bd2389-4d3c-4bd1-8a22-8bf4502e7238")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 105.41)
+		(size 25.4 20.955)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7fda2409-1758-4461-822b-801ba75fe202")
+		(property "Sheetname" "USB Power"
+			(at 57.15 104.6984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_power.kicad_sch"
+			(at 57.15 126.9496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_D+" output
+			(at 82.55 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8892d787-5b0f-4ec8-91bf-40591848ba84")
+		)
+		(pin "USB_D-" output
+			(at 82.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c6aa4dec-fec8-495a-ab83-aaf030351178")
+		)
+		(pin "+BATT" bidirectional
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "56d0eb41-8176-4da2-93c5-8f205d418a51")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 55.245 50.8)
+		(size 27.305 14.605)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8a163738-8cdd-43d1-ab87-ebdfd2811ec1")
+		(property "Sheetname" "Solar Power"
+			(at 55.245 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "solar_power.kicad_sch"
+			(at 55.245 65.9896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LDO_EN" output
+			(at 82.55 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "58205c2f-020a-47ed-911b-9c61299381ac")
+		)
+		(pin "PWR_STATUS" output
+			(at 82.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "438a5d40-ffef-4f28-8700-d9f844ac2895")
+		)
+		(pin "+BATT" bidirectional
+			(at 82.55 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f23b82a4-43f1-4e3e-96bf-024744cd8140")
+		)
+		(pin "MPP_STATUS" output
+			(at 82.55 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "95ec860a-5e72-4ed4-830f-f28b83a928c1")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 71.12)
+		(size 37.465 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "943ab7c0-d00c-4ea0-8716-990ca6b0cb6f")
+		(property "Sheetname" "Main Controller"
+			(at 158.75 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "main_controller.kicad_sch"
+			(at 158.75 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 196.215 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "29a0fb94-f858-4111-9f35-3e466cd308d7")
+		)
+		(pin "USB_D+" input
+			(at 158.75 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "977a0276-c28d-4c62-8c7d-6aaca24a4a10")
+		)
+		(pin "USB_D-" input
+			(at 158.75 120.65 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "67c0f035-8cfb-4392-a8f6-5df3d50a0be1")
+		)
+		(pin "BATT_MEAS_EN" output
+			(at 196.215 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ef45a878-2c12-4e72-8928-44880ae7ccab")
+		)
+		(pin "BATT_MEAS" input
+			(at 196.215 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "62175acc-66f9-46d5-a9c3-0a1da39d7b38")
+		)
+		(pin "PWM" output
+			(at 196.215 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b0f2b919-dcb4-46cd-9d2a-68431134854e")
+		)
+		(pin "SENSE_OUT" input
+			(at 196.215 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f18e2dc3-2262-46e4-a3fd-0416c576019a")
+		)
+		(pin "SCL" output
+			(at 196.215 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "499595d9-020f-4054-9e92-df7abed25109")
+		)
+		(pin "PWR_STATUS" input
+			(at 158.75 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d7374f01-438e-46e5-a83c-4c9521731591")
+		)
+		(pin "+3V3" input
+			(at 158.75 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7902f89b-c4ee-4b4e-ade4-b46f9770a00a")
+		)
+		(pin "SCLK" output
+			(at 196.215 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e4426c9d-fa0a-445f-97ec-6ef1bd66e95c")
+		)
+		(pin "RST" output
+			(at 196.215 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "818c7522-71dd-4bf1-9a87-ca01ff61397e")
+		)
+		(pin "DC" output
+			(at 196.215 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8a7556c6-7b94-4fd9-8ac0-746601372cda")
+		)
+		(pin "CS" output
+			(at 196.215 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c56a6e41-1b43-4f22-b081-f449b4e92899")
+		)
+		(pin "BUSY" input
+			(at 196.215 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "255ba0d7-7186-4984-8fc9-e519a535e380")
+		)
+		(pin "SDI" output
+			(at 196.215 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "85294df8-1fcd-4772-b072-56057ad71a43")
+		)
+		(pin "MPP_STATUS" input
+			(at 158.75 76.835 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "10e25a3f-cbab-4cb8-a636-1fc3c536a49d")
+		)
+		(pin "DISPLAY_EN" output
+			(at 158.75 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "abed216f-5d81-4c1f-9706-3830da45c35c")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

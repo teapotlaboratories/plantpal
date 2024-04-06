@@ -1,848 +1,2022 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid f9440f04-40ba-4a04-b934-049cbe550e10)
-
-  (paper "A5")
-
-  (title_block
-    (title "Battery")
-    (date "2024-02-01")
-    (rev "4")
-    (company "Teapot Laboratories")
-  )
-
-  (lib_symbols
-    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "TP" (at 0 6.858 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "TestPoint" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 5.08 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 5.08 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "test point tp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "test point" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Pin* Test*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TestPoint_0_1"
-        (circle (center 0 3.302) (radius 0.762)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "TestPoint_1_1"
-        (pin passive line (at 0 0 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector_Generic:Conn_01x01" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x01" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x01_1_1"
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 1.27) (end 1.27 -1.27)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Battery_Cell" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "BT" (at 2.54 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Battery_Cell" (at 2.54 0 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 1.524 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 1.524 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "battery cell" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Single-cell battery" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Battery_Cell_0_1"
-        (rectangle (start -2.286 1.778) (end 2.286 1.524)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start -1.524 1.016) (end 1.524 0.508)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 0 0.762)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.778)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 3.048)
-            (xy 1.778 3.048)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 3.556)
-            (xy 1.27 2.54)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Battery_Cell_1_1"
-        (pin passive line (at 0 5.08 270) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Q_PMOS_GSD" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "Q" (at 5.08 1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Q_PMOS_GSD" (at 5.08 -1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 5.08 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "P-MOSFET transistor, gate/source/drain" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Q_PMOS_GSD_0_1"
-        (polyline
-          (pts
-            (xy 0.254 0)
-            (xy -2.54 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.254 1.905)
-            (xy 0.254 -1.905)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 -1.27)
-            (xy 0.762 -2.286)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 0.508)
-            (xy 0.762 -0.508)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 2.286)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 2.54)
-            (xy 2.54 1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 -2.54)
-            (xy 2.54 0)
-            (xy 0.762 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 1.778)
-            (xy 3.302 1.778)
-            (xy 3.302 -1.778)
-            (xy 0.762 -1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.286 0)
-            (xy 1.27 0.381)
-            (xy 1.27 -0.381)
-            (xy 2.286 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 2.794 -0.508)
-            (xy 2.921 -0.381)
-            (xy 3.683 -0.381)
-            (xy 3.81 -0.254)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.302 -0.381)
-            (xy 2.921 0.254)
-            (xy 3.683 0.254)
-            (xy 3.302 -0.381)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 1.651 0) (radius 2.794)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.54 -1.778) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (circle (center 2.54 1.778) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "Q_PMOS_GSD_1_1"
-        (pin input line (at -5.08 0 0) (length 2.54)
-          (name "G" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 -5.08 90) (length 2.54)
-          (name "S" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 5.08 270) (length 2.54)
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+BATT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+BATT" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag battery" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+BATT\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+BATT_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+BATT_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+BATT" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 106.68 52.07) (diameter 0) (color 0 0 0 0)
-    (uuid 05e46f54-1e22-4e15-b246-ac8bdc4d2bb4)
-  )
-  (junction (at 119.38 52.07) (diameter 0) (color 0 0 0 0)
-    (uuid 67080e92-86cf-45a5-9158-f1aca078143c)
-  )
-  (junction (at 106.68 64.77) (diameter 0) (color 0 0 0 0)
-    (uuid 84c6bea2-b3fe-48e1-abaf-70c62e29bce0)
-  )
-  (junction (at 106.68 68.58) (diameter 0) (color 0 0 0 0)
-    (uuid 9500e3dc-0d14-4caa-94df-082894009c15)
-  )
-
-  (wire (pts (xy 135.255 59.69) (xy 135.255 68.58))
-    (stroke (width 0) (type default))
-    (uuid 004e7c34-3c86-4708-af80-6d1fff5f8164)
-  )
-  (polyline (pts (xy 81.28 39.37) (xy 60.96 39.37))
-    (stroke (width 0) (type dash))
-    (uuid 0726254d-6f3c-4b68-a5f4-f33345f4166b)
-  )
-  (polyline (pts (xy 60.96 53.34) (xy 81.28 53.34))
-    (stroke (width 0) (type dash))
-    (uuid 1882cbce-a7a5-4dd8-828c-edf963b27711)
-  )
-
-  (wire (pts (xy 106.68 68.58) (xy 106.68 71.12))
-    (stroke (width 0) (type default))
-    (uuid 25e44c26-fbb0-413b-9038-ad7e87d10809)
-  )
-  (wire (pts (xy 149.86 48.26) (xy 149.86 52.07))
-    (stroke (width 0) (type default))
-    (uuid 29a0eda0-8e95-4897-bd78-ff7960c14f15)
-  )
-  (polyline (pts (xy 60.96 39.37) (xy 60.96 53.34))
-    (stroke (width 0) (type dash))
-    (uuid 3592b951-edb2-41fe-9691-504e09a29590)
-  )
-
-  (wire (pts (xy 119.38 52.07) (xy 130.175 52.07))
-    (stroke (width 0) (type default))
-    (uuid 811d13f4-2a7d-4992-b470-01b6cff96921)
-  )
-  (polyline (pts (xy 153.67 39.37) (xy 153.67 87.63))
-    (stroke (width 0.5) (type default))
-    (uuid 8da2e450-2b7c-4aba-b02c-d199feb467ce)
-  )
-
-  (wire (pts (xy 69.85 44.45) (xy 69.85 46.99))
-    (stroke (width 0) (type default))
-    (uuid 995f2c9b-54f4-4b04-ac51-898c1347533c)
-  )
-  (wire (pts (xy 106.68 52.07) (xy 106.68 59.69))
-    (stroke (width 0) (type default))
-    (uuid 9cacec89-b02e-4263-bf40-37e73cbf4641)
-  )
-  (wire (pts (xy 140.335 52.07) (xy 149.86 52.07))
-    (stroke (width 0) (type default))
-    (uuid 9e229a61-8ba4-4334-8d63-5b05150eb5b3)
-  )
-  (polyline (pts (xy 82.55 39.37) (xy 82.55 87.63))
-    (stroke (width 0.5) (type default))
-    (uuid a0231be0-a0fa-441a-86c8-0c54e6cca510)
-  )
-
-  (wire (pts (xy 119.38 64.135) (xy 106.68 64.135))
-    (stroke (width 0) (type default))
-    (uuid b09d7885-3ada-4e94-a56c-73c9848e71d7)
-  )
-  (polyline (pts (xy 81.28 53.34) (xy 81.28 39.37))
-    (stroke (width 0) (type dash))
-    (uuid b594bf58-f37b-4cf6-94a0-cc37b3cd8f60)
-  )
-
-  (wire (pts (xy 106.68 64.77) (xy 106.68 68.58))
-    (stroke (width 0) (type default))
-    (uuid b796f61e-8a5c-408f-bb2e-e19fbb4ad708)
-  )
-  (wire (pts (xy 119.38 52.07) (xy 119.38 56.515))
-    (stroke (width 0) (type default))
-    (uuid cc9c17b1-7393-442e-b1d6-044e08ea2ea5)
-  )
-  (wire (pts (xy 106.68 68.58) (xy 135.255 68.58))
-    (stroke (width 0) (type default))
-    (uuid d2bbb253-64cb-431d-ac79-45fea2c9f5d4)
-  )
-  (polyline (pts (xy 153.67 87.63) (xy 82.55 87.63))
-    (stroke (width 0.5) (type default))
-    (uuid da594e24-40ff-4d02-878d-e76b0cccc491)
-  )
-
-  (wire (pts (xy 106.68 64.135) (xy 106.68 64.77))
-    (stroke (width 0) (type default))
-    (uuid dd0d5648-0fe2-467b-b3c4-d96f9407b93b)
-  )
-  (wire (pts (xy 69.85 46.99) (xy 71.755 46.99))
-    (stroke (width 0) (type default))
-    (uuid df5dd7df-0272-4f92-8c00-453968fd34cb)
-  )
-  (polyline (pts (xy 82.55 39.37) (xy 153.67 39.37))
-    (stroke (width 0.5) (type default))
-    (uuid e8c9a90f-4de3-4729-bc2c-0b5344862828)
-  )
-
-  (wire (pts (xy 106.68 52.07) (xy 119.38 52.07))
-    (stroke (width 0) (type default))
-    (uuid fb3cb338-a13a-4ec8-8606-7ce086965770)
-  )
-
-  (text "Battery Polar Protection" (at 95.25 85.09 0)
-    (effects (font (size 3 3) (thickness 0.6) bold) (justify left bottom))
-    (uuid 8a0af9ce-fbcf-4224-af15-21afb605aa2d)
-  )
-  (text "Sheets Connection" (at 61.595 52.07 0)
-    (effects (font (size 1.27 1.27) (thickness 0.6) bold) (justify left bottom))
-    (uuid fa551372-2141-4a8b-907c-e17b578858e8)
-  )
-
-  (hierarchical_label "+BATT" (shape bidirectional) (at 71.755 46.99 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 99dbbec7-9626-4b5c-9fda-7c099df7b7a9)
-  )
-
-  (symbol (lib_id "Device:Battery_Cell") (at 119.38 61.595 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1b4c28f2-32dd-42a9-9630-71b86e992bdf)
-    (property "Reference" "BT1" (at 123.825 63.5 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "S2B-PH-SM4-TB(LF)(SN)" (at 133.985 66.04 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "plantpal:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 119.38 60.071 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2102031704_JST-Sales-America-S2B-PH-SM4-TB-LF-SN_C295747.pdf" (at 119.38 60.071 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "Wire To Board Connector 1x2P PH 2mm Male 2A P=2mm" (at 119.38 61.595 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "JST Sales America" (at 119.38 61.595 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "S2B-PH-SM4-TB(LF)(SN)" (at 119.38 61.595 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "LCSC" (at 119.38 61.595 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "C295747" (at 119.38 61.595 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-SM4-TB-LF-SN_C295747.html" (at 119.38 61.595 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c82d5bac-0900-4679-bffe-5f1579b541ff))
-    (pin "2" (uuid 2a3b5668-e377-4021-af0d-97a39d5dc513))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "BT1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Q_PMOS_GSD") (at 135.255 54.61 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 30640bdc-93d9-4cac-ba54-6bb52a06aad7)
-    (property "Reference" "Q6" (at 135.255 44.45 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AO3407A" (at 135.255 46.99 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 132.715 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810231523_Alpha---Omega-Semicon-AO3407A_C15155.pdf" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "MOSFET P Channel 30V 4.3A 48mΩ@10V,4.3A 1.4W" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Alpha & Omega Semicon" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "AO3407A" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "LCSC" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "C15155" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "https://www.lcsc.com/product-detail/MOSFETs_Alpha-Omega-Semicon-AO3407A_C15155.html" (at 135.255 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 82144ecf-200b-4b22-9fe4-294191eb1a56))
-    (pin "2" (uuid 309ca7bd-70db-4ede-bf54-542247f90bce))
-    (pin "3" (uuid 56ea06d3-4447-4a9d-9ea1-e08ef6d1a42c))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "Q6") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "Q1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 106.68 52.07 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3d99f6bc-c1ce-46d4-8275-767b9d01245f)
-    (property "Reference" "TP6" (at 109.22 45.72 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "+LIPO" (at 102.87 45.72 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 111.76 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 111.76 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "" (at 106.68 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "" (at 106.68 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "" (at 106.68 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "" (at 106.68 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "" (at 106.68 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "" (at 106.68 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4ca3ab9c-fb70-4a40-8999-5c921a2607ec))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "TP6") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "TP9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+BATT") (at 149.86 48.26 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 50a8de8c-8953-4749-a4b5-d53d21b13eaa)
-    (property "Reference" "#PWR091" (at 149.86 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+BATT" (at 149.86 43.815 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 149.86 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 149.86 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3bcc9f41-c851-472d-a6c3-b743e28031d4))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR091") (unit 1)
-        )
-      )
-      (project "bwlr1e-prog"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR018") (unit 1)
-        )
-      )
-      (project "feather_rak3172"
-        (path "/a1545928-1195-40b9-b3c4-78f837012afb"
-          (reference "#PWR0131") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+BATT") (at 69.85 44.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6f87e3e2-8d51-40d6-8fd4-5a066cab4d2d)
-    (property "Reference" "#PWR089" (at 69.85 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+BATT" (at 65.405 43.18 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 69.85 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 69.85 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f77f9dfb-14b8-4d3d-9e2c-25e46b034708))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR089") (unit 1)
-        )
-      )
-      (project "bwlr1e-prog"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR018") (unit 1)
-        )
-      )
-      (project "feather_rak3172"
-        (path "/a1545928-1195-40b9-b3c4-78f837012afb"
-          (reference "#PWR0131") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 106.68 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ab1a2a30-e759-4c58-b80f-bed03e4a32ae)
-    (property "Reference" "#PWR090" (at 106.68 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 106.68 76.2 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 106.68 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 106.68 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d52a4bd8-5690-445b-8bce-37a74bc625dd))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "#PWR090") (unit 1)
-        )
-      )
-      (project "bwlr1e"
-        (path "/630c8da6-5464-4eef-824d-89618087f4b4"
-          (reference "#PWR013") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 101.6 59.69 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c1e0367c-b8e7-4323-9ebb-f72966a8363b)
-    (property "Reference" "J2" (at 97.79 56.515 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "+LIPO" (at 96.52 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "On-board Pad" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "" (at 101.6 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1a13fa6c-ba9a-4909-b4eb-75d7bb3c0032))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 101.6 64.77 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d1e3f8b0-44ed-4887-a469-2fa49cc16564)
-    (property "Reference" "J3" (at 97.79 67.945 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "-LIPO" (at 96.52 64.77 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Part Description" "On-board Pad" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor" "" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Part Number" "" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Distributor Link" "" (at 101.6 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0aef189b-e98c-42d0-bd7e-0a7b4bf3e2d9))
-    (instances
-      (project "plantpal"
-        (path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
-          (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f9440f04-40ba-4a04-b934-049cbe550e10")
+	(paper "A5")
+	(title_block
+		(title "Battery")
+		(date "2024-02-01")
+		(rev "4")
+		(company "Teapot Laboratories")
+	)
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Battery_Cell"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Q_PMOS_GSD"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PMOS_GSD"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "P-MOSFET transistor, gate/source/drain"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PMOS_GSD_0_1"
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_PMOS_GSD_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+BATT"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+BATT"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+BATT\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+BATT_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+BATT_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+BATT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 106.68 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05e46f54-1e22-4e15-b246-ac8bdc4d2bb4")
+	)
+	(junction
+		(at 119.38 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67080e92-86cf-45a5-9158-f1aca078143c")
+	)
+	(junction
+		(at 106.68 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84c6bea2-b3fe-48e1-abaf-70c62e29bce0")
+	)
+	(junction
+		(at 106.68 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9500e3dc-0d14-4caa-94df-082894009c15")
+	)
+	(wire
+		(pts
+			(xy 135.255 59.69) (xy 135.255 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004e7c34-3c86-4708-af80-6d1fff5f8164")
+	)
+	(polyline
+		(pts
+			(xy 81.28 39.37) (xy 60.96 39.37)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "0726254d-6f3c-4b68-a5f4-f33345f4166b")
+	)
+	(polyline
+		(pts
+			(xy 60.96 53.34) (xy 81.28 53.34)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "1882cbce-a7a5-4dd8-828c-edf963b27711")
+	)
+	(wire
+		(pts
+			(xy 106.68 68.58) (xy 106.68 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25e44c26-fbb0-413b-9038-ad7e87d10809")
+	)
+	(wire
+		(pts
+			(xy 149.86 48.26) (xy 149.86 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a0eda0-8e95-4897-bd78-ff7960c14f15")
+	)
+	(polyline
+		(pts
+			(xy 60.96 39.37) (xy 60.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3592b951-edb2-41fe-9691-504e09a29590")
+	)
+	(wire
+		(pts
+			(xy 119.38 52.07) (xy 130.175 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "811d13f4-2a7d-4992-b470-01b6cff96921")
+	)
+	(polyline
+		(pts
+			(xy 153.67 39.37) (xy 153.67 87.63)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "8da2e450-2b7c-4aba-b02c-d199feb467ce")
+	)
+	(wire
+		(pts
+			(xy 69.85 44.45) (xy 69.85 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "995f2c9b-54f4-4b04-ac51-898c1347533c")
+	)
+	(wire
+		(pts
+			(xy 106.68 52.07) (xy 106.68 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cacec89-b02e-4263-bf40-37e73cbf4641")
+	)
+	(wire
+		(pts
+			(xy 140.335 52.07) (xy 149.86 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e229a61-8ba4-4334-8d63-5b05150eb5b3")
+	)
+	(polyline
+		(pts
+			(xy 82.55 39.37) (xy 82.55 87.63)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "a0231be0-a0fa-441a-86c8-0c54e6cca510")
+	)
+	(wire
+		(pts
+			(xy 119.38 64.135) (xy 106.68 64.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b09d7885-3ada-4e94-a56c-73c9848e71d7")
+	)
+	(polyline
+		(pts
+			(xy 81.28 53.34) (xy 81.28 39.37)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "b594bf58-f37b-4cf6-94a0-cc37b3cd8f60")
+	)
+	(wire
+		(pts
+			(xy 106.68 64.77) (xy 106.68 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b796f61e-8a5c-408f-bb2e-e19fbb4ad708")
+	)
+	(wire
+		(pts
+			(xy 119.38 52.07) (xy 119.38 56.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc9c17b1-7393-442e-b1d6-044e08ea2ea5")
+	)
+	(wire
+		(pts
+			(xy 106.68 68.58) (xy 135.255 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2bbb253-64cb-431d-ac79-45fea2c9f5d4")
+	)
+	(polyline
+		(pts
+			(xy 153.67 87.63) (xy 82.55 87.63)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "da594e24-40ff-4d02-878d-e76b0cccc491")
+	)
+	(wire
+		(pts
+			(xy 106.68 64.135) (xy 106.68 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd0d5648-0fe2-467b-b3c4-d96f9407b93b")
+	)
+	(wire
+		(pts
+			(xy 69.85 46.99) (xy 71.755 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df5dd7df-0272-4f92-8c00-453968fd34cb")
+	)
+	(polyline
+		(pts
+			(xy 82.55 39.37) (xy 153.67 39.37)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "e8c9a90f-4de3-4729-bc2c-0b5344862828")
+	)
+	(wire
+		(pts
+			(xy 106.68 52.07) (xy 119.38 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3cb338-a13a-4ec8-8606-7ce086965770")
+	)
+	(text "Battery Polar Protection"
+		(exclude_from_sim no)
+		(at 95.25 85.09 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a0af9ce-fbcf-4224-af15-21afb605aa2d")
+	)
+	(text "Sheets Connection"
+		(exclude_from_sim no)
+		(at 61.595 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa551372-2141-4a8b-907c-e17b578858e8")
+	)
+	(hierarchical_label "+BATT"
+		(shape bidirectional)
+		(at 71.755 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "99dbbec7-9626-4b5c-9fda-7c099df7b7a9")
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 119.38 61.595 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b4c28f2-32dd-42a9-9630-71b86e992bdf")
+		(property "Reference" "BT1"
+			(at 123.825 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S2B-PH-SM4-TB(LF)(SN)"
+			(at 133.985 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "plantpal:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+			(at 119.38 60.071 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2102031704_JST-Sales-America-S2B-PH-SM4-TB-LF-SN_C295747.pdf"
+			(at 119.38 60.071 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" "Wire To Board Connector 1x2P PH 2mm Male 2A P=2mm"
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST Sales America"
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "S2B-PH-SM4-TB(LF)(SN)"
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "LCSC"
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "C295747"
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-Sales-America-S2B-PH-SM4-TB-LF-SN_C295747.html"
+			(at 119.38 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c82d5bac-0900-4679-bffe-5f1579b541ff")
+		)
+		(pin "2"
+			(uuid "2a3b5668-e377-4021-af0d-97a39d5dc513")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_PMOS_GSD")
+		(at 135.255 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30640bdc-93d9-4cac-ba54-6bb52a06aad7")
+		(property "Reference" "Q6"
+			(at 135.255 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AO3407A"
+			(at 135.255 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 132.715 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810231523_Alpha---Omega-Semicon-AO3407A_C15155.pdf"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" "MOSFET P Channel 30V 4.3A 48mΩ@10V,4.3A 1.4W"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Alpha & Omega Semicon"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "AO3407A"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "LCSC"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "C15155"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" "https://www.lcsc.com/product-detail/MOSFETs_Alpha-Omega-Semicon-AO3407A_C15155.html"
+			(at 135.255 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82144ecf-200b-4b22-9fe4-294191eb1a56")
+		)
+		(pin "2"
+			(uuid "309ca7bd-70db-4ede-bf54-542247f90bce")
+		)
+		(pin "3"
+			(uuid "56ea06d3-4447-4a9d-9ea1-e08ef6d1a42c")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d99f6bc-c1ce-46d4-8275-767b9d01245f")
+		(property "Reference" "TP6"
+			(at 109.22 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+LIPO"
+			(at 102.87 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 106.68 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ca3ab9c-fb70-4a40-8999-5c921a2607ec")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 149.86 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50a8de8c-8953-4749-a4b5-d53d21b13eaa")
+		(property "Reference" "#PWR091"
+			(at 149.86 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 149.86 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bcc9f41-c851-472d-a6c3-b743e28031d4")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e-prog"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+			(project "feather_rak3172"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#PWR0131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 69.85 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f87e3e2-8d51-40d6-8fd4-5a066cab4d2d")
+		(property "Reference" "#PWR089"
+			(at 69.85 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 65.405 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f77f9dfb-14b8-4d3d-9e2c-25e46b034708")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "#PWR089")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e-prog"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+			(project "feather_rak3172"
+				(path "/a1545928-1195-40b9-b3c4-78f837012afb"
+					(reference "#PWR0131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab1a2a30-e759-4c58-b80f-bed03e4a32ae")
+		(property "Reference" "#PWR090"
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d52a4bd8-5690-445b-8bce-37a74bc625dd")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+			(project "bwlr1e"
+				(path "/630c8da6-5464-4eef-824d-89618087f4b4"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 101.6 59.69 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1e0367c-b8e7-4323-9ebb-f72966a8363b")
+		(property "Reference" "J2"
+			(at 97.79 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+LIPO"
+			(at 96.52 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" "On-board Pad"
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 101.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a13fa6c-ba9a-4909-b4eb-75d7bb3c0032")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 101.6 64.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1e3f8b0-44ed-4887-a469-2fa49cc16564")
+		(property "Reference" "J3"
+			(at 97.79 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-LIPO"
+			(at 96.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Description" "On-board Pad"
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" ""
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link" ""
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aef189b-e98c-42d0-bd7e-0a7b4bf3e2d9")
+		)
+		(instances
+			(project "plantpal"
+				(path "/59b4123e-c7be-466b-a5db-658b8f0c1171/76cc1a03-b597-4ef0-85b8-85a2d617e76b"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
