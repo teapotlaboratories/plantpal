@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "USB Power")
-		(date "2024-02-01")
-		(rev "4")
+		(date "2024-04-06")
+		(rev "5")
 		(company "Teapot Laboratories")
 	)
 	(lib_symbols

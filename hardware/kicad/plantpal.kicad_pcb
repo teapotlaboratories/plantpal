@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Teapotlabs Plantpal")
-		(date "2024-02-01")
-		(rev "4")
+		(date "2024-04-06")
+		(rev "5")
 		(company "Teapot Laboratories")
 	)
 	(layers
@@ -36133,7 +36133,7 @@
 	)
 	(gr_line
 		(start 91.97 60.41)
-		(end 91.97 65.48)
+		(end 91.97 72.38)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -36162,7 +36162,7 @@
 		(uuid "b4919bd3-e951-4877-9b46-50c1afa6c9ed")
 	)
 	(gr_line
-		(start 91.97 65.49)
+		(start 91.97 73.34)
 		(end 91.97 60.42)
 		(stroke
 			(width 0.15)
@@ -36173,7 +36173,7 @@
 	)
 	(gr_line
 		(start 113.7825 55.15)
-		(end 120.91 55.15)
+		(end 120.38 55.15)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -36223,7 +36223,7 @@
 	)
 	(gr_line
 		(start 101.93 66.915)
-		(end 101.93 72.725)
+		(end 101.93 72.2)
 		(stroke
 			(width 0.2)
 			(type default)
@@ -36242,7 +36242,7 @@
 		(uuid "70686aec-cc49-4368-86b4-6a51f96e1b10")
 	)
 	(gr_line
-		(start 112.54 41.49)
+		(start 113.11 41.49)
 		(end 121.02 41.49)
 		(stroke
 			(width 0.15)
@@ -36252,8 +36252,8 @@
 		(uuid "77d8e870-2864-4554-a334-62abbcda1cbd")
 	)
 	(gr_line
-		(start 119.61 63.53)
-		(end 119.61 58.35)
+		(start 119.44 70.56)
+		(end 119.44 58.04)
 		(stroke
 			(width 0.15)
 			(type default)
@@ -36302,7 +36302,7 @@
 		(uuid "a4fe2672-d2fa-45c9-9c35-cdcd2f2f55ff")
 	)
 	(gr_line
-		(start 97.9875 60.35)
+		(start 98.37 60.35)
 		(end 93.9625 60.35)
 		(stroke
 			(width 0.15)
@@ -36353,7 +36353,7 @@
 		(uuid "c5c71168-0952-4669-9f76-ea83a44eb617")
 	)
 	(gr_line
-		(start 103.58 60.1)
+		(start 103.19 60.1)
 		(end 109.83 60.1)
 		(stroke
 			(width 0.15)
@@ -36784,7 +36784,7 @@
 		)
 	)
 	(gr_text "ENVIRONMENTAL SENSOR"
-		(at 118.3 38.7 0)
+		(at 117.87 38.96 0)
 		(layer "B.SilkS" knockout)
 		(uuid "a02f54d2-7b84-45eb-a22a-910b136b5c46")
 		(effects
@@ -36808,7 +36808,7 @@
 		)
 	)
 	(gr_text "3V7 LIPO"
-		(at 93.66 65.52 90)
+		(at 93.28 65.5 90)
 		(layer "B.SilkS" knockout)
 		(uuid "e94c6836-a108-43e4-aabb-ca38a9aebe62")
 		(effects
@@ -37037,7 +37037,7 @@
 			)
 		)
 	)
-	(gr_text "REVISION 4"
+	(gr_text "REVISION 5"
 		(at 125.77 100.17 0)
 		(layer "B.SilkS" knockout)
 		(uuid "f969bdda-0321-44c8-8a9a-b96673f211d9")
@@ -37087,7 +37087,7 @@
 		)
 	)
 	(gr_text "3V7\nLIPO"
-		(at 95.775 67.58 0)
+		(at 94.66 67.49 0)
 		(layer "F.SilkS" knockout)
 		(uuid "0b2a44c5-0cfc-4b39-affd-3593e1c5c3f5")
 		(effects
@@ -37098,8 +37098,8 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "EPD CONNECTOR"
-		(at 102.19 72.46 0)
+	(gr_text "EPD CONNECTOR "
+		(at 101.79 72.24 0)
 		(layer "F.SilkS" knockout)
 		(uuid "28592902-f7c2-4696-8e59-780ad705399a")
 		(effects
@@ -37123,7 +37123,7 @@
 		)
 	)
 	(gr_text "ESD"
-		(at 103.86 43.74 0)
+		(at 103.65 43.36 0)
 		(layer "F.SilkS" knockout)
 		(uuid "42349d6a-4e45-48ca-bbd1-c99d14a72550")
 		(effects
@@ -37135,7 +37135,7 @@
 		)
 	)
 	(gr_text "HARVESTER"
-		(at 100.51 59.78 0)
+		(at 100.51 60.05 0)
 		(layer "F.SilkS" knockout)
 		(uuid "4c095fe2-88b6-460c-95bf-d1af37659606")
 		(effects
@@ -37159,7 +37159,7 @@
 		)
 	)
 	(gr_text "BATT\nSENSE"
-		(at 96.65 62.14 -90)
+		(at 96.65 61.82 -90)
 		(layer "F.SilkS" knockout)
 		(uuid "6f031464-150b-4fab-b507-a4b210c8adba")
 		(effects
@@ -37171,7 +37171,7 @@
 		)
 	)
 	(gr_text "CHG"
-		(at 93.89 50.38 0)
+		(at 93.61 50 0)
 		(layer "F.SilkS" knockout)
 		(uuid "79539ecf-a582-445f-a8ed-4d3e655f5afd")
 		(effects
@@ -37183,7 +37183,7 @@
 		)
 	)
 	(gr_text "MCU"
-		(at 113.87 43.11 90)
+		(at 114.09 42.72 90)
 		(layer "F.SilkS" knockout)
 		(uuid "9332b0d4-a5d2-4064-be85-59e05fd6c232")
 		(effects
@@ -37231,7 +37231,7 @@
 		)
 	)
 	(gr_text "EPD POWER"
-		(at 118.17 67.43 270)
+		(at 118.37 67.12 270)
 		(layer "F.SilkS" knockout)
 		(uuid "b21df706-38ce-40b2-87c2-ca5eb931606b")
 		(effects
@@ -37243,7 +37243,7 @@
 		)
 	)
 	(gr_text "SOLAR CELL"
-		(at 121.84 74.96 0)
+		(at 122.18 75.1 0)
 		(layer "F.SilkS" knockout)
 		(uuid "b42ea93a-fc6b-4b2f-9a67-712261850de0")
 		(effects
@@ -37267,7 +37267,7 @@
 		)
 	)
 	(gr_text "SOIL MOISTURE\nSENSING"
-		(at 124.98 59.36 90)
+		(at 124.54 59.31 90)
 		(layer "F.SilkS" knockout)
 		(uuid "be254c4d-6821-4634-999e-649adea1eaa1")
 		(effects
@@ -37279,7 +37279,7 @@
 		)
 	)
 	(gr_text "PWR INPUT"
-		(at 93.64 73.56 90)
+		(at 93.3 73.56 90)
 		(layer "F.SilkS" knockout)
 		(uuid "cff1bb92-a3af-4fb7-8c42-f7cbf74ac82f")
 		(effects
@@ -37327,7 +37327,7 @@
 		)
 	)
 	(gr_text "LDO"
-		(at 119.7 56.38 0)
+		(at 119.45 56.09 0)
 		(layer "F.SilkS" knockout)
 		(uuid "f4769a31-c2e8-4307-8ae0-ac82277516b8")
 		(effects
