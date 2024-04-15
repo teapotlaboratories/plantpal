@@ -489,7 +489,7 @@
         "name": "50Ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.21,
+        "track_width": 0.255,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
