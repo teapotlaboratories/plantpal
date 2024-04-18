@@ -42,9 +42,10 @@ The project won't be possible without the amazing work from people across the gl
 	- Move BME688 to bottom layer
 	- Improve antenna layout
 - **Revision 4**: Re-wire EPD remaining power to +3V3D
+- **Revision 5**: Re-trace Wifi antenna to conform with the new stack-up
 
 ## Release
-- **Revision 4.1**: Based on revision 4.0, with BoM changes.
+- **Release 4.1**: Based on revision 4.0, with BoM changes.
   - Change charge rate resistor to 2K for 500mA
   - Update solar cell components to latest available  
 

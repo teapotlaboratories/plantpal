@@ -18,7 +18,7 @@ SUGGESTED STACK-UP
 
 L1	Copper		1oz					plantpal-F_Cu.gbr
 
-	Prepreg		0.11mm		Dk=4.29 (2116)
+	Prepreg		0.137mm		Dk=4.29 (2116)
 
 L2	Copper		1oz					plantpal-In1_Cu.gbr
 
@@ -26,7 +26,7 @@ L2	Copper		1oz					plantpal-In1_Cu.gbr
 
 L3	Copper		1oz					plantpal-In2_Cu.gbr
 
-	Prepreg		0.11mm		Dk=4.29 (2116)
+	Prepreg		0.137mm			Dk=4.29 (2116)
 
 L4	Copper		1oz					plantpal-B_Cu.gbr
 
