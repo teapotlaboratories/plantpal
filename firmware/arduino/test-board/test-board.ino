@@ -1,4 +1,6 @@
+#include <WiFi.h>
 #include "Zanshin_BME680.h"  // Include the BME680 Sensor library
+#include <ESPping.h>
 
 #include <GxEPD2_BW.h>
 #include <Fonts/FreeMonoBold9pt7b.h>
@@ -60,10 +62,50 @@ BME680_Class BME680;
 #define uS_TO_S_FACTOR 1000000ULL  /* Conversion factor for micro seconds to seconds */
 #define TIME_TO_SLEEP  15        /* Time ESP32 will go to sleep (in seconds) */
 
-/* variable to catch interrupt events */
+/* Menu configuration */
+#define OSM_SENSOR_READINGS 0
+#define OSM_WIFI_STATUS 1
+#define OSM_HAPPY_FACE 2
+#define OSM_MAX_MENU 3 
+static uint8_t current_menu = 0;
+
+
+/* setup interrupt routine and variable */
 static uint32_t total_event_pwr_status;
 static uint32_t total_event_mpp_status;
 static uint32_t total_event_user_button;
+static bool button_pressed = false;
+
+// isr for processing power status
+void process_power_status() {
+  total_event_pwr_status = ++total_event_pwr_status > 99999 ? 0 : total_event_pwr_status;
+}
+
+// isr for processing mpp status
+void process_mpp_status() {
+  total_event_mpp_status = ++total_event_mpp_status > 9999 ? 0 : total_event_mpp_status;
+}
+
+// isr for processing user button
+void process_user_button() {
+  total_event_user_button = ++total_event_user_button > 999 ? 0 : total_event_user_button;
+  button_pressed = true;
+}
+
+/* WiFi Credential */
+const char* ssid     = "SET_SSID_HERE";
+const char* password = "SET_PASSWORD_HERE";
+
+/* lazily store reading globally */
+static int32_t  temp, humidity, pressure, gas;  // BME readings
+static char     buf[16];                        // sprintf text buffer
+static float    alt;                            // Temporary variable
+static uint16_t loopCounter = 0;                // Display iterations
+static uint16_t sm_adc;
+static uint16_t batt;
+static uint8_t mpp_status;
+static uint8_t pwr_status;
+static uint8_t usr_button;
 
 void setup()
 {
@@ -137,21 +179,174 @@ void setup()
 
   /* clear scren to white background */
   FillScreen( GxEPD_WHITE );
-}
 
-void process_power_status() {
-  total_event_pwr_status = ++total_event_pwr_status > 99999 ? 0 : total_event_pwr_status;
-}
-void process_mpp_status() {
-  total_event_mpp_status = ++total_event_mpp_status > 9999 ? 0 : total_event_mpp_status;
-}
-void process_user_button() {
-  total_event_user_button = ++total_event_user_button > 999 ? 0 : total_event_user_button;
+
+  /* start wifi connection */
+  // We start by connecting to a WiFi network
+  // To debug, please enable Core Debug Level to Verbose
+  Serial.println();
+  Serial.print("[WiFi] Connecting to ");
+  Serial.println(ssid);
+  WriteToDisplay(0, 0, "Connecting to");
+  WriteToDisplay(0, 25, "> " + String(ssid) );
+
+  
+  WiFi.begin(ssid, password);
+  // Auto reconnect is set true as default
+  // To set auto connect off, use the following function
+  // WiFi.setAutoReconnect(false);
+
+  // Will try for about 10 seconds (20x 500ms)
+  int tryDelay = 500;
+  int numberOfTries = 20;
+
+  // Wait for the WiFi event
+  while (true) {
+      
+      switch(WiFi.status()) {
+        case WL_NO_SSID_AVAIL:
+          Serial.println("[WiFi] SSID not found");
+          break;
+        case WL_CONNECT_FAILED:
+          Serial.print("[WiFi] Failed - WiFi not connected! Reason: ");
+          return;
+          break;
+        case WL_CONNECTION_LOST:
+          Serial.println("[WiFi] Connection was lost");
+          break;
+        case WL_SCAN_COMPLETED:
+          Serial.println("[WiFi] Scan is completed");
+          break;
+        case WL_DISCONNECTED:
+          Serial.println("[WiFi] WiFi is disconnected");
+          break;
+        case WL_CONNECTED:
+          Serial.println("[WiFi] WiFi is connected!");
+          Serial.print("[WiFi] IP address: ");
+          Serial.println(WiFi.localIP());
+          Serial.println();
+          UpdateDisplay( current_menu );
+
+          return;
+
+          break;
+        default:
+          Serial.print("[WiFi] WiFi Status: ");
+          Serial.println(WiFi.status());
+          break;
+      }
+      delay(tryDelay);
+      
+      if(numberOfTries <= 0){
+        Serial.print("[WiFi] Failed to connect to WiFi!");
+        // Use disconnect function to force stop trying to connect
+        WiFi.disconnect();
+        return;
+      } else {
+        numberOfTries--;
+      }
+  }
+
 }
 
 void loop()
 {
-  ReadAllSensors();
+  const long interval = 60000;
+  static unsigned long previousMillis = 0;
+
+  // to avoid having delays in loop, we'll use the strategy from BlinkWithoutDelay
+  // see: File -> Examples -> 02.Digital -> BlinkWithoutDelay for more info
+  unsigned long currentMillis = millis();
+  if ( currentMillis - previousMillis >= interval ) {
+
+    // save the last time a message was sent
+    previousMillis = currentMillis;
+
+    ReadAllSensors();
+    UpdateDisplay( current_menu );
+  }
+
+  /* control menu */
+  if( button_pressed ){
+    current_menu = ++current_menu >= OSM_MAX_MENU ? 0 : current_menu;
+    Serial.println( "current_menu: " + String(current_menu) );
+    UpdateDisplay( current_menu );
+    button_pressed = false;
+  }
+
+  /* do a full refresh */
+  static uint32_t next_refresh_ms;
+  if( next_refresh_ms == 0 )
+  {
+    next_refresh_ms = millis() + FULL_REFRESH_PERIOD_MS;
+  } 
+  else if ( millis() > next_refresh_ms )
+  {
+    FillScreen( GxEPD_WHITE );
+    FillScreen( GxEPD_BLACK );
+    FillScreen( GxEPD_WHITE );
+    next_refresh_ms = millis() + FULL_REFRESH_PERIOD_MS;
+  }
+}
+
+
+void UpdateDisplay( uint8_t menu )
+{
+  switch( menu ){
+    case OSM_SENSOR_READINGS:
+    { 
+      FillScreen( GxEPD_WHITE );
+      float temp_f = temp / 100.0;
+      float humidity_f = humidity / 1000.0;
+      float pressure_f = humidity / 100.0;
+      float gas_f = gas / 100.0;
+
+      /* print to display */
+      WriteToDisplay( 0,   0, "t: " + String(temp_f, 2) + " c" );
+      WriteToDisplay( 0,  20, "h: " + String(humidity_f, 2) + " %" );
+      WriteToDisplay( 0,  40, "p: " + String(pressure_f, 2) + " Pa" );
+      WriteToDisplay( 0,  65, "g: " + String(gas_f, 1) + " mOhm");
+      WriteToDisplay(-3,  90, "s: " + String(sm_adc) + " adc" );
+      WriteToDisplay( 0, 110, "v: " + String(batt) + " mV" );
+      WriteToDisplay( 0, 125, "ps: " + String(pwr_status) + " te: " + String(total_event_pwr_status) );
+      WriteToDisplay( 0, 145, "mpps: " + String(mpp_status) + " te: " + String(total_event_mpp_status) );
+      WriteToDisplay( 0, 170, "button: " + String(usr_button) + " te: " + String(total_event_user_button) );
+      break;
+    }
+    case OSM_WIFI_STATUS:
+    {
+      FillScreen( GxEPD_WHITE );
+
+      /* print to display */
+      WriteToDisplay( 0,   0, "wifi status: " + String(WiFi.status()) );
+      Serial.println( WiFi.SSID() );
+      WriteToDisplay( 0,  20, "s:" + String(WiFi.SSID()) );
+      Serial.println( WiFi.localIP() );
+      WriteToDisplay( 0,  40, "ip: " + String(WiFi.localIP().toString()) );
+      Serial.println( WiFi.gatewayIP() );
+      WriteToDisplay( 0,  65, "gw: " + String(WiFi.gatewayIP().toString()) );
+      WriteToDisplay(-3,  90, "rssi: " + String(WiFi.RSSI()) );
+
+      /* ping here */
+      WriteToDisplay( 0, 110, "ping: pinging...");
+      if (Ping.ping(WiFi.gatewayIP()) > 0){
+        WriteToDisplay( 0, 110, "ping: " + String(Ping.averageTime()) + " ms");
+      } else {
+        WriteToDisplay( 0, 110, "ping: failed");
+      }
+      // WriteToDisplay( 0, 125, "ps: " + String(pwr_status) + " te: " + String(total_event_pwr_status) );
+      // WriteToDisplay( 0, 145, "mpps: " + String(mpp_status) + " te: " + String(total_event_mpp_status) );
+      // WriteToDisplay( 0, 170, "button: " + String(usr_button) + " te: " + String(total_event_user_button) );
+      break;
+    }
+    case OSM_HAPPY_FACE:
+    {
+      DrawHappyFace();
+      break;
+    }
+  } 
+  
+  display.hibernate();
 }
 
 void FillScreen(uint16_t colour)
@@ -260,16 +455,6 @@ uint16_t ReadBatteryMillivolts()
 
 void ReadAllSensors()
 {  
-  static int32_t  temp, humidity, pressure, gas;  // BME readings
-  static char     buf[16];                        // sprintf text buffer
-  static float    alt;                            // Temporary variable
-  static uint16_t loopCounter = 0;                // Display iterations
-  static uint16_t sm_adc;
-  static uint16_t batt;
-  static uint8_t mpp_status;
-  static uint8_t pwr_status;
-  static uint8_t usr_button;
-
   if (loopCounter % 25 == 0) {                    // Show header @25 loops
     Serial.print(F("\nLoop Temp\xC2\xB0\x43 Humid% Press hPa Air m\xE2\x84\xA6    SoilMstr  Batt mV"));
     Serial.print(F("\n==== ====== ====== ========= ========= ========= =========\n"));  // "�C" symbol
@@ -299,39 +484,6 @@ void ReadAllSensors()
     Serial.print(sm_adc);
     Serial.print("     ");
     Serial.println(batt);
-
-    float temp_f = temp / 100.0;
-    float humidity_f = humidity / 1000.0;
-    float pressure_f = humidity / 100.0;
-    float gas_f = gas / 100.0;
-
-    /* print to display */
-    WriteToDisplay( 0,   0, "t: " + String(temp_f, 2) + " c" );
-    WriteToDisplay( 0,  20, "h: " + String(humidity_f, 2) + " %" );
-    WriteToDisplay( 0,  40, "p: " + String(pressure_f, 2) + " Pa" );
-    WriteToDisplay( 0,  65, "g: " + String(gas_f, 1) + " mOhm");
-    WriteToDisplay(-3,  90, "s: " + String(sm_adc) + " adc" );
-    WriteToDisplay( 0, 110, "v: " + String(batt) + " mV" );
-    WriteToDisplay( 0, 125, "ps: " + String(pwr_status) + " te: " + String(total_event_pwr_status) );
-    WriteToDisplay( 0, 145, "mpps: " + String(mpp_status) + " te: " + String(total_event_mpp_status) );
-    WriteToDisplay( 0, 170, "button: " + String(usr_button) + " te: " + String(total_event_user_button) );
-    display.hibernate();
-
-    delay(10000);  // Wait 10s
-  }                // of ignore first reading
-
-  /* do a full refresh */
-  static uint32_t next_refresh_ms;
-  if( next_refresh_ms == 0 )
-  {
-    next_refresh_ms = millis() + FULL_REFRESH_PERIOD_MS;
-  } 
-  else if ( millis() > next_refresh_ms )
-  {
-    FillScreen( GxEPD_WHITE );
-    FillScreen( GxEPD_BLACK );
-    FillScreen( GxEPD_WHITE );
-    next_refresh_ms = millis() + FULL_REFRESH_PERIOD_MS;
   }
 }
 
