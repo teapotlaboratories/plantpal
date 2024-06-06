@@ -12,16 +12,7 @@
 
 #include "plantpal_graphics.h"
 
-/* EPD wiring */
-// ESP32-C6 DevKit-1
-// #define EPD_CS 10
-// #define EPD_DC 11
-// #define EPD_RST 2
-// #define EPD_BUSY 3
-// #define EPD_SDI 19
-// #define EPD_SCK 21
-
-// Plantpal
+/* EPD Wiring */
 #define EPD_CS 19
 #define EPD_DC 18
 #define EPD_RST 15
@@ -38,6 +29,8 @@ GxEPD2_BW< GxEPD2_154_GDEY0154D67,
                                                                                           EPD_DC, 
                                                                                           EPD_RST, 
                                                                                           EPD_BUSY) ); // adapt the constructor parameters to your wiring
+// full refresh every (FULL_REFRESH_PERIOD_MS) ms
+#define FULL_REFRESH_PERIOD_MS 300 * 1000
 
 /* BME688 Object */
 BME680_Class BME680;
@@ -50,15 +43,27 @@ BME680_Class BME680;
 #define SM_PWM_DUTY_CYCLE 4
 
 /* Battery Measurement */
-#define BATT_MEAS 2
-#define BATT_MEAS_EN 3
+#define BATT_MEAS_PIN 2
+#define BATT_MEAS_EN_PIN 3
 #define BATT_MEAS_VD_R1 4700.0  // 4.7K ohm
 #define BATT_MEAS_VD_R2 10000.0 // 10K Ohm
+
+/* AEM10941 Pin Status */
+#define MPP_STATUS_PIN 5
+#define PWR_STATUS_PIN 8
+
+/* User button */
+#define USER_BUTTON_PIN 9
 
 /* Deep-sleep test */
 // #define TEST_DEEP_SLEEP
 #define uS_TO_S_FACTOR 1000000ULL  /* Conversion factor for micro seconds to seconds */
 #define TIME_TO_SLEEP  15        /* Time ESP32 will go to sleep (in seconds) */
+
+/* variable to catch interrupt events */
+static uint32_t total_event_pwr_status;
+static uint32_t total_event_mpp_status;
+static uint32_t total_event_user_button;
 
 void setup()
 {
@@ -79,10 +84,6 @@ void setup()
   StartupDisplay();
   delay(1000);
   DrawHappyFace();
-  // power off display
-  display.powerOff();
-  display.hibernate();
-  display.end();
 
   /* Initialise BME688 */
   Wire.setPins(6, 7);
@@ -110,9 +111,21 @@ void setup()
   digitalWrite( SM_PWM_PIN, LOW );
 
   /* Initialise Battery Measurement */
-  pinMode( BATT_MEAS, INPUT );
-  pinMode( BATT_MEAS_EN, OUTPUT );
-  digitalWrite( BATT_MEAS_EN, LOW );
+  pinMode( BATT_MEAS_PIN, INPUT );
+  pinMode( BATT_MEAS_EN_PIN, OUTPUT );
+  digitalWrite( BATT_MEAS_EN_PIN, LOW );
+
+  /* Initialise AEM10941 Status Pin */
+  pinMode( MPP_STATUS_PIN, INPUT );
+  pinMode( PWR_STATUS_PIN, INPUT );
+
+  /* Initialise User Button */
+  pinMode( USER_BUTTON_PIN, INPUT );
+
+  /* Setup interrupt for counting AEM pin status and user button */
+  attachInterrupt(digitalPinToInterrupt(PWR_STATUS_PIN), process_power_status, FALLING);
+  attachInterrupt(digitalPinToInterrupt(MPP_STATUS_PIN), process_mpp_status, FALLING);
+  attachInterrupt(digitalPinToInterrupt(USER_BUTTON_PIN), process_user_button, FALLING);
 
   /* Deep-sleep now */
 #ifdef TEST_DEEP_SLEEP
@@ -121,11 +134,92 @@ void setup()
   Serial.flush(); 
   esp_deep_sleep_start();
 #endif
+
+  /* clear scren to white background */
+  FillScreen( GxEPD_WHITE );
+}
+
+void process_power_status() {
+  total_event_pwr_status = ++total_event_pwr_status > 99999 ? 0 : total_event_pwr_status;
+}
+void process_mpp_status() {
+  total_event_mpp_status = ++total_event_mpp_status > 9999 ? 0 : total_event_mpp_status;
+}
+void process_user_button() {
+  total_event_user_button = ++total_event_user_button > 999 ? 0 : total_event_user_button;
 }
 
 void loop()
 {
   ReadAllSensors();
+}
+
+void FillScreen(uint16_t colour)
+{
+  display.setFullWindow();
+  display.firstPage();
+  do
+  {
+    display.fillScreen(colour);
+  }
+  while (display.nextPage());
+  display.hibernate();
+}
+
+void WriteToDisplay( int16_t x, int16_t y, String text )
+{
+  int16_t box_x, box_y;
+  uint16_t box_w, box_h;
+  display.getTextBounds(text, x, y, &box_x, &box_y, &box_w, &box_h);
+
+  // adjust to plantpal screen 
+  box_x += 11;
+  box_y += 20;
+
+  // too lazy to the understand the library, but text will 
+  // be cut if the following line is not added 
+  box_h += 6;
+  uint16_t cursor_y = box_y + box_h - 6;
+
+  display.setFont(&FreeMonoBold9pt7b);
+  display.setTextColor(GxEPD_BLACK);
+  
+  display.setPartialWindow(box_x, box_y, box_w, box_h);
+  display.firstPage();
+  do
+  {
+    display.fillRect(box_x, box_y, box_w, box_h, GxEPD_WHITE);
+    display.setCursor(box_x, cursor_y);
+    display.print(text);
+  }
+  while (display.nextPage());
+}
+
+uint8_t ReadMPPStatus()
+{
+  // Asserted when the AEM performs a MPP evaluation.
+
+  // Assert signal is inverse, caused by the 
+  // MPP status driver ( see schematics )
+  return !digitalRead( MPP_STATUS_PIN );
+}
+
+uint8_t ReadPowerStatus()
+{
+  // Asserted during 600 ms if the battery voltage falls below VOVDIS\
+
+  // Assert signal is inverse, caused by the 
+  // power status driver ( see schematics )
+  return !digitalRead( PWR_STATUS_PIN );
+}
+
+uint8_t ReadUserButton()
+{
+  // Note:  User button is also shared with ESP32
+  //        BOOT1 pin
+
+  // User button signal is inverse because it is externally pulled-up.
+  return !digitalRead( USER_BUTTON_PIN );
 }
 
 uint16_t ReadSoilMoistureAdcValue()
@@ -153,10 +247,10 @@ uint16_t ReadSoilMoistureAdcValue()
 
 uint16_t ReadBatteryMillivolts()
 { 
-  digitalWrite( BATT_MEAS_EN, HIGH );
+  digitalWrite( BATT_MEAS_EN_PIN, HIGH );
   delay(20); // wait until voltage is stable
-  uint16_t batt_vd = analogReadMilliVolts( BATT_MEAS );
-  digitalWrite( BATT_MEAS_EN, LOW );
+  uint16_t batt_vd = analogReadMilliVolts( BATT_MEAS_PIN );
+  digitalWrite( BATT_MEAS_EN_PIN, LOW );
   
   // calculate battery voltage based 
   // on voltage divider resistor
@@ -170,11 +264,24 @@ void ReadAllSensors()
   static char     buf[16];                        // sprintf text buffer
   static float    alt;                            // Temporary variable
   static uint16_t loopCounter = 0;                // Display iterations
+  static uint16_t sm_adc;
+  static uint16_t batt;
+  static uint8_t mpp_status;
+  static uint8_t pwr_status;
+  static uint8_t usr_button;
+
   if (loopCounter % 25 == 0) {                    // Show header @25 loops
     Serial.print(F("\nLoop Temp\xC2\xB0\x43 Humid% Press hPa Air m\xE2\x84\xA6    SoilMstr  Batt mV"));
     Serial.print(F("\n==== ====== ====== ========= ========= ========= =========\n"));  // "�C" symbol
   }                                                     // if-then time to show headers
+  // Get sensor data
   BME680.getSensorData(temp, humidity, pressure, gas);  // Get readings
+  sm_adc = ReadSoilMoistureAdcValue();
+  batt = ReadBatteryMillivolts();
+  mpp_status = ReadMPPStatus();
+  pwr_status = ReadPowerStatus();
+  usr_button = ReadUserButton();
+
   if (loopCounter++ != 0) {                             // Ignore first reading, might be incorrect
     sprintf(buf, "%4d %3d.%02d", (loopCounter - 1) % 9999,  // Clamp to 9999,
             (int8_t)(temp / 100), (uint8_t)(temp % 100));   // Temp in decidegrees
@@ -189,11 +296,43 @@ void ReadAllSensors()
     sprintf(buf, "%4d.%02d", (int16_t)(gas / 100), (uint8_t)(gas % 100));  // Resistance milliohms
     Serial.print(buf);
     Serial.print("     ");
-    Serial.print(ReadSoilMoistureAdcValue());
+    Serial.print(sm_adc);
     Serial.print("     ");
-    Serial.println(ReadBatteryMillivolts());
+    Serial.println(batt);
+
+    float temp_f = temp / 100.0;
+    float humidity_f = humidity / 1000.0;
+    float pressure_f = humidity / 100.0;
+    float gas_f = gas / 100.0;
+
+    /* print to display */
+    WriteToDisplay( 0,   0, "t: " + String(temp_f, 2) + " c" );
+    WriteToDisplay( 0,  20, "h: " + String(humidity_f, 2) + " %" );
+    WriteToDisplay( 0,  40, "p: " + String(pressure_f, 2) + " Pa" );
+    WriteToDisplay( 0,  65, "g: " + String(gas_f, 1) + " mOhm");
+    WriteToDisplay(-3,  90, "s: " + String(sm_adc) + " adc" );
+    WriteToDisplay( 0, 110, "v: " + String(batt) + " mV" );
+    WriteToDisplay( 0, 125, "ps: " + String(pwr_status) + " te: " + String(total_event_pwr_status) );
+    WriteToDisplay( 0, 145, "mpps: " + String(mpp_status) + " te: " + String(total_event_mpp_status) );
+    WriteToDisplay( 0, 170, "button: " + String(usr_button) + " te: " + String(total_event_user_button) );
+    display.hibernate();
+
     delay(10000);  // Wait 10s
   }                // of ignore first reading
+
+  /* do a full refresh */
+  static uint32_t next_refresh_ms;
+  if( next_refresh_ms == 0 )
+  {
+    next_refresh_ms = millis() + FULL_REFRESH_PERIOD_MS;
+  } 
+  else if ( millis() > next_refresh_ms )
+  {
+    FillScreen( GxEPD_WHITE );
+    FillScreen( GxEPD_BLACK );
+    FillScreen( GxEPD_WHITE );
+    next_refresh_ms = millis() + FULL_REFRESH_PERIOD_MS;
+  }
 }
 
 // note for partial update window and setPartialWindow() method:
