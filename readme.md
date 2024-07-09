@@ -95,6 +95,7 @@ The following are the summary of the measurement:
 - Read Sensor, Update Display, and Store Data to Flash: **31mA @ 2.5s**
 - Read Sensor, Update Display, Store Data to Flash, and Publish to MQTT: **54mA @ 3.77s**
 - Direct Sunlight Solar Charge: **7.5mA**
+  - Note: latest testing shows an average of 10mA
 - Indirect Sunlight Solar Charge: **400uA**
 
 > :warning: **Tested on Revision 4-equivalent board, but should be similar to Revision 4** 
@@ -149,6 +150,7 @@ Some disclaimer about Plantpal:
 - RTC components have not been tested
 - Deep-sleep with `esp_sleep_enable_timer_wakeup()` on Arduino SDK have weird behavior where it only sleeps for the half amount of time it instructed to do.
 - The solar charge rate is 1.5mA lower than [Teapotlabs BWLR1E](https://github.com/teapotlaboratories/bwlr1e) even though they use the same components and configuration.
+  - Note: latest testing shows an average of 10mA
 
 ## Questions?
 For any questions feel free to create a issue or contact contact@teapotlabs.io
