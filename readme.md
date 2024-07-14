@@ -134,7 +134,9 @@ Out of factory, the ESP32-C6 will be blank and need to be put in `bootloader` mo
   5. Release `RESET` button 
   6. Wait couple seconds
   7. Release `BOOT` button
-  8. Plantpal should be in `bootloader` mode and you can flash it via `ESP-IDF` or `Arduino` 
+  8. Plantpal should be in `bootloader` mode and you can flash it via `ESP-IDF` or `Arduino`
+
+<p align="center"><img src="https://media.githubusercontent.com/media/teapotlaboratories/plantpal/main/docs/images/device_button.jpg" alt="plantpal-buttons"  width="30%" height="30%"/><br><b>Plantpal buttons</b></p>
 
 A more detailed information about USB behavior on ESP32-C6 can be [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/api-guides/usb-serial-jtag-console.html)
 
@@ -146,9 +148,8 @@ If you'd like to buy it from us fully assembled, we might be available and pleas
 
 ## Disclaimer and notes
 Some disclaimer about Plantpal:
-- WiFi antenna is not optimized and not certified
+- WiFi antenna is not tuned and not certified
 - RTC components have not been tested
-- Deep-sleep with `esp_sleep_enable_timer_wakeup()` on Arduino SDK have weird behavior where it only sleeps for the half amount of time it instructed to do.
 - The solar charge rate is 1.5mA lower than [Teapotlabs BWLR1E](https://github.com/teapotlaboratories/bwlr1e) even though they use the same components and configuration.
   - Note: latest testing shows an average of 10mA
 
