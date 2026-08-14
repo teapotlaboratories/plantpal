@@ -1,4 +1,13 @@
 <title>PlantPal BOM Cost</title>
+<script>
+  // Runs before the page paints so a stored choice never flashes the wrong theme.
+  // The host stamps its own data-theme; remember it as what "Auto" means here.
+  window.__hostTheme = document.documentElement.getAttribute("data-theme");
+  try {
+    var saved = localStorage.getItem("plantpal-bom-theme");
+    if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+  } catch (e) {}
+</script>
 <style>
   :root {
     --ground:#EDEEEA; --surface:#FBFBF9; --sunk:#E4E6E0;
@@ -61,6 +70,23 @@
     border-top:1px solid var(--rule-soft); padding-top:14px;
   }
   .meta b { color:var(--ink-2); font-weight:400; }
+  .head-top { display:flex; justify-content:space-between; align-items:flex-start;
+    gap:20px; flex-wrap:wrap; }
+
+  /* ---- theme control ---- */
+  .seg { display:flex; flex:0 0 auto; border:1px solid var(--rule); background:var(--surface); }
+  .seg button {
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase;
+    padding:6px 11px; background:transparent; border:0; border-right:1px solid var(--rule);
+    color:var(--muted); cursor:pointer; transition:color .12s ease, background-color .12s ease;
+  }
+  .seg button:last-child { border-right:0; }
+  .seg button:hover { color:var(--ink); }
+  .seg button[aria-pressed="true"] { background:var(--accent-wash); color:var(--accent); }
+  .seg button:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition:none !important; animation:none !important; }
+  }
 
   /* ---- hero figure ---- */
   .hero {
@@ -175,7 +201,14 @@
 <div class="wrap">
 
 <header>
-  <p class="eyebrow">PlantPal &middot; Hardware &middot; Cost report</p>
+  <div class="head-top">
+    <p class="eyebrow">PlantPal &middot; Hardware &middot; Cost report</p>
+    <div class="seg" role="group" aria-label="Colour theme">
+      <button type="button" data-theme-set="auto" aria-pressed="true">Auto</button>
+      <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+    </div>
+  </div>
   <h1>Bill of materials<br>cost breakdown</h1>
   <p class="lede">Every line of the PlantPal BOM priced against live distributor listings, with
   extended cost per assembled board.</p>
@@ -1029,3 +1062,40 @@
 </footer>
 
 </div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var host = window.__hostTheme;              // whatever the viewer's own setting stamped
+    var buttons = document.querySelectorAll("[data-theme-set]");
+
+    function apply(choice, remember) {
+      if (choice === "auto") {
+        if (host) root.setAttribute("data-theme", host);
+        else root.removeAttribute("data-theme");
+      } else {
+        root.setAttribute("data-theme", choice);
+      }
+      buttons.forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.themeSet === choice));
+      });
+      if (remember) {
+        try {
+          if (choice === "auto") localStorage.removeItem("plantpal-bom-theme");
+          else localStorage.setItem("plantpal-bom-theme", choice);
+        } catch (e) {}
+      }
+    }
+
+    var initial = "auto";
+    try {
+      var saved = localStorage.getItem("plantpal-bom-theme");
+      if (saved === "light" || saved === "dark") initial = saved;
+    } catch (e) {}
+    apply(initial, false);
+
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () { apply(b.dataset.themeSet, true); });
+    });
+  })();
+</script>
